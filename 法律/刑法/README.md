@@ -21,3 +21,4 @@
 | 2021-03-01 | amendment | 中华人民共和国刑法修正案（十一）（2020年） | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf |
 | 2024-03-01 | amendment | 中华人民共和国刑法修正案（十二）（2023年） | http://www.npc.gov.cn/npc/c2/c30834/202312/t20231229_433988.html |
 | 2006-06-29 | correction | 中华人民共和国刑法修正案（六）（2006年） | metadata only: re-credits 第187条.md (its wording had been credited to Lexifina by ebbc5debbf) |
+| 2011-05-01 | correction | 中华人民共和国刑法修正案（八）（2011年） | metadata only: re-credits 第294条.md (its wording had been credited to Lexifina by ebbc5debbf) |
