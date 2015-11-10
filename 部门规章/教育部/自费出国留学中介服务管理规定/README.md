@@ -1,0 +1,5 @@
+# 自费出国留学中介服务管理规定
+
+已废止。自2015-11-10起，由《教育部关于废止和修改部分规章的决定》（教育部令第38号）废止。来源：http://www.moe.gov.cn/srcsite/A02/s5911/moe_621/201511/t20151126_221285.html
+
+Repealed from 2015-11-10 by 教育部关于废止和修改部分规章的决定（教育部令第38号）. The last text is in this folder's history.
