@@ -1,7 +1,5 @@
 # 中华人民共和国固体废物污染环境防治法
 
-1 versions in this record, in force from 2020-09-01 (the last from 2020-09-01). Article numbers are those of the version in force.
+已废止。自2026-08-15起，由《中华人民共和国生态环境法典》废止（该法：http://www.npc.gov.cn/npc/c2/c30834/202604/P020260417343768024693.pdf）。
 
-| In force | Kind | Commit author | Source |
-| --- | --- | --- | --- |
-| 2020-09-01 | law | 中华人民共和国固体废物污染环境防治法（2020年修订） | http://www.npc.gov.cn/npc/c2/c30834/202004/t20200430_305758.html |
+Repealed from 2026-08-15 by 中华人民共和国生态环境法典. The last text is in this folder's history.
