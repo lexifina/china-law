@@ -1,7 +1,5 @@
 # 中华人民共和国噪声污染防治法
 
-1 versions in this record, in force from 2022-06-05 (the last from 2022-06-05). Article numbers are those of the version in force.
+已废止。自2026-08-15起，由《中华人民共和国生态环境法典》废止（该法：http://www.npc.gov.cn/npc/c2/c30834/202604/P020260417343768024693.pdf）。
 
-| In force | Kind | Commit author | Source |
-| --- | --- | --- | --- |
-| 2022-06-05 | law | 中华人民共和国噪声污染防治法（2021年） | http://www.npc.gov.cn/npc/c2/c30834/202112/t20211224_315601.html |
+Repealed from 2026-08-15 by 中华人民共和国生态环境法典. The last text is in this folder's history.
