@@ -11,3 +11,6 @@ amendment texts (宪法修正案) and the 2018 consolidated text, in the section
 
 The National Laws Database (flk.npc.gov.cn) is NOT used: its robots.txt disallows all crawlers and states
 "禁止使用任何自动化工具、脚本、爬虫程序采集或复制网站数据".
+
+Progress: the 1982 text and all 52 amendment articles parse and apply; the result equals the official 2018 text
+except two typographic points (〇/○ in the preamble, a half-width colon in art. 124), which will be a labelled commit.
