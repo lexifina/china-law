@@ -1,0 +1,40 @@
+{
+  "corpus": "cn/national/acts",
+  "name": "Chinese law: 中华人民共和国宪法 (Constitution of the People's Republic of China, 1982, as amended)",
+  "acts": [
+    "中华人民共和国宪法"
+  ],
+  "history_from": "1982-12-04",
+  "built": "2026-10-28",
+  "dates": {
+    "commit": "in-force",
+    "other_trailers": [
+      "Adopted",
+      "Promulgated"
+    ],
+    "time": "12:00 Asia/Shanghai (UTC+8; UTC+9 in the summer time of 1986-1991)"
+  },
+  "scope": {
+    "trailer": "Applies",
+    "when_absent": "this corpus records no scope notes (no commit carries Applies:); the absence is not a statement that the change reaches every case",
+    "default_reach": {
+      "rule": "no retroactivity, unless a special provision better protects rights and interests",
+      "meaning": "laws, administrative regulations, local regulations, autonomous and separate regulations and rules do not apply retroactively, except special provisions made to better protect the rights and interests of citizens, legal persons and other organisations; in criminal law the law at the time of the act applies unless the later law is lighter",
+      "authority": "中华人民共和国立法法第一百零四条 (2023年修正; 2015年文本第九十三条): \"法律、行政法规、地方性法规、自治条例和单行条例、规章不溯及既往，但为了更好地保护公民、法人和其他组织的权利和利益而作的特别规定除外。\"; 中华人民共和国刑法第十二条",
+      "decided_here": false
+    }
+  },
+  "tool": "tools/on_date.py",
+  "in_force_trailer": "In-force",
+  "record_to": "2018-03-21",
+  "citation": {
+    "file": "([a-z]+)/art-0*([0-9]+)\\.md",
+    "cites": "第{n}条",
+    "numerals": "zh-Hans: {n} is written in Chinese numerals (第一百零三条 = 103), as tools/text.py int_cn() does; with Arabic digits the rule finds nothing"
+  },
+  "label": "China",
+  "language": "zh",
+  "checked_on": "2026-10-28",
+  "history": "in-force",
+  "record_note": "The 1982 text and the 2018 text are checked word for word against the official pages of 中国人大网 on 2026-10-28; the versions between are the 1982 text with each amendment applied."
+}
