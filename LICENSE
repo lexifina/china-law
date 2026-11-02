@@ -7,6 +7,16 @@ protected by copyright in the People's Republic of China (中华人民共和国�
 The 中国人大网 site publishes no reuse terms for this section that we could find; this repository stays private
 until reuse is confirmed.
 
+The Constitution, the codes and the laws in this repository (xianfa/, xingfa/, xingshisusongfa/, gongsifa/,
+laodonghetongfa/ and any act folder added later) are laws and decisions of the National People's Congress and its
+Standing Committee, which the Copyright Law of the People's Republic of China excludes from its protection:
+
+    中华人民共和国著作权法（2020年修正）第五条：“本法不适用于：（一）法律、法规，国家机关的决议、决定、命令和其他具有立法、行政、司法性质的文件，及其官方正式译文；（二）单纯事实消息；（三）历法、通用数表、通用表格和公式。”
+
+    ("This Law does not apply to: (1) laws and regulations, resolutions, decisions and orders of state organs, and other
+    documents of a legislative, administrative or judicial nature, and their official translations; (2) mere news of
+    facts; (3) calendars, general numerical tables, general tables and formulas.")
+
 Tools and documentation
 
 The scripts in tools/ and the documentation are by Lexifina, MIT licence:

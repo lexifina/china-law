@@ -1,4 +1,4 @@
-"""Prints the Constitution, or one provision of it, as it stood on a given day, from this repository's history.
+"""Prints an act (the Constitution, xianfa, by default in the examples), or one provision of it, as it stood on a given day.
 
     python tools/on_date.py 2000-01-01 xianfa 11        # 第十一条 on 1 January 2000
     python tools/on_date.py 2000-01-01 xianfa xuyan     # the preamble (序言)
@@ -26,13 +26,23 @@ def order(path: str) -> tuple:
         return (0, 0)
     if name == 'xuyan':
         return (1, 0)
-    m = re.fullmatch(r'art-(\d+)', name)
-    return (2, int(m.group(1))) if m else (3, name)
+    m = re.fullmatch(r'art-(\d+)(?:-(\d+))?', name)
+    if m:
+        return (2, int(m.group(1)), int(m.group(2) or 0))
+    m = re.fullmatch(r'fujian-(\d+)', name)
+    return (4, int(m.group(1)), 0) if m else (3, 0, name)
 
 
-def file_for(key: str) -> str:
-    if re.fullmatch(r'\d+', key):
-        return f'art-{int(key):03d}.md'
+def file_for(key: str, names: list[str] | None = None) -> str:
+    """'11' -> art-011.md (art-0011.md in a folder numbered with four digits); '120-1' -> art-120-1.md (之一)."""
+    m = re.fullmatch(r'(\d+)(?:-(\d+))?', key)
+    if m:
+        tail = f'-{int(m.group(2))}' if m.group(2) else ''
+        for w in (3, 4):
+            f = f'art-{int(m.group(1)):0{w}d}{tail}.md'
+            if names is None or f in names:
+                return f
+        return f'art-{int(m.group(1)):03d}{tail}.md'
     return key if key.endswith('.md') else f'{key}.md'
 
 
@@ -53,9 +63,11 @@ def main():
     dt.date.fromisoformat(day)
     commit = commit_on(day, act)
     if not commit:
-        sys.exit(f'{act} is not in the record on {day} (the record starts on 1982-12-04).')
+        first = git('log', '--reverse', '--format=%(trailers:key=In-force,valueonly,separator=)', 'main', '--', act).split()
+        sys.exit(f'{act} is not in the record on {day}' + (f' (its record starts on {first[0]}).' if first else '.'))
     if len(sys.argv) > 3:
-        name = file_for(sys.argv[3])
+        names = [f.rsplit('/', 1)[1] for f in git('ls-tree', '-r', '--name-only', commit, f'{act}/').split('\n') if f]
+        name = file_for(sys.argv[3], names)
         try:
             sys.stdout.write(git('show', f'{commit}:{act}/{name}'))
         except subprocess.CalledProcessError:

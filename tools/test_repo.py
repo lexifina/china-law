@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-LAW = re.compile(r'^(中华人民共和国宪法（1982年）|宪法修正案（\d{4}年）)$')
+LAW = re.compile(r'^(中华人民共和国宪法（1982年）|宪法修正案（\d{4}年）|\S+（\d{4}年(修订)?）)$')
 PUBLISHER = '中国人大网 (全国人大常委会办公厅)'
 
 
@@ -108,22 +108,28 @@ class Smoke:
         for t in tags:
             self.git('rev-parse', '--verify', '-q', f'{t}^{{commit}}')
         rows = self.git('log', '--format=%H%x09%an%x09%(trailers:key=In-force,valueonly,separator=)', 'main').splitlines()
-        missing = [r for r in rows[1:] if not r.split('\t')[2].strip()]
+        law = [r for r in rows if r.split('\t')[1] != 'Lexifina']
+        missing = [r for r in law if not r.split('\t')[2].strip()]
         assert not missing, f'{len(missing)} commits without In-force, e.g. {missing[:2]}'
         assert not rows[0].split('\t')[2].strip(), 'documentation commit should carry no In-force'
-        bad = [r for r in rows[1:] if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', r.split('\t')[2].strip())]
+        bad = [r for r in law if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', r.split('\t')[2].strip())]
         assert not bad, f'malformed In-force {bad[:2]}'
-        return f'{len(tags)} tags resolve; {len(rows) - 1} law commits carry In-force'
+        return f'{len(tags)} tags resolve; {len(law)} law commits carry In-force'
 
     # 5
     def lexifina(self):
         rows = self.git('log', '--format=%H%x09%an%x09%ae%x09%cn', 'main').splitlines()
         by_lex = [r for r in rows if r.split('\t')[1] == 'Lexifina']
-        assert len(by_lex) == 1 and by_lex[0] == rows[0], f'{len(by_lex)} commits by Lexifina'
+        # Documentation commits only: the head, and one closing each part appended before it (main is append-only).
+        assert by_lex and by_lex[0] == rows[0], f'{len(by_lex)} commits by Lexifina, the head not among them'
+        for r in by_lex:
+            h = r.split('\t')[0]
+            assert not self.git('log', '-1', '--format=%(trailers:key=In-force,valueonly)', h).strip(), \
+                f'{h[:10]}: a Lexifina commit with In-force'
         assert all(r.split('\t')[3] == 'Lexifina' for r in rows), 'a committer other than Lexifina'
-        authors = {r.split('\t')[1] for r in rows[1:]}
+        authors = {r.split('\t')[1] for r in rows if r.split('\t')[1] != 'Lexifina'}
         assert all(LAW.match(a) or a == PUBLISHER for a in authors), f'unexpected authors {authors - {PUBLISHER}}'
-        return f'only the documentation commit {rows[0][:10]} is by Lexifina; {len(authors)} distinct authors'
+        return f'only the {len(by_lex)} documentation commits are by Lexifina; {len(authors)} distinct authors'
 
     # 6
     def readme(self):

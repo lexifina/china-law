@@ -94,3 +94,28 @@ CPython 3.12.10; git version 2.46.0.windows.1. Standard library only.
 Built by Claude Code with Claude Opus 5.5 (`claude-opus-5-5`), which researched the source, wrote the scripts and the
 documentation. No AI wrote or edited legal text, and no model runs at build time: every word of law comes from the
 official pages, moved by the code above.
+
+<!-- acts: begin -->
+## More acts
+
+Pages of 中国人大网 (www.npc.gov.cn), retrieved up to 2026-11-02. Each page is parsed into its adoption line, the
+headings of its body and its articles (`parse.py`); the letters and digits of the page body (目录 removed,
+each heading removed once) must equal those of the article files, in order. Full-width digits are written
+as ASCII digits (the form the current texts use); nothing else in the text is changed.
+
+| Act | In force | Kind | Page | sha256 of the page |
+| --- | --- | --- | --- | --- |
+| 中华人民共和国刑法 | 1997-10-01 | law | http://www.npc.gov.cn/npc/c1773/c1848/c21114/c25714/c25716/201905/t20190522_46193.html | `0e4f21c8efed7af0` |
+| 中华人民共和国刑事诉讼法 | 1997-01-01 | oldest | http://www.npc.gov.cn/cwhhdbdh/c6626/c7487/c7528/201905/t20190523_388735.html | `2fa9963b7f641377` |
+| 中华人民共和国刑事诉讼法 | 2013-01-01 | amendment | http://www.npc.gov.cn/npc/c2434/c17314/c17320/201905/t20190522_56090.html | `4b058bf37dcb7233` |
+| 中华人民共和国刑事诉讼法 | 2018-10-26 | amendment | http://www.npc.gov.cn/npc/c2/c12435/201905/t20190521_276591.html | `96451606f0ef9cf4` |
+| 中华人民共和国公司法 | 2018-10-26 | oldest | http://www.npc.gov.cn/npc/c2/c12435/201905/t20190521_276469.html | `c8838121a158edd9` |
+| 中华人民共和国公司法 | 2024-07-01 | law | http://www.npc.gov.cn/npc/c2/c30834/202312/t20231229_433999.html | `aef5ccfbae8eb958` |
+| 中华人民共和国劳动合同法 | 2008-01-01 | law | http://www.npc.gov.cn/npc/c2/c183/c198/201905/t20190522_26978.html | `51b14a86fda43ecd` |
+| 中华人民共和国劳动合同法 | 2013-07-01 | amendment | http://www.npc.gov.cn/npc/c2/c12435/c12488/201905/t20190522_76069.html | `` |
+
+The day each version took effect is read from the source: the law's own commencement article, or the
+amending decision's (本决定自……起施行 / 自公布之日起施行); `In-force-evidence:` in each commit names it.
+Main is append-only: these commits were added on top of the Constitution history, which is unchanged.
+
+<!-- acts: end -->

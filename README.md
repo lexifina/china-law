@@ -62,3 +62,33 @@ The National Laws Database (flk.npc.gov.cn) was not used: its robots.txt disallo
 
 Full detail, every command and the hashes are in [REPRODUCE.md](REPRODUCE.md). This is not legal advice; the
 official text is the one the NPC publishes.
+
+<!-- acts: begin -->
+## More acts
+
+Besides the Constitution, the record holds these acts, in the same layout: one folder per act, one file per
+article (`art-NNN.md`; an article 之一 is `art-NNN-1.md`), `mulu.md` for the headings of the body (编, 章, 节)
+and `fujian-N.md` for annexes (附件). Each commit is dated noon Asia/Shanghai on the day the version took
+effect (`In-force:` trailer) and is authored by the law that made it. Where 中国人大网 has no earlier full text,
+the first version is the oldest it has, credited to the publisher and labelled so. Tags `<folder>/<day>` mark
+each version.
+
+| Act | Folder | In force | Commit author | What |
+| --- | --- | --- | --- | --- |
+| 中华人民共和国刑法 | `xingfa/` | 1997-10-01 | 中华人民共和国刑法（1997年修订） | the text as adopted, 455 files |
+| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 1997-01-01 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (1996年修正文本), 226 files |
+| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2013-01-01 | 全国人民代表大会关于修改《中华人民共和国刑事诉讼法》的决定（2012年） | the amending decision, 263 files |
+| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国刑事诉讼法》的决定（2018年） | the amending decision, 295 files |
+| 中华人民共和国公司法 | `gongsifa/` | 2018-10-26 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (2018年修正文本), 219 files |
+| 中华人民共和国公司法 | `gongsifa/` | 2024-07-01 | 中华人民共和国公司法（2023年修订） | the revised text (修订), 267 files |
+| 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2008-01-01 | 中华人民共和国劳动合同法（2007年） | the text as adopted, 99 files |
+| 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2013-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动合同法》的决定（2012年） | the amending decision, 4 files |
+
+- `python tools/on_date.py 2010-01-01 xingfa 2` prints 第二条 of that act as in force on that day.
+- `git log --follow --format=%an%x09%(trailers:key=In-force,valueonly) -- xingshisusongfa/art-002.md` lists
+  the laws that changed an article. Article numbers are those of the version in force; a decision that
+  renumbers articles shows as changes to the files it moves.
+- A version made from an amending decision's own wording (not from a republished full text) says so in its
+  `Evidence:` trailer.
+
+<!-- acts: end -->
