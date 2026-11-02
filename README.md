@@ -75,6 +75,7 @@ each version.
 
 | Act | Folder | In force | Commit author | What |
 | --- | --- | --- | --- | --- |
+| 中华人民共和国民法典 | `minfadian/` | 2021-01-01 | 中华人民共和国民法典（2020年） | the text as adopted, 1261 files |
 | 中华人民共和国刑法 | `xingfa/` | 1997-10-01 | 中华人民共和国刑法（1997年修订） | the text as adopted, 455 files |
 | 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 1997-01-01 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (1996年修正文本), 226 files |
 | 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2013-01-01 | 全国人民代表大会关于修改《中华人民共和国刑事诉讼法》的决定（2012年） | the amending decision, 263 files |
@@ -84,7 +85,7 @@ each version.
 | 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2008-01-01 | 中华人民共和国劳动合同法（2007年） | the text as adopted, 99 files |
 | 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2013-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动合同法》的决定（2012年） | the amending decision, 4 files |
 
-- `python tools/on_date.py 2010-01-01 xingfa 2` prints 第二条 of that act as in force on that day.
+- `python tools/on_date.py 2010-01-01 minfadian 2` prints 第二条 of that act as in force on that day.
 - `git log --follow --format=%an%x09%(trailers:key=In-force,valueonly) -- xingshisusongfa/art-002.md` lists
   the laws that changed an article. Article numbers are those of the version in force; a decision that
   renumbers articles shows as changes to the files it moves.

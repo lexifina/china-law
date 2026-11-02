@@ -105,6 +105,7 @@ as ASCII digits (the form the current texts use); nothing else in the text is ch
 
 | Act | In force | Kind | Page | sha256 of the page |
 | --- | --- | --- | --- | --- |
+| 中华人民共和国民法典 | 2021-01-01 | law | http://www.npc.gov.cn/wxzlhgb/c27214/gb2020/202006/P020230313538731037747.pdf | `261066267a44172e` |
 | 中华人民共和国刑法 | 1997-10-01 | law | http://www.npc.gov.cn/npc/c1773/c1848/c21114/c25714/c25716/201905/t20190522_46193.html | `0e4f21c8efed7af0` |
 | 中华人民共和国刑事诉讼法 | 1997-01-01 | oldest | http://www.npc.gov.cn/cwhhdbdh/c6626/c7487/c7528/201905/t20190523_388735.html | `2fa9963b7f641377` |
 | 中华人民共和国刑事诉讼法 | 2013-01-01 | amendment | http://www.npc.gov.cn/npc/c2434/c17314/c17320/201905/t20190522_56090.html | `4b058bf37dcb7233` |
