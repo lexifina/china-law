@@ -76,7 +76,7 @@ def squash(s: str) -> str:
     return re.sub('[' + WS + ']', '', s)
 
 
-ANNEX_RE = re.compile(r'附件([一二三四五六七八九十]+)')
+ANNEX_RE = re.compile(r'附件([一二三四五六七八九十]+)：?')
 BARE_HEAD = re.compile(r'(附[' + WS + r']*则)')
 
 
@@ -100,7 +100,7 @@ def parse(blocks: list[str], width: int = 3, h3: str = '') -> dict:
     # An adoption line split over several blocks (（……通过，| ……修订）) is joined first.
     for i, x in enumerate(blocks[:60]):
         if x.startswith('（') and '通过' in x and '）' not in x:
-            j = next((j for j in range(i + 1, min(i + 8, len(blocks))) if blocks[j].endswith('）')), None)
+            j = next((j for j in range(i + 1, min(i + 25, len(blocks))) if blocks[j].endswith('）')), None)
             if j is not None:
                 blocks = blocks[:i] + [''.join(blocks[i:j + 1])] + blocks[j + 1:]
             break

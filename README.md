@@ -77,13 +77,28 @@ each version.
 | --- | --- | --- | --- | --- |
 | 中华人民共和国民法典 | `minfadian/` | 2021-01-01 | 中华人民共和国民法典（2020年） | the text as adopted, 1261 files |
 | 中华人民共和国刑法 | `xingfa/` | 1997-10-01 | 中华人民共和国刑法（1997年修订） | the text as adopted, 455 files |
+| 中华人民共和国刑法 | `xingfa/` | 1997-10-01 | 中国人大网 (全国人大常委会办公厅) | correction to the 公报 standard text, 6 files |
+| 中华人民共和国刑法 | `xingfa/` | 1998-12-29 | 全国人民代表大会常务委员会关于惩治骗购外汇、逃汇和非法买卖外汇犯罪的决定（1998年） | the amending act, 1 files |
+| 中华人民共和国刑法 | `xingfa/` | 1999-12-25 | 中华人民共和国刑法修正案（1999年） | the amending act, 8 files |
+| 中华人民共和国刑法 | `xingfa/` | 2001-08-31 | 中华人民共和国刑法修正案（二）（2001年） | the amending act, 1 files |
+| 中华人民共和国刑法 | `xingfa/` | 2001-12-29 | 中华人民共和国刑法修正案（三）（2001年） | the amending act, 8 files |
+| 中华人民共和国刑法 | `xingfa/` | 2002-12-28 | 中华人民共和国刑法修正案（四）（2002年） | the amending act, 8 files |
+| 中华人民共和国刑法 | `xingfa/` | 2005-02-28 | 中华人民共和国刑法修正案（五）（2005年） | the amending act, 3 files |
+| 中华人民共和国刑法 | `xingfa/` | 2006-06-29 | 中华人民共和国刑法修正案（六）（2006年） | the amending act, 20 files |
+| 中华人民共和国刑法 | `xingfa/` | 2009-02-28 | 中华人民共和国刑法修正案（七）（2009年） | the amending act, 14 files |
+| 中华人民共和国刑法 | `xingfa/` | 2009-08-27 | 全国人民代表大会常务委员会关于修改部分法律的决定（2009年） | the amending act, 2 files |
+| 中华人民共和国刑法 | `xingfa/` | 2011-05-01 | 中华人民共和国刑法修正案（八）（2011年） | the amending act, 49 files |
+| 中华人民共和国刑法 | `xingfa/` | 2015-11-01 | 中华人民共和国刑法修正案（九）（2015年） | the amending act, 56 files |
+| 中华人民共和国刑法 | `xingfa/` | 2017-11-04 | 中华人民共和国刑法修正案（十）（2017年） | the amending act, 1 files |
+| 中华人民共和国刑法 | `xingfa/` | 2021-03-01 | 中华人民共和国刑法修正案（十一）（2020年） | the amending act, 47 files |
+| 中华人民共和国刑法 | `xingfa/` | 2024-03-01 | 中华人民共和国刑法修正案（十二）（2023年） | the amending act, 7 files |
 | 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 1997-01-01 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (1996年修正文本), 226 files |
-| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2013-01-01 | 全国人民代表大会关于修改《中华人民共和国刑事诉讼法》的决定（2012年） | the amending decision, 263 files |
-| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国刑事诉讼法》的决定（2018年） | the amending decision, 295 files |
+| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2013-01-01 | 全国人民代表大会关于修改《中华人民共和国刑事诉讼法》的决定（2012年） | the amending act, 263 files |
+| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国刑事诉讼法》的决定（2018年） | the amending act, 295 files |
 | 中华人民共和国公司法 | `gongsifa/` | 2018-10-26 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (2018年修正文本), 219 files |
 | 中华人民共和国公司法 | `gongsifa/` | 2024-07-01 | 中华人民共和国公司法（2023年修订） | the revised text (修订), 267 files |
 | 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2008-01-01 | 中华人民共和国劳动合同法（2007年） | the text as adopted, 99 files |
-| 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2013-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动合同法》的决定（2012年） | the amending decision, 4 files |
+| 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2013-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动合同法》的决定（2012年） | the amending act, 4 files |
 
 - `python tools/on_date.py 2010-01-01 minfadian 2` prints 第二条 of that act as in force on that day.
 - `git log --follow --format=%an%x09%(trailers:key=In-force,valueonly) -- xingshisusongfa/art-002.md` lists

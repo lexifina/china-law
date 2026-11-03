@@ -98,7 +98,7 @@ official pages, moved by the code above.
 <!-- acts: begin -->
 ## More acts
 
-Pages of 中国人大网 (www.npc.gov.cn), retrieved up to 2026-11-02. Each page is parsed into its adoption line, the
+Pages of 中国人大网 (www.npc.gov.cn), retrieved up to 2026-11-03. Each page is parsed into its adoption line, the
 headings of its body and its articles (`parse.py`); the letters and digits of the page body (目录 removed,
 each heading removed once) must equal those of the article files, in order. Full-width digits are written
 as ASCII digits (the form the current texts use); nothing else in the text is changed.
@@ -107,6 +107,21 @@ as ASCII digits (the form the current texts use); nothing else in the text is ch
 | --- | --- | --- | --- | --- |
 | 中华人民共和国民法典 | 2021-01-01 | law | http://www.npc.gov.cn/wxzlhgb/c27214/gb2020/202006/P020230313538731037747.pdf | `261066267a44172e` |
 | 中华人民共和国刑法 | 1997-10-01 | law | http://www.npc.gov.cn/npc/c1773/c1848/c21114/c25714/c25716/201905/t20190522_46193.html | `0e4f21c8efed7af0` |
+| 中华人民共和国刑法 | 1997-10-01 | correction | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 1998-12-29 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 1999-12-25 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2001-08-31 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2001-12-29 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2002-12-28 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2005-02-28 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2006-06-29 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2009-02-28 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2009-08-27 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2011-05-01 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2015-11-01 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2017-11-04 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2021-03-01 | amendment | http://www.npc.gov.cn/wxzlhgb/c27214/gb2021/202104/P020230313538043179978.pdf | `2252a75f5549dbd9` |
+| 中华人民共和国刑法 | 2024-03-01 | amendment | http://www.npc.gov.cn/npc/c2/c30834/202312/t20231229_433988.html | `126a466e4e85cec5` |
 | 中华人民共和国刑事诉讼法 | 1997-01-01 | oldest | http://www.npc.gov.cn/cwhhdbdh/c6626/c7487/c7528/201905/t20190523_388735.html | `2fa9963b7f641377` |
 | 中华人民共和国刑事诉讼法 | 2013-01-01 | amendment | http://www.npc.gov.cn/npc/c2434/c17314/c17320/201905/t20190522_56090.html | `4b058bf37dcb7233` |
 | 中华人民共和国刑事诉讼法 | 2018-10-26 | amendment | http://www.npc.gov.cn/npc/c2/c12435/201905/t20190521_276591.html | `96451606f0ef9cf4` |

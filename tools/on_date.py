@@ -75,8 +75,16 @@ def main():
         return
     files = [f for f in git('ls-tree', '-r', '--name-only', commit, f'{act}/').split('\n')
              if f.endswith('.md') and not f.endswith('/README.md')]
-    for f in sorted(files, key=order):
-        sys.stdout.write(git('show', f'{commit}:{f}') + '\n')
+    # One `git cat-file --batch` for every file (a git process per file is slow for an act of a thousand articles).
+    files = sorted(files, key=order)
+    out = subprocess.run(['git', 'cat-file', '--batch'], input=''.join(f'{commit}:{f}\n' for f in files).encode(),
+                         capture_output=True, check=True).stdout
+    i = 0
+    for _ in files:
+        end = out.index(b'\n', i)
+        size = int(out[i:end].split()[2])
+        sys.stdout.write(out[end + 1:end + 1 + size].decode('utf-8') + '\n')
+        i = end + 1 + size + 1
 
 
 if __name__ == '__main__':
