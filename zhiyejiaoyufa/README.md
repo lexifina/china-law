@@ -1,0 +1,7 @@
+# 中华人民共和国职业教育法
+
+1 versions in this record, in force from 2022-05-01 (the last from 2022-05-01). Article numbers are those of the version in force.
+
+| In force | Kind | Commit author | Source |
+| --- | --- | --- | --- |
+| 2022-05-01 | law | 中华人民共和国职业教育法（2022年修订） | http://www.npc.gov.cn/npc/c2/c30834/202204/t20220420_317575.html |
