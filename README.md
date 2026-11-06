@@ -1,5 +1,7 @@
 # China: law history
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is China's national law, which global-law reads at `china/national/acts/`.
+
 The Constitution of the People's Republic of China (中华人民共和国宪法) as a git history: one file per provision,
 one commit per amendment, each dated the day it was promulgated and took effect (noon Asia/Shanghai), with the
 amendment as the commit author. It follows the shared design of lexifina/global-law, which places it at `cn/`.
