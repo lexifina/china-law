@@ -1,279 +1,87 @@
-# China: law history
+# China: law history in git
+
+
+The law of China as a git history: one file per article, one commit per version on the day it took effect, and the act that made each change as the commit's author. `git blame` names the act behind every paragraph; `git log` lists every change to an article; picking a date gives the text in force that day.
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is China's national law, which global-law reads at `china/national/acts/`.
 
-The Constitution of the People's Republic of China (中华人民共和国宪法) as a git history: one file per provision,
-one commit per amendment, each dated the day it was promulgated and took effect (noon Asia/Shanghai), with the
-amendment as the commit author. It follows the shared design of lexifina/global-law, which places it at `cn/`.
+**What is in it now:** the Constitution, as adopted in 1982 and changed by its five amendments, and 172 laws of the National People's Congress and its Standing Committee, all in force, with 190 versions: 15 of the Criminal Law, 3 of the Criminal Procedure Law, 2 each of the Company Law and the Labour Contract Law, and one each of the other 168. [`data/acts.json`](data/acts.json) lists every act with its folder, its versions and where its record starts; each act's folder has a `README.md` listing its versions.
 
-| In force | Commit author | What |
-| --- | --- | --- |
-| 1982-12-04 | 中华人民共和国宪法（1982年） | the text as adopted |
-| 1988-04-12 | 宪法修正案（1988年） | amendment articles 1-2, 2 provisions |
-| 1993-03-29 | 宪法修正案（1993年） | amendment articles 3-11, 8 provisions |
-| 1999-03-15 | 宪法修正案（1999年） | amendment articles 12-17, 6 provisions |
-| 2004-03-14 | 宪法修正案（2004年） | amendment articles 18-31, 14 provisions |
-| 2018-03-11 | 宪法修正案（2018年） | amendment articles 32-52, 40 provisions |
-| 2018-03-21 | 中国人大网 (全国人大常委会办公厅) | labelled typographic differences of the official 2018 text (credited to no act) |
+Each act is a folder named in pinyin, one file per article (`laodonghetongfa/art-066.md` is 第六十六条 of the 中华人民共和国劳动合同法, the Labour Contract Law), with `mulu.md` for the headings of its parts and chapters and `fujian-N.md` for its annexes; the Constitution is [`xianfa/`](xianfa/), its preamble `xianfa/xuyan.md`. Article numbers are those of the version in force: where a change renumbers articles, git shows the text moving between files.
 
-## The questions
+The text is in Chinese, as 中国人大网 publishes it, with full-width digits written as ASCII digits. An English translation is not part of this record.
+
+## Questions as git commands
 
 | Question | Command |
 | --- | --- |
-| What did 第十一条 say on 1 January 2000? | `python tools/on_date.py 2000-01-01 xianfa 11` |
-| What did the preamble say before the 2018 amendment? | `python tools/on_date.py 2018-03-10 xianfa xuyan` |
-| Which chapters and sections were there in 2003? | `python tools/on_date.py 2003-01-01 xianfa mulu` |
-| Which amendments changed 第十一条? | `git log --follow --format=%an%x09%(trailers:key=In-force,valueonly) -- xianfa/art-011.md` |
-| Which amendment wrote each line of 第十三条? | `git blame --line-porcelain main -- xianfa/art-013.md` |
-| What did the 2004 amendment change? | `git show --stat xianfa/2004-03-14` |
-| What changed between 1982 and 2018 in 第七十九条? | `git diff xianfa/1982-12-04 xianfa/2018-03-11 -- xianfa/art-079.md` |
-| Which provisions did the 1993 amendment touch? | `git log -1 --format=%(trailers:key=Affecting,valueonly) xianfa/1993-03-29` |
-| Every version and its day | `git tag --list xianfa/*` |
+| Every change to Article 66 of the Labour Contract Law | `git log -p --word-diff -- laodonghetongfa/art-066.md` |
+| Which act wrote each line of Article 66? | `git blame laodonghetongfa/art-066.md` |
+| Every version of the Labour Contract Law, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- laodonghetongfa ':!laodonghetongfa/README.md'` |
+| Article 66 as in force on 1 January 2010 | `python tools/on_date.py 2010-01-01 laodonghetongfa 66` |
 
-## The dates
+**Outside git**, we also host this record publicly, for free:
 
-Each commit's `In-force:` trailer is the day the change took effect: every amendment was adopted by the National
-People's Congress and promulgated by its announcement (公告) on the same day, in force from promulgation (公布施行).
-Commit dates are noon Asia/Shanghai on that day. `Adopted:` and `Promulgated:` trailers give the other dates.
+- **[Ask Claude about Chinese law](https://global-law.lexifina.com/v1/try_claude?country=china)**: opens Claude with a first question ready.
+- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=china)**: the same question in ChatGPT.
+- **[Call the API in your browser](https://global-law.lexifina.com/v1/search_law?query=%E5%B9%B4%E4%BC%91%E5%81%87&jurisdictions=china)**: a search of Chinese law for "年休假" (annual leave), returned as JSON. See the [documentation here](https://lexifina.com/api/global-law).
 
-## Reading it
+Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Chinese or in English.
 
-- `xianfa/xuyan.md` is the preamble (序言), `xianfa/art-001.md` ... `xianfa/art-143.md` the articles (第一条 ...),
-  `xianfa/mulu.md` the chapter and section headings (目录). One paragraph (款, or list item 项) per line.
-- `python tools/on_date.py 2000-01-01 xianfa 11` prints 第十一条 as in force on that day; without the number it
-  prints the whole text. Each commit has an `In-force:` trailer, which is the date to trust.
-- `git log --follow xianfa/art-011.md` lists the amendments that changed an article; `git blame` names the
-  amendment behind each line. Tags `xianfa/<day>` mark each version.
-- Article numbers are those in force at the time: the 2018 amendment inserted 第一百二十三条 to 第一百二十七条
-  (监察委员会) and moved the old 第一百二十三条 to 第一百三十八条 up by five. Git shows these as renames.
-- After a rebuild, run `git fetch --force --tags`: a plain fetch keeps stale tags.
+**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
 
-## How it was made
+```sh
+git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
+python3 tools/countries.py add china/national/acts
+python3 tools/law.py show 2026-01-01 china/national/acts/laodonghetongfa/art-066.md
+```
 
-The source is 中国人大网 (www.npc.gov.cn), the website of the General Office of the NPC Standing Committee: the 1982
-text, the five amendments and the 2018 consolidated text, all in its section 宪法、基本法和相关法律 > 宪法. The first
-commit is the 1982 text. Each later commit applies one amendment (宪法修正案) to the text before it, using the words the
-amendment itself quotes ("宪法第十条第四款“……”修改为：“……”"); the operations are listed in `tools/text.py`
-(OPS). The 1982 version and the final version are checked word for word against the official pages; the versions in
-between have no official consolidated text on the source, and are the amendment applied. After the 2018 amendment the
-text differs from the official 2018 text in two characters; that difference is its own commit, authored by the
-publisher, credited to no amendment and dated 2018-03-21, the day the official consolidated text was published.
+Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
 
-The National Laws Database (flk.npc.gov.cn) was not used: its robots.txt disallows all crawlers and says
-"禁止使用任何自动化工具、脚本、爬虫程序采集或复制网站数据".
+## Dates
 
-Full detail, every command and the hashes are in [REPRODUCE.md](REPRODUCE.md). This is not legal advice; the
-official text is the one the NPC publishes.
+Each commit is dated at noon, Asia/Shanghai, on the day the version took effect, and carries it in its `In-force:` trailer; the versions of every law but the Constitution also say where the day comes from, in `In-force-evidence:`:
 
-<!-- acts: begin -->
-## More acts
+- for a law as adopted or revised, its own commencement article (本法自……起施行);
+- for a version made by an amending decision or a 刑法修正案, the commencement it states (本决定自……起施行, 本修正案自……起施行), often the day it was promulgated (自公布之日起施行); each of the Constitution's five amendments was adopted, promulgated and in force on the same day;
+- a correction to the standard text printed in the 全国人大常委会公报 (two, both to the 1997 Criminal Law) carries the day of the version it corrects, and `tools/on_date.py` applies it to that version.
 
-Besides the Constitution, the record holds these acts, in the same layout: one folder per act, one file per
-article (`art-NNN.md`; an article 之一 is `art-NNN-1.md`), `mulu.md` for the headings of the body (编, 章, 节)
-and `fujian-N.md` for annexes (附件). Each commit is dated noon Asia/Shanghai on the day the version took
-effect (`In-force:` trailer) and is authored by the law that made it. Where 中国人大网 has no earlier full text,
-the first version is the oldest it has, credited to the publisher and labelled so. Tags `<folder>/<day>` mark
-each version.
+Each change is credited to the act that made it, as 中国人大网 names it (`中华人民共和国刑法修正案（十一）（2020年）`), at an address that cannot exist (`xingfa-xzan-2020@npc.gov.cn.invalid`). Where the record starts at a law's current consolidated text (45 laws), the whole text is credited to the latest amending act; the oldest texts of the Criminal Procedure Law (1997) and the Company Law (2018), the two corrections and one typographic difference in the Constitution's official 2018 text are credited to the publisher, `中国人大网 (全国人大常委会办公厅)`.
 
-| Act | Folder | In force | Commit author | What |
-| --- | --- | --- | --- | --- |
-| 中华人民共和国民法典 | `minfadian/` | 2021-01-01 | 中华人民共和国民法典（2020年） | the text as adopted, 1261 files |
-| 中华人民共和国刑法 | `xingfa/` | 1997-10-01 | 中华人民共和国刑法（1997年修订） | the text as adopted, 455 files |
-| 中华人民共和国刑法 | `xingfa/` | 1997-10-01 | 中国人大网 (全国人大常委会办公厅) | correction to the 公报 standard text, 6 files |
-| 中华人民共和国刑法 | `xingfa/` | 1998-12-29 | 全国人民代表大会常务委员会关于惩治骗购外汇、逃汇和非法买卖外汇犯罪的决定（1998年） | the amending act, 1 files |
-| 中华人民共和国刑法 | `xingfa/` | 1999-12-25 | 中华人民共和国刑法修正案（1999年） | the amending act, 8 files |
-| 中华人民共和国刑法 | `xingfa/` | 2001-08-31 | 中华人民共和国刑法修正案（二）（2001年） | the amending act, 1 files |
-| 中华人民共和国刑法 | `xingfa/` | 2001-12-29 | 中华人民共和国刑法修正案（三）（2001年） | the amending act, 8 files |
-| 中华人民共和国刑法 | `xingfa/` | 2002-12-28 | 中华人民共和国刑法修正案（四）（2002年） | the amending act, 8 files |
-| 中华人民共和国刑法 | `xingfa/` | 2005-02-28 | 中华人民共和国刑法修正案（五）（2005年） | the amending act, 3 files |
-| 中华人民共和国刑法 | `xingfa/` | 2006-06-29 | 中华人民共和国刑法修正案（六）（2006年） | the amending act, 20 files |
-| 中华人民共和国刑法 | `xingfa/` | 2009-02-28 | 中华人民共和国刑法修正案（七）（2009年） | the amending act, 14 files |
-| 中华人民共和国刑法 | `xingfa/` | 2009-08-27 | 全国人民代表大会常务委员会关于修改部分法律的决定（2009年） | the amending act, 2 files |
-| 中华人民共和国刑法 | `xingfa/` | 2011-05-01 | 中华人民共和国刑法修正案（八）（2011年） | the amending act, 49 files |
-| 中华人民共和国刑法 | `xingfa/` | 2015-11-01 | 中华人民共和国刑法修正案（九）（2015年） | the amending act, 56 files |
-| 中华人民共和国刑法 | `xingfa/` | 2017-11-04 | 中华人民共和国刑法修正案（十）（2017年） | the amending act, 1 files |
-| 中华人民共和国刑法 | `xingfa/` | 2021-03-01 | 中华人民共和国刑法修正案（十一）（2020年） | the amending act, 47 files |
-| 中华人民共和国刑法 | `xingfa/` | 2024-03-01 | 中华人民共和国刑法修正案（十二）（2023年） | the amending act, 7 files |
-| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 1997-01-01 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (1996年修正文本), 226 files |
-| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2013-01-01 | 全国人民代表大会关于修改《中华人民共和国刑事诉讼法》的决定（2012年） | the amending act, 263 files |
-| 中华人民共和国刑事诉讼法 | `xingshisusongfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国刑事诉讼法》的决定（2018年） | the amending act, 295 files |
-| 中华人民共和国公司法 | `gongsifa/` | 2018-10-26 | 中国人大网 (全国人大常委会办公厅) | the oldest full text 中国人大网 has (2018年修正文本), 219 files |
-| 中华人民共和国公司法 | `gongsifa/` | 2024-07-01 | 中华人民共和国公司法（2023年修订） | the revised text (修订), 267 files |
-| 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2008-01-01 | 中华人民共和国劳动合同法（2007年） | the text as adopted, 99 files |
-| 中华人民共和国劳动合同法 | `laodonghetongfa/` | 2013-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动合同法》的决定（2012年） | the amending act, 4 files |
-| 中华人民共和国爱国主义教育法 | `aiguozhuyijiaoyufa/` | 2024-01-01 | 中华人民共和国爱国主义教育法（2023年） | the text as adopted, 41 files |
-| 中华人民共和国保守国家秘密法 | `baoshouguojiamimifa/` | 2024-05-01 | 中华人民共和国保守国家秘密法（2024年修订） | the text as adopted, 66 files |
-| 中华人民共和国标准化法 | `biaozhunhuafa/` | 2018-01-01 | 中华人民共和国标准化法（2017年修订） | the text as adopted, 46 files |
-| 中华人民共和国兵役法 | `bingyifa/` | 2021-10-01 | 中华人民共和国兵役法（2021年修订） | the text as adopted, 66 files |
-| 中华人民共和国残疾人保障法 | `canjirenbaozhangfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 69 files |
-| 中华人民共和国测绘法 | `cehuifa/` | 2017-07-01 | 中华人民共和国测绘法（2017年修订） | the text as adopted, 69 files |
-| 中华人民共和国长江保护法 | `changjiangbaohufa/` | 2021-03-01 | 中华人民共和国长江保护法（2020年） | the text as adopted, 97 files |
-| 中华人民共和国车辆购置税法 | `chelianggouzhishuifa/` | 2019-07-01 | 中华人民共和国车辆购置税法（2018年） | the text as adopted, 19 files |
-| 中华人民共和国城市房地产管理法 | `chengshifangdichanguanlifa/` | 2020-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理法》的决定（2019年） | the latest text (2019年修正文本), the oldest in this record, 74 files |
-| 中华人民共和国城市居民委员会组织法 | `chengshijuminweiyuanhuizuzhifa/` | 2026-01-01 | 中华人民共和国城市居民委员会组织法（2025年修订） | the text as adopted, 51 files |
-| 中华人民共和国城市维护建设税法 | `chengshiweihujiansheshuifa/` | 2021-09-01 | 中华人民共和国城市维护建设税法（2020年） | the text as adopted, 11 files |
-| 中华人民共和国船舶吨税法 | `chuanbodunshuifa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 22 files |
-| 中华人民共和国传染病防治法 | `chuanranbingfangzhifa/` | 2025-09-01 | 中华人民共和国传染病防治法（2025年修订） | the text as adopted, 116 files |
-| 中华人民共和国出境入境管理法 | `chujingrujingguanlifa/` | 2013-07-01 | 中华人民共和国出境入境管理法（2012年） | the text as adopted, 94 files |
-| 中华人民共和国出口管制法 | `chukouguanzhifa/` | 2020-12-01 | 中华人民共和国出口管制法（2020年） | the text as adopted, 50 files |
-| 中华人民共和国促进科技成果转化法 | `cujinkejichengguozhuanhuafa/` | 2015-10-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国促进科技成果转化法》的决定（2015年） | the latest text (2015年修正文本), the oldest in this record, 53 files |
-| 中华人民共和国档案法 | `danganfa/` | 2021-01-01 | 中华人民共和国档案法（2020年修订） | the text as adopted, 54 files |
-| 中华人民共和国大气污染防治法 | `daqiwuranfangzhifa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 130 files |
-| 中华人民共和国电力法 | `dianlifa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国电力法》等四部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 76 files |
-| 中华人民共和国电影产业促进法 | `dianyingchanyecujinfa/` | 2017-03-01 | 中华人民共和国电影产业促进法（2016年） | the text as adopted, 61 files |
-| 中华人民共和国电子商务法 | `dianzishangwufa/` | 2019-01-01 | 中华人民共和国电子商务法（2018年） | the text as adopted, 90 files |
-| 中华人民共和国动物防疫法 | `dongwufangyifa/` | 2021-05-01 | 中华人民共和国动物防疫法（2021年修订） | the text as adopted, 114 files |
-| 中华人民共和国对外关系法 | `duiwaiguanxifa/` | 2023-07-01 | 中华人民共和国对外关系法（2023年） | the text as adopted, 46 files |
-| 中华人民共和国对外贸易法 | `duiwaimaoyifa/` | 2026-03-01 | 中华人民共和国对外贸易法（2025年修订） | the text as adopted, 84 files |
-| 中华人民共和国法律援助法 | `falvyuanzhufa/` | 2022-01-01 | 中华人民共和国法律援助法（2021年） | the text as adopted, 72 files |
-| 中华人民共和国反不正当竞争法 | `fanbuzhengdangjingzhengfa/` | 2025-10-15 | 中华人民共和国反不正当竞争法（2025年修订） | the text as adopted, 42 files |
-| 中华人民共和国反电信网络诈骗法 | `fandianxinwangluozhapianfa/` | 2022-12-01 | 中华人民共和国反电信网络诈骗法（2022年） | the text as adopted, 51 files |
-| 中华人民共和国防沙治沙法 | `fangshazhishafa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 48 files |
-| 中华人民共和国反间谍法 | `fanjiandiefa/` | 2023-07-01 | 中华人民共和国反间谍法（2023年修订） | the text as adopted, 72 files |
-| 中华人民共和国反家庭暴力法 | `fanjiatingbaolifa/` | 2016-03-01 | 中华人民共和国反家庭暴力法（2015年） | the text as adopted, 39 files |
-| 中华人民共和国反恐怖主义法 | `fankongbuzhuyifa/` | 2018-04-27 | 全国人民代表大会常务委员会关于修改《中华人民共和国国境卫生检疫法》等六部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 98 files |
-| 中华人民共和国反食品浪费法 | `fanshipinlangfeifa/` | 2021-04-29 | 中华人民共和国反食品浪费法（2021年） | the text as adopted, 32 files |
-| 中华人民共和国反外国制裁法 | `fanwaiguozhicaifa/` | 2021-06-10 | 中华人民共和国反外国制裁法（2021年） | the text as adopted, 16 files |
-| 中华人民共和国反洗钱法 | `fanxiqianfa/` | 2025-01-01 | 中华人民共和国反洗钱法（2024年修订） | the text as adopted, 66 files |
-| 中华人民共和国反有组织犯罪法 | `fanyouzuzhifanzuifa/` | 2022-05-01 | 中华人民共和国反有组织犯罪法（2021年） | the text as adopted, 78 files |
-| 中华人民共和国法治宣传教育法 | `fazhixuanchuanjiaoyufa/` | 2025-11-01 | 中华人民共和国法治宣传教育法（2025年） | the text as adopted, 66 files |
-| 中华人民共和国妇女权益保障法 | `funvquanyibaozhangfa/` | 2023-01-01 | 中华人民共和国妇女权益保障法（2022年修订） | the text as adopted, 87 files |
-| 中华人民共和国港口法 | `gangkoufa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国电力法》等四部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 63 files |
-| 中华人民共和国高等教育法 | `gaodengjiaoyufa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国电力法》等四部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 70 files |
-| 中华人民共和国各级人民代表大会常务委员会监督法 | `gejirenmindaibiaodahuichangwuweiyuanhuijiandufa/` | 2024-11-08 | 全国人民代表大会常务委员会关于修改《中华人民共和国各级人民代表大会常务委员会监督法》的决定（2024年） | the latest text (2024年修正文本), the oldest in this record, 66 files |
-| 中华人民共和国耕地占用税法 | `gengdizhanyongshuifa/` | 2019-09-01 | 中华人民共和国耕地占用税法（2018年） | the text as adopted, 16 files |
-| 中华人民共和国个人信息保护法 | `gerenxinxibaohufa/` | 2021-11-01 | 中华人民共和国个人信息保护法（2021年） | the text as adopted, 75 files |
-| 中华人民共和国公共图书馆法 | `gonggongtushuguanfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 56 files |
-| 中华人民共和国公共文化服务保障法 | `gonggongwenhuafuwubaozhangfa/` | 2017-03-01 | 中华人民共和国公共文化服务保障法（2016年） | the text as adopted, 66 files |
-| 中华人民共和国公路法 | `gonglufa/` | 2017-11-05 | 全国人民代表大会常务委员会关于修改《中华人民共和国会计法》等十一部法律的决定（2017年） | the latest text (2017年修正文本), the oldest in this record, 88 files |
-| 中华人民共和国公务员法 | `gongwuyuanfa/` | 2019-06-01 | 中华人民共和国公务员法（2018年修订） | the text as adopted, 114 files |
-| 中华人民共和国公证法 | `gongzhengfa/` | 2018-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国法官法》等八部法律的决定（2017年） | the latest text (2017年修正文本), the oldest in this record, 48 files |
-| 中华人民共和国公职人员政务处分法 | `gongzhirenyuanzhengwuchufenfa/` | 2020-07-01 | 中华人民共和国公职人员政务处分法（2020年） | the text as adopted, 69 files |
-| 中华人民共和国关税法 | `guanshuifa/` | 2024-12-01 | 中华人民共和国关税法（2024年） | the text as adopted, 73 files |
-| 中华人民共和国国防动员法 | `guofangdongyuanfa/` | 2026-10-01 | 中华人民共和国国防动员法（2026年修订） | the text as adopted, 83 files |
-| 中华人民共和国国防法 | `guofangfa/` | 2021-01-01 | 中华人民共和国国防法（2020年修订） | the text as adopted, 74 files |
-| 中华人民共和国国防交通法 | `guofangjiaotongfa/` | 2017-01-01 | 中华人民共和国国防交通法（2016年） | the text as adopted, 61 files |
-| 中华人民共和国国防教育法 | `guofangjiaoyufa/` | 2024-09-21 | 中华人民共和国国防教育法（2024年修订） | the text as adopted, 43 files |
-| 中华人民共和国国家安全法 | `guojiaanquanfa/` | 2015-07-01 | 中华人民共和国国家安全法（2015年） | the text as adopted, 85 files |
-| 中华人民共和国国家发展规划法 | `guojiafazhanguihuafa/` | 2026-03-12 | 中华人民共和国国家发展规划法（2026年） | the text as adopted, 39 files |
-| 中华人民共和国国家公园法 | `guojiagongyuanfa/` | 2026-01-01 | 中华人民共和国国家公园法（2025年） | the text as adopted, 64 files |
-| 中华人民共和国国家情报法 | `guojiaqingbaofa/` | 2018-04-27 | 全国人民代表大会常务委员会关于修改《中华人民共和国国境卫生检疫法》等六部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 33 files |
-| 中华人民共和国国家通用语言文字法 | `guojiatongyongyuyanwenzifa/` | 2026-01-01 | 中华人民共和国国家通用语言文字法（2025年修订） | the text as adopted, 33 files |
-| 中华人民共和国国家勋章和国家荣誉称号法 | `guojiaxunzhangheguojiarongyuchenghaofa/` | 2016-01-01 | 中华人民共和国国家勋章和国家荣誉称号法（2015年） | the text as adopted, 21 files |
-| 中华人民共和国国境卫生检疫法 | `guojingweishengjianyifa/` | 2025-01-01 | 中华人民共和国国境卫生检疫法（2024年修订） | the text as adopted, 58 files |
-| 中华人民共和国国际刑事司法协助法 | `guojixingshisifaxiezhufa/` | 2018-10-26 | 中华人民共和国国际刑事司法协助法（2018年） | the text as adopted, 71 files |
-| 中华人民共和国国务院组织法 | `guowuyuanzuzhifa/` | 2024-03-11 | 中华人民共和国国务院组织法（2024年修订） | the text as adopted, 20 files |
-| 中华人民共和国固体废物污染环境防治法 | `gutifeiwuwuranhuanjingfangzhifa/` | 2020-09-01 | 中华人民共和国固体废物污染环境防治法（2020年修订） | the text as adopted, 127 files |
-| 中华人民共和国海南自由贸易港法 | `hainanziyoumaoyigangfa/` | 2021-06-10 | 中华人民共和国海南自由贸易港法（2021年） | the text as adopted, 58 files |
-| 中华人民共和国海商法 | `haishangfa/` | 2026-05-01 | 中华人民共和国海商法（2025年修订） | the text as adopted, 311 files |
-| 中华人民共和国海上交通安全法 | `haishangjiaotonganquanfa/` | 2021-09-01 | 中华人民共和国海上交通安全法（2021年修订） | the text as adopted, 123 files |
-| 中华人民共和国海洋环境保护法 | `haiyanghuanjingbaohufa/` | 2024-01-01 | 中华人民共和国海洋环境保护法（2023年修订） | the text as adopted, 125 files |
-| 中华人民共和国航道法 | `hangdaofa/` | 2015-03-01 | 中华人民共和国航道法（2014年） | the text as adopted, 49 files |
-| 中华人民共和国黑土地保护法 | `heitudibaohufa/` | 2022-08-01 | 中华人民共和国黑土地保护法（2022年） | the text as adopted, 38 files |
-| 中华人民共和国红十字会法 | `hongshizihuifa/` | 2017-05-08 | 中华人民共和国红十字会法（2017年修订） | the text as adopted, 31 files |
-| 中华人民共和国黄河保护法 | `huanghebaohufa/` | 2023-04-01 | 中华人民共和国黄河保护法（2022年） | the text as adopted, 123 files |
-| 中华人民共和国环境保护法 | `huanjingbaohufa/` | 2015-01-01 | 中华人民共和国环境保护法（2014年修订） | the text as adopted, 71 files |
-| 中华人民共和国环境影响评价法 | `huanjingyingxiangpingjiafa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动法》等七部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 38 files |
-| 中华人民共和国监察法 | `jianchafa/` | 2025-06-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国监察法》的决定（2024年） | the latest text (2024年修正文本), the oldest in this record, 79 files |
-| 中华人民共和国监狱法 | `jianyufa/` | 2026-11-01 | 中华人民共和国监狱法（2026年修订） | the text as adopted, 122 files |
-| 中华人民共和国家庭教育促进法 | `jiatingjiaoyucujinfa/` | 2022-01-01 | 中华人民共和国家庭教育促进法（2021年） | the text as adopted, 56 files |
-| 中华人民共和国基本医疗卫生与健康促进法 | `jibenyiliaoweishengyujiankangcujinfa/` | 2020-06-01 | 中华人民共和国基本医疗卫生与健康促进法（2019年） | the text as adopted, 111 files |
-| 中华人民共和国节约能源法 | `jieyuenengyuanfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 88 files |
-| 中华人民共和国计量法 | `jiliangfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 35 files |
-| 中华人民共和国精神卫生法 | `jingshenweishengfa/` | 2018-04-27 | 全国人民代表大会常务委员会关于修改《中华人民共和国国境卫生检疫法》等六部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 86 files |
-| 中华人民共和国境外非政府组织境内活动管理法 | `jingwaifeizhengfuzuzhijingneihuodongguanlifa/` | 2017-11-05 | 全国人民代表大会常务委员会关于修改《中华人民共和国会计法》等十一部法律的决定（2017年） | the latest text (2017年修正文本), the oldest in this record, 55 files |
-| 中华人民共和国军人保险法 | `junrenbaoxianfa/` | 2012-07-01 | 中华人民共和国军人保险法（2012年） | the text as adopted, 52 files |
-| 中华人民共和国军人地位和权益保障法 | `junrendiweihequanyibaozhangfa/` | 2021-08-01 | 中华人民共和国军人地位和权益保障法（2021年） | the text as adopted, 72 files |
-| 中华人民共和国军事设施保护法 | `junshisheshibaohufa/` | 2021-08-01 | 中华人民共和国军事设施保护法（2021年修订） | the text as adopted, 73 files |
-| 中华人民共和国科学技术进步法 | `kexuejishujinbufa/` | 2022-01-01 | 中华人民共和国科学技术进步法（2021年修订） | the text as adopted, 118 files |
-| 中华人民共和国科学技术普及法 | `kexuejishupujifa/` | 2024-12-25 | 中华人民共和国科学技术普及法（2024年修订） | the text as adopted, 61 files |
-| 中华人民共和国劳动法 | `laodongfa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动法》等七部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 108 files |
-| 中华人民共和国老年人权益保障法 | `laonianrenquanyibaozhangfa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动法》等七部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 86 files |
-| 中华人民共和国立法法 | `lifafa/` | 2023-03-15 | 全国人民代表大会关于修改《中华人民共和国立法法》的决定（2023年） | the latest text (2023年修正文本), the oldest in this record, 121 files |
-| 中华人民共和国陆地国界法 | `ludiguojiefa/` | 2022-01-01 | 中华人民共和国陆地国界法（2021年） | the text as adopted, 63 files |
-| 中华人民共和国旅游法 | `lvyoufa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 113 files |
-| 中华人民共和国密码法 | `mimafa/` | 2020-01-01 | 中华人民共和国密码法（2019年） | the text as adopted, 45 files |
-| 中华人民共和国民事诉讼法 | `minshisusongfa/` | 2024-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国民事诉讼法》的决定（2023年） | the latest text (2023年修正文本), the oldest in this record, 307 files |
-| 中华人民共和国民营经济促进法 | `minyingjingjicujinfa/` | 2025-05-20 | 中华人民共和国民营经济促进法（2025年） | the text as adopted, 79 files |
-| 中华人民共和国民用航空法 | `minyonghangkongfa/` | 2026-07-01 | 中华人民共和国民用航空法（2025年修订） | the text as adopted, 263 files |
-| 中华人民共和国母婴保健法 | `muyingbaojianfa/` | 2017-11-05 | 全国人民代表大会常务委员会关于修改《中华人民共和国会计法》等十一部法律的决定（2017年） | the latest text (2017年修正文本), the oldest in this record, 40 files |
-| 中华人民共和国能源法 | `nengyuanfa/` | 2025-01-01 | 中华人民共和国能源法（2024年） | the text as adopted, 81 files |
-| 中华人民共和国农产品质量安全法 | `nongchanpinzhilianganquanfa/` | 2023-01-01 | 中华人民共和国农产品质量安全法（2022年修订） | the text as adopted, 82 files |
-| 中华人民共和国农村集体经济组织法 | `nongcunjitijingjizuzhifa/` | 2025-05-01 | 中华人民共和国农村集体经济组织法（2024年） | the text as adopted, 68 files |
-| 中华人民共和国农村土地承包法 | `nongcuntudichengbaofa/` | 2019-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国农村土地承包法》的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 71 files |
-| 中华人民共和国农民专业合作社法 | `nongminzhuanyehezuoshefa/` | 2018-07-01 | 中华人民共和国农民专业合作社法（2017年修订） | the text as adopted, 75 files |
-| 中华人民共和国农业机械化促进法 | `nongyejixiehuacujinfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 36 files |
-| 中华人民共和国期货和衍生品法 | `qihuoheyanshengpinfa/` | 2022-08-01 | 中华人民共和国期货和衍生品法（2022年） | the text as adopted, 156 files |
-| 中华人民共和国清洁生产促进法 | `qingjieshengchancujinfa/` | 2012-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国清洁生产促进法》的决定（2012年） | the latest text (2012年修正文本), the oldest in this record, 41 files |
-| 中华人民共和国青藏高原生态保护法 | `qingzanggaoyuanshengtaibaohufa/` | 2023-09-01 | 中华人民共和国青藏高原生态保护法（2023年） | the text as adopted, 64 files |
-| 中华人民共和国契税法 | `qishuifa/` | 2021-09-01 | 中华人民共和国契税法（2020年） | the text as adopted, 16 files |
-| 中华人民共和国企业所得税法 | `qiyesuodeshuifa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国电力法》等四部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 61 files |
-| 中华人民共和国全国人民代表大会和地方各级人民代表大会代表法 | `quanguorenmindaibiaodahuihedifanggejirenmindaibiaodahuidaibiaofa/` | 2025-03-12 | 全国人民代表大会关于修改《中华人民共和国全国人民代表大会和地方各级人民代表大会代表法》的决定（2025年） | the latest text (2025年修正文本), the oldest in this record, 66 files |
-| 中华人民共和国全国人民代表大会和地方各级人民代表大会选举法 | `quanguorenmindaibiaodahuihedifanggejirenmindaibiaodahuixuanjufa/` | 2020-10-18 | 全国人民代表大会常务委员会关于修改《中华人民共和国全国人民代表大会和地方各级人民代表大会选举法》的决定（2020年） | the latest text (2020年修正文本), the oldest in this record, 61 files |
-| 中华人民共和国人口与计划生育法 | `renkouyujihuashengyufa/` | 2021-08-20 | 全国人民代表大会常务委员会关于修改《中华人民共和国人口与计划生育法》的决定（2021年） | the latest text (2021年修正文本), the oldest in this record, 49 files |
-| 中华人民共和国人民检察院组织法 | `renminjianchayuanzuzhifa/` | 2019-01-01 | 中华人民共和国人民检察院组织法（2018年修订） | the text as adopted, 54 files |
-| 中华人民共和国人民陪审员法 | `renminpeishenyuanfa/` | 2018-04-27 | 中华人民共和国人民陪审员法（2018年） | the text as adopted, 32 files |
-| 中华人民共和国人民武装警察法 | `renminwuzhuangjingchafa/` | 2020-06-21 | 中华人民共和国人民武装警察法（2020年修订） | the text as adopted, 52 files |
-| 中华人民共和国森林法 | `senlinfa/` | 2020-07-01 | 中华人民共和国森林法（2019年修订） | the text as adopted, 85 files |
-| 中华人民共和国社会保险法 | `shehuibaoxianfa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国社会保险法》的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 99 files |
-| 中华人民共和国社会救助法 | `shehuijiuzhufa/` | 2026-07-01 | 中华人民共和国社会救助法（2026年） | the text as adopted, 79 files |
-| 中华人民共和国深海海底区域资源勘探开发法 | `shenhaihaidiquyuziyuankantankaifafa/` | 2016-05-01 | 中华人民共和国深海海底区域资源勘探开发法（2016年） | the text as adopted, 30 files |
-| 中华人民共和国社区矫正法 | `shequjiaozhengfa/` | 2020-07-01 | 中华人民共和国社区矫正法（2019年） | the text as adopted, 64 files |
-| 中华人民共和国湿地保护法 | `shidibaohufa/` | 2022-06-01 | 中华人民共和国湿地保护法（2021年） | the text as adopted, 66 files |
-| 中华人民共和国水污染防治法 | `shuiwuranfangzhifa/` | 2018-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国水污染防治法》的决定（2017年） | the latest text (2017年修正文本), the oldest in this record, 104 files |
-| 中华人民共和国数据安全法 | `shujuanquanfa/` | 2021-09-01 | 中华人民共和国数据安全法（2021年） | the text as adopted, 56 files |
-| 中华人民共和国台湾同胞投资保护法 | `taiwantongbaotouzibaohufa/` | 2020-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国台湾同胞投资保护法》的决定（2019年） | the latest text (2019年修正文本), the oldest in this record, 14 files |
-| 中华人民共和国特种设备安全法 | `tezhongshebeianquanfa/` | 2014-01-01 | 中华人民共和国特种设备安全法（2013年） | the text as adopted, 102 files |
-| 中华人民共和国体育法 | `tiyufa/` | 2023-01-01 | 中华人民共和国体育法（2022年修订） | the text as adopted, 123 files |
-| 中华人民共和国土地管理法 | `tudiguanlifa/` | 2020-01-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国土地管理法》、《中华人民共和国城市房地产管理法》的决定（2019年） | the latest text (2019年修正文本), the oldest in this record, 88 files |
-| 中华人民共和国突发公共卫生事件应对法 | `tufagonggongweishengshijianyingduifa/` | 2025-11-01 | 中华人民共和国突发公共卫生事件应对法（2025年） | the text as adopted, 66 files |
-| 中华人民共和国突发事件应对法 | `tufashijianyingduifa/` | 2024-11-01 | 中华人民共和国突发事件应对法（2024年修订） | the text as adopted, 107 files |
-| 中华人民共和国退役军人保障法 | `tuiyijunrenbaozhangfa/` | 2021-01-01 | 中华人民共和国退役军人保障法（2020年） | the text as adopted, 86 files |
-| 中华人民共和国土壤污染防治法 | `turangwuranfangzhifa/` | 2019-01-01 | 中华人民共和国土壤污染防治法（2018年） | the text as adopted, 100 files |
-| 中华人民共和国外国国家豁免法 | `waiguoguojiahuomianfa/` | 2024-01-01 | 中华人民共和国外国国家豁免法（2023年） | the text as adopted, 23 files |
-| 中华人民共和国外商投资法 | `waishangtouzifa/` | 2020-01-01 | 中华人民共和国外商投资法（2019年） | the text as adopted, 43 files |
-| 中华人民共和国危险化学品安全法 | `weixianhuaxuepinanquanfa/` | 2026-05-01 | 中华人民共和国危险化学品安全法（2025年） | the text as adopted, 128 files |
-| 中华人民共和国文物保护法 | `wenwubaohufa/` | 2025-03-01 | 中华人民共和国文物保护法（2024年修订） | the text as adopted, 102 files |
-| 中华人民共和国无障碍环境建设法 | `wuzhangaihuanjingjianshefa/` | 2023-09-01 | 中华人民共和国无障碍环境建设法（2023年） | the text as adopted, 73 files |
-| 中华人民共和国乡村振兴促进法 | `xiangcunzhenxingcujinfa/` | 2021-06-01 | 中华人民共和国乡村振兴促进法（2021年） | the text as adopted, 75 files |
-| 中华人民共和国香港特别行政区维护国家安全法 | `xianggangtebiexingzhengquweihuguojiaanquanfa/` | 2020-06-30 | 中华人民共和国香港特别行政区维护国家安全法（2020年） | the text as adopted, 67 files |
-| 中华人民共和国行政处罚法 | `xingzhengchufafa/` | 2021-07-15 | 中华人民共和国行政处罚法（2021年修订） | the text as adopted, 87 files |
-| 中华人民共和国行政复议法 | `xingzhengfuyifa/` | 2024-01-01 | 中华人民共和国行政复议法（2023年修订） | the text as adopted, 91 files |
-| 中华人民共和国行政诉讼法 | `xingzhengsusongfa/` | 2017-07-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国民事诉讼法》和《中华人民共和国行政诉讼法》的决定（2017年） | the latest text (2017年修正文本), the oldest in this record, 104 files |
-| 中华人民共和国学前教育法 | `xueqianjiaoyufa/` | 2025-06-01 | 中华人民共和国学前教育法（2024年） | the text as adopted, 86 files |
-| 中华人民共和国学位法 | `xueweifa/` | 2025-01-01 | 中华人民共和国学位法（2024年） | the text as adopted, 46 files |
-| 中华人民共和国畜牧法 | `xumufa/` | 2023-03-01 | 中华人民共和国畜牧法（2022年修订） | the text as adopted, 95 files |
-| 中华人民共和国循环经济促进法 | `xunhuanjingjicujinfa/` | 2018-10-26 | 全国人民代表大会常务委员会关于修改《中华人民共和国野生动物保护法》等十五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 59 files |
-| 中华人民共和国烟叶税法 | `yanyeshuifa/` | 2018-07-01 | 中华人民共和国烟叶税法（2017年） | the text as adopted, 10 files |
-| 中华人民共和国野生动物保护法 | `yeshengdongwubaohufa/` | 2023-05-01 | 中华人民共和国野生动物保护法（2022年修订） | the text as adopted, 65 files |
-| 中华人民共和国疫苗管理法 | `yimiaoguanlifa/` | 2019-12-01 | 中华人民共和国疫苗管理法（2019年） | the text as adopted, 101 files |
-| 中华人民共和国英雄烈士保护法 | `yingxionglieshibaohufa/` | 2018-05-01 | 中华人民共和国英雄烈士保护法（2018年） | the text as adopted, 30 files |
-| 中华人民共和国印花税法 | `yinhuashuifa/` | 2022-07-01 | 中华人民共和国印花税法（2021年） | the text as adopted, 20 files |
-| 中华人民共和国医师法 | `yishifa/` | 2022-03-01 | 中华人民共和国医师法（2021年） | the text as adopted, 68 files |
-| 中华人民共和国义务教育法 | `yiwujiaoyufa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国产品质量法》等五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 64 files |
-| 中华人民共和国原子能法 | `yuanzinengfa/` | 2026-01-15 | 中华人民共和国原子能法（2025年） | the text as adopted, 63 files |
-| 中华人民共和国预备役人员法 | `yubeiyirenyuanfa/` | 2023-03-01 | 中华人民共和国预备役人员法（2022年） | the text as adopted, 66 files |
-| 中华人民共和国预防未成年人犯罪法 | `yufangweichengnianrenfanzuifa/` | 2021-06-01 | 中华人民共和国预防未成年人犯罪法（2020年修订） | the text as adopted, 69 files |
-| 中华人民共和国预算法 | `yusuanfa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国产品质量法》等五部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 102 files |
-| 中华人民共和国渔业法 | `yuyefa/` | 2026-05-01 | 中华人民共和国渔业法（2025年修订） | the text as adopted, 91 files |
-| 中华人民共和国噪声污染防治法 | `zaoshengwuranfangzhifa/` | 2022-06-05 | 中华人民共和国噪声污染防治法（2021年） | the text as adopted, 91 files |
-| 中华人民共和国增值税法 | `zengzhishuifa/` | 2026-01-01 | 中华人民共和国增值税法（2024年） | the text as adopted, 39 files |
-| 中华人民共和国证券法 | `zhengquanfa/` | 2020-03-01 | 中华人民共和国证券法（2019年修订） | the text as adopted, 227 files |
-| 中华人民共和国职业病防治法 | `zhiyebingfangzhifa/` | 2018-12-29 | 全国人民代表大会常务委员会关于修改《中华人民共和国劳动法》等七部法律的决定（2018年） | the latest text (2018年修正文本), the oldest in this record, 89 files |
-| 中华人民共和国职业教育法 | `zhiyejiaoyufa/` | 2022-05-01 | 中华人民共和国职业教育法（2022年修订） | the text as adopted, 70 files |
-| 中华人民共和国仲裁法 | `zhongcaifa/` | 2026-03-01 | 中华人民共和国仲裁法（2025年修订） | the text as adopted, 97 files |
-| 中华人民共和国中小企业促进法 | `zhongxiaoqiyecujinfa/` | 2018-01-01 | 中华人民共和国中小企业促进法（2017年修订） | the text as adopted, 62 files |
-| 中华人民共和国中医药法 | `zhongyiyaofa/` | 2017-07-01 | 中华人民共和国中医药法（2016年） | the text as adopted, 64 files |
-| 中华人民共和国专利法 | `zhuanlifa/` | 2021-06-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国专利法》的决定（2020年） | the latest text (2020年修正文本), the oldest in this record, 83 files |
-| 中华人民共和国著作权法 | `zhuzuoquanfa/` | 2021-06-01 | 全国人民代表大会常务委员会关于修改《中华人民共和国著作权法》的决定（2020年） | the latest text (2020年修正文本), the oldest in this record, 68 files |
-| 中华人民共和国资产评估法 | `zichanpinggufa/` | 2016-12-01 | 中华人民共和国资产评估法（2016年） | the text as adopted, 56 files |
-| 中华人民共和国资源税法 | `ziyuanshuifa/` | 2020-09-01 | 中华人民共和国资源税法（2019年） | the text as adopted, 17 files |
+## How it is checked
 
-- `python tools/on_date.py 2010-01-01 minfadian 2` prints 第二条 of that act as in force on that day.
-- `git log --follow --format=%an%x09%(trailers:key=In-force,valueonly) -- xingshisusongfa/art-002.md` lists
-  the laws that changed an article. Article numbers are those of the version in force; a decision that
-  renumbers articles shows as changes to the files it moves.
-- A version made from an amending decision's own wording (not from a republished full text) says so in its
-  `Evidence:` trailer.
+- `tools/check_repo.py` compares the Constitution's 1982 version and its current text with the official pages, byte for byte and again by the letters and digits an independent extractor reads, and checks that every new wording an amendment quotes is in that version's files. The versions in between have no official consolidated text: they are the amendments applied.
+- For every other act, the letters and digits of each source page (目录 and headings taken out) must equal those of the act's files, in order.
+- `tools/test_repo.py` checks that `git blame` names an amending act, that `tools/on_date.py` gives the text before and after a known amendment, and that every law commit has an `In-force:` trailer. Two builds of the Constitution from the same pages gave the same head hash; see [`REPRODUCE.md`](REPRODUCE.md).
+- History is append-only: no merge commits, the laws were added on top of the Constitution's history, and no published commit is rewritten.
 
-<!-- acts: end -->
+## What it does not show
+
+- **Most national laws.** 173 are here; others in force, such as the 个人所得税法, the 网络安全法, the 食品安全法 and the 消费者权益保护法, are not yet.
+- **Earlier wording of 97 laws.** Their record starts at a revision (修订, 50 laws), at the current consolidated text (45) or at the oldest full text 中国人大网 serves (2).
+- **Repealed laws**, such as the 合同法 and the 物权法, which the 民法典 repealed on 1 January 2021.
+- **Administrative and local regulations, judicial interpretations and case law**: the record holds the laws of the National People's Congress and its Standing Committee only. The National Laws Database (flk.npc.gov.cn) was not used: its robots.txt forbids automated collection.
+
+## Sources
+
+| Source | Kind | Past versions | Notes |
+| --- | --- | --- | --- |
+| [中国人大网](http://www.npc.gov.cn) (全国人大常委会办公厅, General Office of the NPC Standing Committee) | Official site of the NPC: the Constitution and its amendments, laws, amending decisions | partly: laws as adopted or revised and the decisions that amended them; otherwise the current text only | Each version names its page in a `Source:` trailer, and a consolidated text the decision behind it in `Decision:` |
+| 全国人大常委会公报 (on 中国人大网) | Gazette of the NPC Standing Committee, as PDF | the text as published | The standard text of a law (立法法); used for the 民法典 and for the 1997 Criminal Law and its amendments to 2021 |
+
+## Licence
+
+See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. The tools and documentation are by Lexifina, under the MIT licence.
+
+No AI model wrote or changed legal text, and none runs when the history is built; an AI model researched the source and wrote the scripts and the documentation (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## More
+
+From [lexifina/global-law](https://github.com/lexifina/global-law):
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
+- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
