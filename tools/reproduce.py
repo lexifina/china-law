@@ -299,6 +299,10 @@ official pages, moved by the code above.
         'data/versions.json': versions_json,
         'xianfa/README.md': act_readme,
     }
+    # The README as published (on the serbia-law model since 2026-11-14) is kept in repo/ beside this script
+    # and replaces the generated one above, so a rebuild keeps it.
+    if (Path(__file__).resolve().parent / 'repo' / 'README.md').exists():
+        files['README.md'] = (Path(__file__).resolve().parent / 'repo' / 'README.md').read_text(encoding='utf-8')
     for t in TOOLS:
         files['tools/' + t] = (HERE / t).read_text(encoding='utf-8').replace('\r\n', '\n')
     msg = ('Documentation, tables, tools and REPRODUCE.md\n\n'
