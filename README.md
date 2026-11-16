@@ -61,6 +61,7 @@ python3 tools/law.py show 2026-01-01 china/national/acts/laodonghetongfa/art-066
 - 对其他每部法律，每个来源网页的文字和数字（去除目录和标题后）必须与该法律各文件的文字和数字依次完全一致。
 - `tools/test_repo.py` 核查 `git blame` 显示修改法律文件、`tools/on_date.py` 给出某一已知修改前后的文本，以及每个法律提交都有 `In-force:` 尾注。由同一组网页两次构建宪法，得到相同的头部哈希；参见 [`REPRODUCE.md`](REPRODUCE.md)。
 - 历史只增不改：没有合并提交，各法律是在宪法历史之上添加的，已发布的提交不会被改写。
+- [vulnerabilities/](vulnerabilities/): 本法律中可能的起草错误，由 global-law 的检测器发现并经人工核对。尚未运行。
 
 ## 未涵盖的内容
 
@@ -83,6 +84,10 @@ python3 tools/law.py show 2026-01-01 china/national/acts/laodonghetongfa/art-066
 没有任何人工智能模型编写或修改法律文本，构建历史时也不运行任何人工智能模型；一个人工智能模型研究了来源，并编写了脚本和文档（参见 [`REPRODUCE.md`](REPRODUCE.md)）。
 
 本文为英文版（[README.en.md](README.en.md)）的译文；如有不一致，以英文版为准。
+
+## 可视化
+
+- [visualisations/](visualisations/): 根据本仓库绘制的图表。尚未绘制。
 
 ## 更多信息
 

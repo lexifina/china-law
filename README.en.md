@@ -61,6 +61,7 @@ Each change is credited to the act that made it, as 中国人大网 names it (`�
 - For every other act, the letters and digits of each source page (目录 and headings taken out) must equal those of the act's files, in order.
 - `tools/test_repo.py` checks that `git blame` names an amending act, that `tools/on_date.py` gives the text before and after a known amendment, and that every law commit has an `In-force:` trailer. Two builds of the Constitution from the same pages gave the same head hash; see [`REPRODUCE.md`](REPRODUCE.md).
 - History is append-only: no merge commits, the laws were added on top of the Constitution's history, and no published commit is rewritten.
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -81,6 +82,10 @@ Each change is credited to the act that made it, as 中国人大网 names it (`�
 See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. The tools and documentation are by Lexifina, under the MIT licence.
 
 No AI model wrote or changed legal text, and none runs when the history is built; an AI model researched the source and wrote the scripts and the documentation (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/README.en.md): charts drawn from this repository. Not drawn yet.
 
 ## More
 
