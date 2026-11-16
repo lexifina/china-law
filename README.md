@@ -1,35 +1,41 @@
-# China: law history in git
+# 中国：git 中的法律历史
 
+**简体中文** · [English](README.en.md)
 
-The law of China as a git history: one file per article, one commit per version on the day it took effect, and the act that made each change as the commit's author. `git blame` names the act behind every paragraph; `git log` lists every change to an article; picking a date gives the text in force that day.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/zh/effort-dark.svg">
+<img alt="本仓库中的中国法律：收录内容、按生效年份统计的修改、对照官方来源的完整性，以及所收录内容的准确性" src="data/zh/effort-light.svg" width="880">
+</picture>
 
-Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is China's national law, which global-law reads at `china/national/acts/`.
+以 git 历史形式呈现的中国法律：每一条为一个文件，每一个版本为一次提交，日期为该版本的施行之日，作出每一处修改的法律文件为提交的作者（author）。`git blame` 显示每一款背后的法律文件；`git log` 列出一条的全部修改；选定一个日期，即可得到当日施行的文本。
 
-**What is in it now:** the Constitution, as adopted in 1982 and changed by its five amendments, and 172 laws of the National People's Congress and its Standing Committee, all in force, with 190 versions: 15 of the Criminal Law, 3 of the Criminal Procedure Law, 2 each of the Company Law and the Labour Contract Law, and one each of the other 168. [`data/acts.json`](data/acts.json) lists every act with its folder, its versions and where its record starts; each act's folder has a `README.md` listing its versions.
+本仓库是 [lexifina/global-law](https://github.com/lexifina/global-law)（将各国法律汇为一个 git 历史）的一部分：这里是中国的国家法律，global-law 在 `china/national/acts/` 读取。
 
-Each act is a folder named in pinyin, one file per article (`laodonghetongfa/art-066.md` is 第六十六条 of the 中华人民共和国劳动合同法, the Labour Contract Law), with `mulu.md` for the headings of its parts and chapters and `fujian-N.md` for its annexes; the Constitution is [`xianfa/`](xianfa/), its preamble `xianfa/xuyan.md`. Article numbers are those of the version in force: where a change renumbers articles, git shows the text moving between files.
+**现有内容：** 1982年通过、经五次修正的宪法，以及全国人民代表大会及其常务委员会制定的172部法律，均现行有效，共190个版本：刑法15个，刑事诉讼法3个，公司法和劳动合同法各2个，其余168部各1个。[`data/acts.json`](data/acts.json) 列出每部法律的文件夹、版本及其记录的起点；每部法律的文件夹中有一个 `README.md`，列出其各个版本。
 
-The text is in Chinese, as 中国人大网 publishes it, with full-width digits written as ASCII digits. An English translation is not part of this record.
+每部法律是一个以拼音命名的文件夹，每一条为一个文件（`laodonghetongfa/art-066.md` 是《中华人民共和国劳动合同法》第六十六条），`mulu.md` 收录其编、章的标题，`fujian-N.md` 收录其附件；宪法在 [`xianfa/`](xianfa/)，序言为 `xianfa/xuyan.md`。条文序号以现行版本为准：修改导致条文序号变动时，git 会显示文本在文件之间移动。
 
-## Questions as git commands
+文本为中文，与中国人大网公布的一致，全角数字改写为 ASCII 数字。本记录不包含英文译文。
 
-| Question | Command |
+## 用 git 命令回答的问题
+
+| 问题 | 命令 |
 | --- | --- |
-| Every change to Article 66 of the Labour Contract Law | `git log -p --word-diff -- laodonghetongfa/art-066.md` |
-| Which act wrote each line of Article 66? | `git blame laodonghetongfa/art-066.md` |
-| Every version of the Labour Contract Law, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- laodonghetongfa ':!laodonghetongfa/README.md'` |
-| Article 66 as in force on 1 January 2010 | `python tools/on_date.py 2010-01-01 laodonghetongfa 66` |
+| 劳动合同法第六十六条的全部修改 | `git log -p --word-diff -- laodonghetongfa/art-066.md` |
+| 第六十六条的每一行由哪部法律文件写入？ | `git blame laodonghetongfa/art-066.md` |
+| 劳动合同法的每个版本及其施行之日 | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- laodonghetongfa ':!laodonghetongfa/README.md'` |
+| 2010年1月1日施行的第六十六条 | `python tools/on_date.py 2010-01-01 laodonghetongfa 66` |
 
-**Outside git**, we also host this record publicly, for free:
+**在 git 之外**，我们还免费公开提供这一记录：
 
-- **[Ask Claude about Chinese law](https://global-law.lexifina.com/v1/try_claude?country=china)**: opens Claude with a first question ready.
-- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=china)**: the same question in ChatGPT.
-- **[Search Chinese law on our site](https://lexifina.com/law?country=china&q=%E5%B9%B4%E4%BC%91%E5%81%87)**: a search for "年休假" (annual leave), with each provision's text and its versions, no account needed.
-- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=%E5%B9%B4%E4%BC%91%E5%81%87&jurisdiction=china)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
+- **[向 Claude 询问中国法律](https://global-law.lexifina.com/v1/try_claude?country=china)**：打开 Claude，并已备好第一个问题。
+- **[询问 ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=china)**：在 ChatGPT 中提出同一问题。
+- **[在本网站检索中国法律](https://lexifina.com/law?country=china&q=%E5%B9%B4%E4%BC%91%E5%81%87)**：检索"年休假"，显示每一条文的文本及其各个版本，无需账户。
+- **[开发者 REST API](https://global-law.lexifina.com/v1/search_law?query=%E5%B9%B4%E4%BC%91%E5%81%87&jurisdiction=china)**：以 JSON 返回同一检索，无需密钥。参见[此处的文档](https://lexifina.com/api/global-law)。
 
-Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Chinese or in English.
+两个助手都通过免费的 Global law 连接器（MCP，`https://global-law.lexifina.com/mcp`）读取这一记录；首次使用时，对话中会给出添加该连接器的链接。可以用中文或英文提问。
 
-**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+**轻松自行托管。** 只需 git 和 Python，工具在您自己的计算机上运行：
 
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
@@ -37,52 +43,54 @@ python3 tools/countries.py add china/national/acts
 python3 tools/law.py show 2026-01-01 china/national/acts/laodonghetongfa/art-066.md
 ```
 
-Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+在 Claude Code、Cursor、VS Code 或 Codex 中打开时，该克隆还会启动一个提供相同工具的本地 MCP 服务器（[MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)）。
 
-## Dates
+## 日期
 
-Each commit is dated at noon, Asia/Shanghai, on the day the version took effect, and carries it in its `In-force:` trailer; the versions of every law but the Constitution also say where the day comes from, in `In-force-evidence:`:
+每次提交的日期为该版本施行之日的正午（Asia/Shanghai），并记载于其 `In-force:` 尾注（trailer）中；除宪法外，每部法律的版本还在 `In-force-evidence:` 中说明该日期的依据：
 
-- for a law as adopted or revised, its own commencement article (本法自……起施行);
-- for a version made by an amending decision or a 刑法修正案, the commencement it states (本决定自……起施行, 本修正案自……起施行), often the day it was promulgated (自公布之日起施行); each of the Constitution's five amendments was adopted, promulgated and in force on the same day;
-- a correction to the standard text printed in the 全国人大常委会公报 (two, both to the 1997 Criminal Law) carries the day of the version it corrects, and `tools/on_date.py` applies it to that version.
+- 通过或者修订的法律，依其本身的施行条款（本法自……起施行）；
+- 由修改决定或者刑法修正案形成的版本，依其规定的施行日期（本决定自……起施行，本修正案自……起施行），通常为公布之日（自公布之日起施行）；宪法的五次修正均在同一日通过、公布和施行；
+- 对《全国人大常委会公报》所载标准文本的更正（共两处，均涉及1997年刑法），采用其所更正版本的日期，`tools/on_date.py` 将其适用于该版本。
 
-Each change is credited to the act that made it, as 中国人大网 names it (`中华人民共和国刑法修正案（十一）（2020年）`), at an address that cannot exist (`xingfa-xzan-2020@npc.gov.cn.invalid`). Where the record starts at a law's current consolidated text (45 laws), the whole text is credited to the latest amending act; the oldest texts of the Criminal Procedure Law (1997) and the Company Law (2018), the two corrections and one typographic difference in the Constitution's official 2018 text are credited to the publisher, `中国人大网 (全国人大常委会办公厅)`.
+每一处修改都记在作出该修改的法律文件名下，名称以中国人大网所用者为准（`中华人民共和国刑法修正案（十一）（2020年）`），使用一个不可能存在的地址（`xingfa-xzan-2020@npc.gov.cn.invalid`）。记录始于法律现行汇编文本的（45部法律），全文记在最近一次修改该法律的法律文件名下；刑事诉讼法（1997年）和公司法（2018年）的最早文本、上述两处更正以及宪法2018年官方文本中的一处排印差异，记在公布者 `中国人大网 (全国人大常委会办公厅)` 名下。
 
-## How it is checked
+## 核对方法
 
-- `tools/check_repo.py` compares the Constitution's 1982 version and its current text with the official pages, byte for byte and again by the letters and digits an independent extractor reads, and checks that every new wording an amendment quotes is in that version's files. The versions in between have no official consolidated text: they are the amendments applied.
-- For every other act, the letters and digits of each source page (目录 and headings taken out) must equal those of the act's files, in order.
-- `tools/test_repo.py` checks that `git blame` names an amending act, that `tools/on_date.py` gives the text before and after a known amendment, and that every law commit has an `In-force:` trailer. Two builds of the Constitution from the same pages gave the same head hash; see [`REPRODUCE.md`](REPRODUCE.md).
-- History is append-only: no merge commits, the laws were added on top of the Constitution's history, and no published commit is rewritten.
+- `tools/check_repo.py` 将宪法的1982年版本及其现行文本与官方网页逐字节比对，并再按一个独立提取程序读取的文字和数字比对一次；还核查修正案所引述的每一处新表述均已见于该版本的文件中。两者之间的版本没有官方汇编文本：它们是适用各修正案后的结果。
+- 对其他每部法律，每个来源网页的文字和数字（去除目录和标题后）必须与该法律各文件的文字和数字依次完全一致。
+- `tools/test_repo.py` 核查 `git blame` 显示修改法律文件、`tools/on_date.py` 给出某一已知修改前后的文本，以及每个法律提交都有 `In-force:` 尾注。由同一组网页两次构建宪法，得到相同的头部哈希；参见 [`REPRODUCE.md`](REPRODUCE.md)。
+- 历史只增不改：没有合并提交，各法律是在宪法历史之上添加的，已发布的提交不会被改写。
 
-## What it does not show
+## 未涵盖的内容
 
-- **Most national laws.** 173 are here; others in force, such as the 个人所得税法, the 网络安全法, the 食品安全法 and the 消费者权益保护法, are not yet.
-- **Earlier wording of 97 laws.** Their record starts at a revision (修订, 50 laws), at the current consolidated text (45) or at the oldest full text 中国人大网 serves (2).
-- **Repealed laws**, such as the 合同法 and the 物权法, which the 民法典 repealed on 1 January 2021.
-- **Administrative and local regulations, judicial interpretations and case law**: the record holds the laws of the National People's Congress and its Standing Committee only. The National Laws Database (flk.npc.gov.cn) was not used: its robots.txt forbids automated collection.
+- **大部分国家法律。** 本仓库收录173部；其他现行法律，如个人所得税法、网络安全法、食品安全法和消费者权益保护法，尚未收录。
+- **97部法律的早期文本。** 其记录始于一次修订（50部）、现行汇编文本（45部）或中国人大网提供的最早全文（2部）。
+- **已废止的法律**，如合同法和物权法，已由民法典于2021年1月1日废止。
+- **行政法规和地方性法规、司法解释以及判例**：本记录仅收录全国人民代表大会及其常务委员会制定的法律。未使用国家法律法规数据库（flk.npc.gov.cn），因为其 robots.txt 禁止自动采集。
 
-## Sources
+## 来源
 
-| Source | Kind | Past versions | Notes |
+| 来源 | 类型 | 历史版本 | 备注 |
 | --- | --- | --- | --- |
-| [中国人大网](http://www.npc.gov.cn) (全国人大常委会办公厅, General Office of the NPC Standing Committee) | Official site of the NPC: the Constitution and its amendments, laws, amending decisions | partly: laws as adopted or revised and the decisions that amended them; otherwise the current text only | Each version names its page in a `Source:` trailer, and a consolidated text the decision behind it in `Decision:` |
-| 全国人大常委会公报 (on 中国人大网) | Gazette of the NPC Standing Committee, as PDF | the text as published | The standard text of a law (立法法); used for the 民法典 and for the 1997 Criminal Law and its amendments to 2021 |
+| [中国人大网](http://www.npc.gov.cn)（全国人大常委会办公厅） | 全国人大官方网站：宪法及其修正案、法律、修改决定 | 部分有：通过或者修订时的法律及修改该法律的决定；其余仅有现行文本 | 每个版本在 `Source:` 尾注中注明其网页，汇编文本在 `Decision:` 中注明其所依据的决定 |
+| 全国人大常委会公报（载于中国人大网） | 全国人大常委会公报，PDF 格式 | 公布时的文本 | 法律的标准文本（立法法）；用于民法典以及1997年刑法及其至2021年的修正案 |
 
-## Licence
+## 许可
 
-See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. The tools and documentation are by Lexifina, under the MIT licence.
+参见 [`LICENSE`](LICENSE)。在中国，国家机关的法律、决议、决定及其官方正式译文不受著作权法保护（著作权法第五条）；中国人大网未就这些网页声明任何再利用条款。工具和文档由 Lexifina 编写，采用 MIT 许可证。
 
-No AI model wrote or changed legal text, and none runs when the history is built; an AI model researched the source and wrote the scripts and the documentation (see [`REPRODUCE.md`](REPRODUCE.md)).
+没有任何人工智能模型编写或修改法律文本，构建历史时也不运行任何人工智能模型；一个人工智能模型研究了来源，并编写了脚本和文档（参见 [`REPRODUCE.md`](REPRODUCE.md)）。
 
-## More
+本文为英文版（[README.en.md](README.en.md)）的译文；如有不一致，以英文版为准。
 
-From [lexifina/global-law](https://github.com/lexifina/global-law):
+## 更多信息
 
-- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
-- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
-- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
-- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
-- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
-- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
+来自 [lexifina/global-law](https://github.com/lexifina/global-law) 仓库（英文页面）：
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): 全部功能，以及每个语料库须支持的内容（`git blame`、`law.py`、MCP 工具）
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): 常见问题 · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): 提出修改建议 · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): MCP 服务器 · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): 构建方法 · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): 各语料库的更新程度 · [监测](https://github.com/lexifina/global-law/tree/main/monitoring): 更新是否在正常运行 · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): 如何监视每个官方来源的变化
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): 工具速度的实测结果
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): 贯通全球法律的图表与关联
+- [漏洞](https://github.com/lexifina/global-law/tree/main/vulnerabilities): 已公布法律文本中的错误
