@@ -66,6 +66,44 @@ def layout_only_renames(repo, h):
     return True
 
 
+_SUP = {}
+
+
+def superseded(repo):
+    """{commit: {old and new paths of the files a later Kind: correction commit lists with Supersedes: commit}}."""
+    if 'v' in _SUP:
+        return _SUP['v']
+    out = subprocess.run(['git', 'log', '--grep=^Kind: *correction', '--format=%x1d%(trailers:key=Supersedes,valueonly,'
+                          'separator=%x1f)%x1e%(trailers:key=Files,valueonly,separator=%x1f)', 'main'], cwd=repo,
+                         capture_output=True, text=True, encoding='utf-8').stdout
+    paths = {}
+    try:
+        paths = json.loads((HERE.parent / 'data' / 'paths.json').read_text(encoding='utf-8')).get('files', {})
+    except (OSError, ValueError):
+        pass
+    back = {v: k for k, v in paths.items()}
+    res = {}
+    for rec in out.split('\x1d'):
+        if '\x1e' not in rec:
+            continue
+        sups, files = rec.strip('\n').split('\x1e', 1)
+        fs = {f.strip() for f in files.split('\x1f') if f.strip()}
+        fs |= {back[f] for f in fs if f in back} | {paths[f] for f in fs if f in paths}
+        for s in sups.split('\x1f'):
+            s = s.strip()
+            if s:
+                for full in [x for x in [s] if len(x) == 40] or [s]:
+                    res.setdefault(full, set()).update(fs)
+    # allow abbreviated hashes in Supersedes
+    full = {}
+    for k, v in res.items():
+        h = subprocess.run(['git', 'rev-parse', '--verify', '-q', k + '^{commit}'], cwd=repo, capture_output=True,
+                           text=True).stdout.strip()
+        full.setdefault(h or k, set()).update(v)
+    _SUP['v'] = full
+    return full
+
+
 def doc_commit_problems(repo, rows):
     """rows: (sha, In-force value) of each commit authored by Lexifina. Every one is a documentation commit (README,
     charts, tools): no In-force trailer and no law text file (one git log --no-walk --name-only for all of them)."""
@@ -85,6 +123,8 @@ def doc_commit_problems(repo, rows):
         law = [f for f in files.get(h, []) if not is_doc_file(f)]
         if law and not day.strip() and layout_only_renames(repo, h):
             continue        # the layout commit (Kind: layout): law files moved, not one byte changed
+        if law and not day.strip() and set(law) <= superseded(repo).get(h, set()):
+            continue        # each law file it touched is re-credited by a later labelled correction (Supersedes: h)
         if day.strip() or law:
             bad.append(h[:10] + (f' In-force {day.strip()}' if day.strip() else '')
                        + (f' touches {len(law)} law text file(s), e.g. {law[0]}' if law else ''))
