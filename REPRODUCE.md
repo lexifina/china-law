@@ -302,3 +302,84 @@ amending decision's (本决定自……起施行 / 自公布之日起施行); `I
 Main is append-only: these commits were added on top of the Constitution history, which is unchanged.
 
 <!-- acts: end -->
+
+## Parts added from 19 November 2026
+
+From 19 November 2026 this repository grows from the official sources of every level of Chinese law, as set out in
+the layout below. Each source is read by its own collector, and commits from all of them reach `main` through one
+writer, as fast-forward pushes only. Every push is checked first: the commit identities must be Lexifina or
+`.invalid` addresses, there must be no private files or notes, and a path already on `main` is never replaced by a
+different file. Nothing published is ever rewritten. A text found wrong later is fixed by a labelled correction
+commit (`Kind: correction`, `Corrects:`, `Supersedes:`, `Reason:`, `Files:`), which `tools/on_date.py` applies.
+
+### Layout (20 November 2026)
+
+Folders and files have Chinese names and follow the hierarchy of Chinese law. The tree has four kinds of folder:
+
+- **Acts:** 宪法, 法律, 法律解释, 行政法规, 监察法规, 部门规章/<制定机关>, 地方/<省>/<市>/<县>/<种类>, 司法解释/<发布机关>,
+  党内法规/<制定机关> and 军事法规. Each act is one folder with one file per article (`第066条.md`, `第120条之一.md`,
+  `序言.md`, `目录.md`, `附件N.md`). Each version is one commit dated on the day it took effect and credited to the
+  instrument that made it, and a repeal is a commit that deletes the act's files.
+- **Documents as issued, one file each:** 决定/<年份>, 修改和废止/<层级>/<年份>, 规范性文件/<制定机关>/<年份>,
+  条约/{双边/<国家>,多边}, 案例/指导性案例/<法院> and 公报/<公报名>/<年份>/第NN号/<NN>-<标题>.md.
+- **Placeholder:** 裁判文书 (court judgments) is kept for later and has no files until there is access.
+- **Old law:** 历史 holds law that comes before this record.
+
+Until the layout commit, the Constitution and the 172 laws were pinyin folders at the top level. `data/paths.json`
+maps every old folder and file to its new place. `git log --follow` follows each file across the move, and the tags
+keep the old paths.
+
+### Dates and authors
+
+- **Commit time:** noon Asia/Shanghai on the 施行日期 (the day the version took effect) where the text states one,
+  else on the 公布日期 (promulgation) or 发布日期 (issue). `In-force-evidence:` says which clause gave the day.
+  Records before 1970 are committed on 1 January 1970, with the real day at the start of the subject and in the
+  trailers.
+- **Author:** the instrument that made the version (a law, decision, 修正案, State Council order, 部令, local
+  congress notice), or the issuing body of a document, at an address under the publisher's host ending in
+  `.invalid`.
+- **Committer:** Lexifina.
+- **Not yet in force:** a record dated after the day it was read is held, and added on its day.
+
+### Sources and how they are read
+
+| Source | Host | What it gives | Pace |
+| --- | --- | --- | --- |
+| 中国人大网 | www.npc.gov.cn (http) | laws, decisions, legislative interpretations, amending instruments, the 全国人大常委会公报 (2018-) | >= 10 s |
+| 国务院公报 (中国政府网) | www.gov.cn | every gazette item, 1955-1966 and 1980 to now (scans read by OCR) | >= 10 s |
+| 国家规章库 (中国政府网) | www.gov.cn/zhengce/xxgk/gjgzk/ | current departmental and local government rules (the same calls the public page makes) | >= 10 s |
+| 国家行政法规库 | xzfg.moj.gov.cn | administrative regulations, current and earlier versions | >= 10 s |
+| 最高人民法院 | www.court.gov.cn | judicial interpretations, guiding cases, repeal decisions | >= 10 s |
+| ministries and agencies | <abbr>.gov.cn (listed in LICENSE 2.3) | 部令 pages, rules as promulgated and amended | >= 10 s each; 15 s where a site asks for it |
+| provincial, city and county congresses and governments | data/legislative-units.csv | local regulations, autonomy and separate regulations, local gazettes | >= 10 s each |
+
+The rules for every host:
+
+- **One request at a time.** There are at least 10 seconds between requests to the same host, or longer where the
+  host states its own limit (www.nra.gov.cn asks for 15 s). Collectors run around the clock with no daily cap, and
+  different hosts are read in parallel.
+- **A host stops for good at the first sign of refusal:** HTTP 401, 403, 412 or 429, a verification
+  page, a firewall's block page, a login wall on its lists, or six connection failures in a row. Nothing more is
+  requested from it, and it is never reached by another route: no proxy, no other machine and no web archive.
+- **A login prompt on a single record** while the lists still answer is taken as a sign the record is not public.
+  The record is skipped and the login page is never requested.
+- **Hosts not used:**
+  - flk.npc.gov.cn: its robots.txt forbids automated collection, and Lexifina has asked its office.
+  - wenshu.court.gov.cn, the 人民法院案例库 and gongbao.court.gov.cn: registration or login.
+  - www.spp.gov.cn and 12309: they refuse.
+  - www.ccdi.gov.cn: verification page.
+  - The local hosts that do not answer from where the collectors run. data/legislative-units.csv records each
+    unit's site status.
+- **Terms:** each host's own statement page and copyright notice were read on 19 November 2026 and are quoted in
+  [`LICENSE`](LICENSE). Under PRC Copyright Law art. 5 the official documents are not protected, so a site's
+  reservation of its own content means only the official text is taken. A robots.txt that disallows everything is
+  recorded and treated as advisory.
+
+### Text
+
+- Text is taken from the official page, or from the text layer of the official PDF, as published. Full-width digits
+  are written as ASCII digits, and nothing else in the wording changes.
+- Scanned gazette years (1955-1966, 1980-c. 1999) are read by OCR (tesseract, chi_sim). Each such file says so in
+  its front matter, has not been checked by hand, and the scan stays the authority.
+- In gazettes and local documents, a private person's name or address is replaced in place by [姓名略] or
+  [地址略]. A document essentially about a private person is kept as metadata only.
