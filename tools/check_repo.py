@@ -45,9 +45,19 @@ class Repo:
         return data
 
     def files(self, rev: str, folder: str = 'xianfa/') -> dict[str, str]:
-        names = [f for f in self.git('ls-tree', '-r', '--name-only', rev, folder).split('\n')
-                 if f.endswith('.md') and not f.endswith('README.md')]
-        return {f: self.blob(f'{rev}:{f}').decode('utf-8') for f in names}
+        """The Constitution's text files at rev, keyed by their names before the layout commit (xianfa/art-NNN.md ...):
+        since 2026-11-20 they are in 宪法/ with Chinese names (data/paths.json), and the official render uses the old
+        names."""
+        names = [f for f in self.git('-c', 'core.quotePath=false', 'ls-tree', '-r', '--name-only', rev, folder)
+                 .split('\n') if f.endswith('.md') and not f.endswith('README.md')]
+        if names:
+            return {f: self.blob(f'{rev}:{f}').decode('utf-8') for f in names}
+        import on_date
+        back = {f'宪法/{on_date.new_name(o.rsplit("/", 1)[1])}': o for o in on_date.PATHS.get('files', {})
+                if o.startswith('xianfa/')}
+        names = [f for f in self.git('-c', 'core.quotePath=false', 'ls-tree', '-r', '--name-only', rev, '宪法/')
+                 .split('\n') if f.endswith('.md') and not f.endswith('README.md')]
+        return {back.get(f, f): self.blob(f'{rev}:{f}').decode('utf-8') for f in names}
 
 
 def letters(s: str) -> str:

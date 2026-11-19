@@ -13,7 +13,7 @@
 
 **现有内容：** 1982年通过、经五次修正的宪法，以及全国人民代表大会及其常务委员会制定的172部法律，均现行有效，共190个版本：刑法15个，刑事诉讼法3个，公司法和劳动合同法各2个，其余168部各1个。[`data/acts.json`](data/acts.json) 列出每部法律的文件夹、版本及其记录的起点；每部法律的文件夹中有一个 `README.md`，列出其各个版本。
 
-每部法律是一个以拼音命名的文件夹，每一条为一个文件（`laodonghetongfa/art-066.md` 是《中华人民共和国劳动合同法》第六十六条），`mulu.md` 收录其编、章的标题，`fujian-N.md` 收录其附件；宪法在 [`xianfa/`](xianfa/)，序言为 `xianfa/xuyan.md`。条文序号以现行版本为准：修改导致条文序号变动时，git 会显示文本在文件之间移动。
+每部法律是 [`法律/`](法律/) 中以其中文名称命名的一个文件夹，每一条为一个文件（`法律/劳动合同法/第066条.md` 是《中华人民共和国劳动合同法》第六十六条），`目录.md` 收录其编、章的标题，`附件N.md` 收录其附件；宪法在 [`宪法/`](宪法/)，序言为 `宪法/序言.md`。2026年11月20日以前，这些文件夹以拼音命名，位于仓库顶层（`laodonghetongfa/art-066.md`）；[`data/paths.json`](data/paths.json) 列出每个旧路径对应的新路径，`git log --follow` 可跨越这次移动追踪每个文件。条文序号以现行版本为准：修改导致条文序号变动时，git 会显示文本在文件之间移动。
 
 文本为中文，与中国人大网公布的一致，全角数字改写为 ASCII 数字。本记录不包含英文译文。
 
@@ -21,10 +21,10 @@
 
 | 问题 | 命令 |
 | --- | --- |
-| 劳动合同法第六十六条的全部修改 | `git log -p --word-diff -- laodonghetongfa/art-066.md` |
-| 第六十六条的每一行由哪部法律文件写入？ | `git blame laodonghetongfa/art-066.md` |
-| 劳动合同法的每个版本及其施行之日 | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- laodonghetongfa ':!laodonghetongfa/README.md'` |
-| 2010年1月1日施行的第六十六条 | `python tools/on_date.py 2010-01-01 laodonghetongfa 66` |
+| 劳动合同法第六十六条的全部修改 | `git log -p --follow --word-diff -- 法律/劳动合同法/第066条.md` |
+| 第六十六条的每一行由哪部法律文件写入？ | `git blame 法律/劳动合同法/第066条.md` |
+| 劳动合同法的每个版本及其施行之日 | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 法律/劳动合同法 laodonghetongfa ':!法律/劳动合同法/README.md' ':!laodonghetongfa/README.md'` |
+| 2010年1月1日施行的第六十六条 | `python tools/on_date.py 2010-01-01 法律/劳动合同法 66` |
 
 **在 git 之外**，我们还免费公开提供这一记录：
 

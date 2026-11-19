@@ -38,6 +38,34 @@ def is_doc_file(path):
     return path.startswith(DOC_DIRS) or path.endswith('/README.md')
 
 
+def _old_folders():
+    try:
+        return sorted(json.loads((HERE.parent / 'data' / 'paths.json').read_text(encoding='utf-8'))['paths'])
+    except (OSError, ValueError, KeyError):
+        return []
+
+
+OLD_FOLDERS = _old_folders()
+
+
+def layout_only_renames(repo, h):
+    """True for a commit with Kind: layout whose law text files are all exact renames (R100) of earlier files."""
+    kind = subprocess.run(['git', 'log', '-1', '--format=%(trailers:key=Kind,valueonly,separator=)', h], cwd=repo,
+                          capture_output=True, text=True, encoding='utf-8').stdout.strip()
+    if kind != 'layout':
+        return False
+    out = subprocess.run(['git', '-c', 'core.quotePath=false', '-c', 'diff.renameLimit=0', 'show', '-M100%',
+                          '--name-status', '--format=', h], cwd=repo, capture_output=True, text=True,
+                         encoding='utf-8').stdout
+    for line in out.splitlines():
+        parts = line.split('\t')
+        if not parts[-1] or is_doc_file(parts[-1]):
+            continue
+        if parts[0] != 'R100':
+            return False
+    return True
+
+
 def doc_commit_problems(repo, rows):
     """rows: (sha, In-force value) of each commit authored by Lexifina. Every one is a documentation commit (README,
     charts, tools): no In-force trailer and no law text file (one git log --no-walk --name-only for all of them)."""
@@ -55,6 +83,8 @@ def doc_commit_problems(repo, rows):
     bad = []
     for h, day in rows:
         law = [f for f in files.get(h, []) if not is_doc_file(f)]
+        if law and not day.strip() and layout_only_renames(repo, h):
+            continue        # the layout commit (Kind: layout): law files moved, not one byte changed
         if day.strip() or law:
             bad.append(h[:10] + (f' In-force {day.strip()}' if day.strip() else '')
                        + (f' touches {len(law)} law text file(s), e.g. {law[0]}' if law else ''))
@@ -99,20 +129,21 @@ class Smoke:
 
     # 1
     def blame(self):
-        out = self.git('blame', '--line-porcelain', 'main', '--', 'xianfa/art-011.md')
+        out = self.git('blame', '--line-porcelain', 'main', '--', '宪法/第011条.md')
         authors = {l[7:] for l in out.splitlines() if l.startswith('author ')}
         assert authors, 'no blame output'
         assert all(LAW.match(a) or a == PUBLISHER for a in authors), f'unexpected authors {authors}'
         assert '宪法修正案（1999年）' in authors, f'the 1999 amendment is not among the authors {authors}'
         assert len(authors) >= 2, f'only {authors}'
-        return f'xianfa/art-011.md lines by {", ".join(sorted(authors))}'
+        return f'宪法/第011条.md lines by {", ".join(sorted(authors))}'
 
     # 2
     def on_date(self):
         done = []
+        # the tags are older than the layout commit (2026-11-20), so the files at a tag have their old paths
         for act, prov, path, tag, before, after in [
-                ('xianfa', '11', 'xianfa/art-011.md', 'xianfa/2004-03-14', '2004-03-13', '2004-03-14'),
-                ('xianfa', '79', 'xianfa/art-079.md', 'xianfa/2018-03-11', '2018-03-10', '2018-03-11')]:
+                ('宪法', '11', 'xianfa/art-011.md', 'xianfa/2004-03-14', '2004-03-13', '2004-03-14'),
+                ('宪法', '79', 'xianfa/art-079.md', 'xianfa/2018-03-11', '2018-03-10', '2018-03-11')]:
             a, b = self.tool(before, act, prov), self.tool(after, act, prov)
             assert a and b and a != b, f'{path}: no change between {before} and {after}'
             assert b == self.git('show', f'{tag}:{path}'), f'{path} on {after} is not the file at {tag}'
@@ -122,16 +153,18 @@ class Smoke:
                 prev = self.git('rev-list', '-1', f'{prev}~1').strip()
             assert a == self.git('show', f'{prev}:{path}'), f'{path} on {before} is not the file before {tag}'
             done.append(f'{path} {before} != {after}')
-        whole = self.tool('2000-01-01', 'xianfa')
+        whole = self.tool('2000-01-01', '宪法')
+        assert whole == self.tool('2000-01-01', 'xianfa'), 'the old folder name gives another text'
         assert '# 第一百三十八条' in whole and '# 第一百四十三条' not in whole, 'whole Constitution on 2000-01-01'
         return '; '.join(done)
 
     # 3
     def follow(self):
         checked = []
-        for path in ('xianfa/art-011.md', 'xianfa/art-008.md', 'xianfa/xuyan.md'):
+        for path in ('宪法/第011条.md', '宪法/第008条.md', '宪法/序言.md'):
             out = self.git('log', '--follow', '--format=%an%x09%(trailers:key=In-force,valueonly,separator=)', 'main', '--', path)
-            rows = [l.split('\t') for l in out.splitlines() if l]
+            # the layout commit (Lexifina, no In-force) only moved the file
+            rows = [l.split('\t') for l in out.splitlines() if l and not l.startswith('Lexifina\t')]
             assert len(rows) >= 2, f'{path}: {len(rows)} commits'
             days = [d.strip() for _, d in rows]
             assert days == sorted(days, reverse=True), f'{path}: not in date order {days}'
@@ -159,19 +192,22 @@ class Smoke:
         rows = self.git('log', '--format=%H%x09%an%x09%ae%x09%cn%x09%(trailers:key=In-force,valueonly,separator=)',
                         'main').splitlines()
         by_lex = [r for r in rows if r.split('\t')[1] == 'Lexifina']
-        # Documentation commits only: the head, and one closing each part appended before it (main is append-only).
-        assert by_lex and by_lex[0] == rows[0], f'{len(by_lex)} commits by Lexifina, the head not among them'
+        # Documentation commits (and the layout commit, renames only); since 2026-11-20 other parts (gazettes, rules,
+        # local law) are appended after them, so the head need not be one.
+        assert by_lex, 'no commit by Lexifina'
         bad = doc_commit_problems(self.repo, [(r.split('\t')[0], r.split('\t')[4]) for r in by_lex])
         assert not bad, f'{len(bad)} Lexifina commits are not documentation commits, e.g. {bad[:3]}'
         assert all(r.split('\t')[3] == 'Lexifina' for r in rows), 'a committer other than Lexifina'
-        authors = {r.split('\t')[1] for r in rows if r.split('\t')[1] != 'Lexifina'}
+        # authors of the Constitution and the national laws (other folders are credited to their issuing bodies)
+        nat = set(self.git('log', '--format=%H', 'main', '--', '宪法', '法律', *OLD_FOLDERS).split())
+        authors = {r.split('\t')[1] for r in rows if r.split('\t')[1] != 'Lexifina' and r.split('\t')[0] in nat}
         assert all(LAW.match(a) or a == PUBLISHER for a in authors), f'unexpected authors {authors - {PUBLISHER}}'
         return f'only the {len(by_lex)} documentation commits are by Lexifina; {len(authors)} distinct authors'
 
     # 6
     def readme(self):
-        text = (self.repo / 'README.md').read_text(encoding='utf-8')
-        assert '## Questions as git commands' in text, 'README has no "## Questions as git commands" table'
+        text = (self.repo / 'README.en.md').read_text(encoding='utf-8')
+        assert '## Questions as git commands' in text, 'README.en.md has no "## Questions as git commands" table'
         start = text.index('## Questions as git commands')
         end = text.find('\n## ', start + 1)
         table = text[start:end if end > 0 else len(text)]

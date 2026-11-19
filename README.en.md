@@ -13,7 +13,7 @@ Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git h
 
 **What is in it now:** the Constitution, as adopted in 1982 and changed by its five amendments, and 172 laws of the National People's Congress and its Standing Committee, all in force, with 190 versions: 15 of the Criminal Law, 3 of the Criminal Procedure Law, 2 each of the Company Law and the Labour Contract Law, and one each of the other 168. [`data/acts.json`](data/acts.json) lists every act with its folder, its versions and where its record starts; each act's folder has a `README.md` listing its versions.
 
-Each act is a folder named in pinyin, one file per article (`laodonghetongfa/art-066.md` is 第六十六条 of the 中华人民共和国劳动合同法, the Labour Contract Law), with `mulu.md` for the headings of its parts and chapters and `fujian-N.md` for its annexes; the Constitution is [`xianfa/`](xianfa/), its preamble `xianfa/xuyan.md`. Article numbers are those of the version in force: where a change renumbers articles, git shows the text moving between files.
+Each law is a folder in [`法律/`](法律/) named by its Chinese title, one file per article (`法律/劳动合同法/第066条.md` is 第六十六条 of the 中华人民共和国劳动合同法, the Labour Contract Law), with `目录.md` for the headings of its parts and chapters and `附件N.md` for its annexes; the Constitution is [`宪法/`](宪法/), its preamble `宪法/序言.md`. Until 20 November 2026 these folders had pinyin names at the top of the repository (`laodonghetongfa/art-066.md`); [`data/paths.json`](data/paths.json) maps every old path to its new one, and `git log --follow` follows each file across the move. Article numbers are those of the version in force: where a change renumbers articles, git shows the text moving between files.
 
 The text is in Chinese, as 中国人大网 publishes it, with full-width digits written as ASCII digits. An English translation is not part of this record.
 
@@ -21,10 +21,10 @@ The text is in Chinese, as 中国人大网 publishes it, with full-width digits 
 
 | Question | Command |
 | --- | --- |
-| Every change to Article 66 of the Labour Contract Law | `git log -p --word-diff -- laodonghetongfa/art-066.md` |
-| Which act wrote each line of Article 66? | `git blame laodonghetongfa/art-066.md` |
-| Every version of the Labour Contract Law, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- laodonghetongfa ':!laodonghetongfa/README.md'` |
-| Article 66 as in force on 1 January 2010 | `python tools/on_date.py 2010-01-01 laodonghetongfa 66` |
+| Every change to Article 66 of the Labour Contract Law | `git log -p --follow --word-diff -- 法律/劳动合同法/第066条.md` |
+| Which act wrote each line of Article 66? | `git blame 法律/劳动合同法/第066条.md` |
+| Every version of the Labour Contract Law, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- 法律/劳动合同法 laodonghetongfa ':!法律/劳动合同法/README.md' ':!laodonghetongfa/README.md'` |
+| Article 66 as in force on 1 January 2010 | `python tools/on_date.py 2010-01-01 法律/劳动合同法 66` |
 
 **Outside git**, we also host this record publicly, for free:
 
