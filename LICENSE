@@ -1,37 +1,729 @@
-Legal text
+Licence and sources
 
-Laws, regulations, resolutions, decisions and orders of state organs and their official translations are not
-protected by copyright in the People's Republic of China (中华人民共和国著作权法第五条). The texts here come from
-中国人大网 (www.npc.gov.cn). Source: 中国人大网, https://www.npc.gov.cn/.
+1. Lexifina's own work
 
-The 中国人大网 site publishes no reuse terms for this section that we could find; this repository stays private
-until reuse is confirmed.
+CC0 1.0 Universal
 
-The Constitution, the codes and the laws in this repository (xianfa/, xingfa/, xingshisusongfa/, gongsifa/,
-laodonghetongfa/ and any act folder added later) are laws and decisions of the National People's Congress and its
-Standing Committee, which the Copyright Law of the People's Republic of China excludes from its protection:
+The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or
+her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent
+allowed by law.
 
-    中华人民共和国著作权法（2020年修正）第五条：“本法不适用于：（一）法律、法规，国家机关的决议、决定、命令和其他具有立法、行政、司法性质的文件，及其官方正式译文；（二）单纯事实消息；（三）历法、通用数表、通用表格和公式。”
+You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
-    ("This Law does not apply to: (1) laws and regulations, resolutions, decisions and orders of state organs, and other
-    documents of a legislative, administrative or judicial nature, and their official translations; (2) mere news of
-    facts; (3) calendars, general numerical tables, general tables and formulas.")
+Full legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
-Tools and documentation
+This dedication covers everything Lexifina made: the history as commits, the commit messages, the folder layout and
+file names, the indexes and tables (data/), the tools (tools/), the READMEs, REPRODUCE.md and this file. It replaces
+the MIT licence that tools/ and the documentation carried before 20 November 2026. It does not cover the texts listed
+in section 2, which come from their publishers and keep whatever terms those publishers give them.
 
-The scripts in tools/ and the documentation are by Lexifina, MIT licence:
+2. Texts from their publishers
 
-Copyright (c) 2026 Lexifina
+2.0 The law: PRC Copyright Law, art. 5
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
-documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
-persons to whom the Software is furnished to do so, subject to the following conditions:
+    中华人民共和国著作权法（1990年通过，2020年11月11日第三次修正，2021年6月1日起施行）第五条：
+    “本法不适用于：（一）法律、法规，国家机关的决议、决定、命令和其他具有立法、行政、司法性质的文件，及其官方正式
+    译文；（二）单纯事实消息；（三）历法、通用数表、通用表格和公式。”
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
-Software.
+    ("This Law does not apply to: (1) laws and regulations, resolutions, decisions and orders of state organs, and
+    other documents of a legislative, administrative or judicial nature, and their official translations; (2) mere
+    news of facts; (3) calendars, general numerical tables, general tables and formulas.")
+    Source: 中华人民共和国著作权法 (2020年修正), promulgated by 中华人民共和国主席令第六十二号, 2020-11-11.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    The constitution, laws, regulations, rules, judicial interpretations, decisions, gazette items and other
+    documents of state organs in this repository are such documents. Only their official text is taken. A site's own
+    editorial matter is left out: news, commentary, explanations not issued as part of the document, editorial
+    summaries (裁判要旨) and annotations. Mandatory national standards are also left out, because standards are
+    copyright-protected in China. The official promulgation (the gazette or the issuing body's own publication) is
+    authoritative; where a site says its online text yields to the printed text, that applies here too.
+
+2.1 How site terms are treated
+
+    Every host used was read once on 2026-11-19 for its robots.txt, its home page and its own statement page (版权声明,
+    网站声明 or 法律声明, where one is linked). What each one says is given below.
+    - Copy and mirror reservations. 64 hosts carry a reservation such as "未经许可，不得复制、转载或建立镜像" ("no
+      copying, reprinting or mirroring without permission"). A reservation like this claims the site's own copyright.
+      Under art. 5 it cannot extend to the official documents, so only those documents are taken, never the site's
+      own editorial content. This is the same rule as for Germany's text-and-data-mining notices (official works,
+      § 5 UrhG).
+    - A written ban on automated collection is a different matter. Such a host is not used until its operator
+      answers (flk.npc.gov.cn, below).
+    - A robots.txt that disallows all clients is recorded. It is treated as advisory. These hosts do that: mp.weixin.qq.com, public.zhengzhou.gov.cn, www.baoding.gov.cn, www.bjsrd.gov.cn, www.dandong.gov.cn, www.lnkd.gov.cn, www.moa.gov.cn, www.mofcom.gov.cn, www.pbc.gov.cn, www.sjzrd.gov.cn, www.zhengzhou.gov.cn, xiamen.pbc.gov.cn.
+    - Pace: at least 10 seconds between requests to a host, or the host's own stated limit if it is longer; one
+      request at a time. Any refusal (HTTP 401, 403, 412 or 429), challenge page or login wall stops the host for
+      good, and nothing is fetched from it by any other route.
+
+2.2 National sources
+
+    中国人大网 www.npc.gov.cn (全国人大常委会办公厅主办，《中国人大》杂志社承办)
+      The source of the laws and the Constitution now in this repository (宪法/, 法律/; the texts as published on
+      its pages and in the 全国人大常委会公报 PDFs it hosts, /wxzlhgb/). No reuse terms are stated on the pages
+      read; its statement page is not reachable without scripts (checked 2026-11-19). Laws and decisions: art. 5.
+
+    国家法律法规数据库 flk.npc.gov.cn
+      Copyright line: "版权所有：全国人大常委会办公厅" (site footer, read 2026-11-19). Its robots.txt begins
+      "#禁止使用任何自动化工具、脚本、爬虫程序采集或复制网站数据" ("collecting or copying site data with any automated
+      tool, script or crawler is prohibited"), then disallows every client. NOT USED: held until the office answers
+      Lexifina's request. The texts themselves are art. 5 documents.
+
+    中国政府网 www.gov.cn (国务院办公厅): 国务院公报 (State Council Gazette, /gongbao/), 国家规章库, policy documents
+      网站声明 https://www.gov.cn/home/2014-02/23/content_5046258.htm (read 2026-11-19):
+      "本网站内容由中央和地方各级政府、政府网站以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容
+      进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属。本网站提供的
+      资料如与相关纸质文本不符，以纸质文本为准。任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，
+      如需转载，必须与相应提供单位直接联系获得合法授权。"
+      ("Media, websites and commercial bodies may not reprint this site's content commercially in its original form,
+      or distort or alter it; copyright in the site's own content is the site's; where material differs from the
+      printed text, the printed text prevails; content provided by other units may not be reprinted without their
+      authorisation.") Taken here: only gazette items and documents of state organs (art. 5), unaltered and named
+      by source; the printed gazette prevails.
+
+    国家行政法规库 xzfg.moj.gov.cn (司法部)
+      No terms stated (checked 2026-11-19; no robots.txt, no statement page linked). Administrative regulations: art. 5.
+
+    司法部 / 中国政府法制信息网 www.moj.gov.cn
+      法律声明 https://www.moj.gov.cn/pub/sfbgw/flsm/201812/t20181231_164581.html (read 2026-11-19):
+      "未经本网书面授权，禁止任何媒体转载本网享有著作权的作品" ("no media may reprint works in which this site holds
+      copyright without its written authorisation"); the page cites the rule that published works may be reprinted
+      unless reserved. Taken here: documents of state organs only (art. 5).
+
+    最高人民法院 www.court.gov.cn
+      Footer: "中华人民共和国最高人民法院 版权所有" (read 2026-11-19); no statement page or reuse terms. Judicial
+      interpretations, guiding cases and judicial documents: art. 5. NOT USED: 中国裁判文书网 wenshu.court.gov.cn
+      (registration with a mobile phone; robots.txt disallows all; Alan has asked for access), 人民法院案例库
+      rmfyalk.court.gov.cn (login), 最高人民法院公报 gongbao.court.gov.cn (refused), 最高人民检察院 www.spp.gov.cn
+      and 12309 (refused).
+
+    中央纪委国家监委网站 www.ccdi.gov.cn (监察法规)
+      版权声明 linked at https://www.ccdi.gov.cn/bqsmn/202004/t20200426_17825.html; the page did not open on 2026-11-19
+      (it redirects in a loop without a site cookie), so its wording is not recorded yet. Supervision regulations:
+      art. 5.
+
+    条约数据库 treaty.mfa.gov.cn (外交部): no terms stated (checked 2026-11-19). Treaty texts: art. 5.
+    国家税务总局政策法规库 fgk.chinatax.gov.cn: no terms stated (checked 2026-11-19).
+    中国证监会 www.csrc.gov.cn, 法律声明 https://www.csrc.gov.cn/csrc/c100227/c1362477/content.shtml (read 2026-11-19):
+      "本网站所有信息的版权属中国证监会所有。未经中国证监会许可，不得更改、销售或租赁本网站信息。" ("copyright in all
+      information on this site belongs to the CSRC; it may not be altered, sold or leased without permission"); the
+      Csrc logo needs permission. Taken here: rules and documents of the CSRC only, unaltered (art. 5).
+
+2.3 Ministries and other State Council bodies (部门规章, ministry gazettes, normative documents)
+
+    neris.csrc.gov.cn (证监会政务服务平台): no terms stated (checked 2026-11-19).
+    www.119.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.audit.gov.cn (中华人民共和国审计署): no terms stated (checked 2026-11-19).
+    www.caac.gov.cn (中国民用航空局): no terms stated (checked 2026-11-19).
+    www.cac.gov.cn (中央网络安全和信息化委员会办公室): no terms stated (checked 2026-11-19).
+    www.chinamine-safety.gov.cn (国家矿山安全监察局): no terms stated (checked 2026-11-19).
+    www.chinatax.gov.cn (国家税务总局): no terms stated (checked 2026-11-19).
+    www.cidca.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.cnipa.gov.cn (国家知识产权局): no terms stated (checked 2026-11-19).
+    www.customs.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.forestry.gov.cn (国家林业和草原局政府网): no terms stated (checked 2026-11-19).
+    www.ggj.gov.cn (国家机关事务管理局): no terms stated (checked 2026-11-19).
+    www.gjxfj.gov.cn (国家信访局): no terms stated (checked 2026-11-19).
+    www.lswz.gov.cn (国家粮食和物资储备局): no terms stated (checked 2026-11-19).
+    www.mca.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.mct.gov.cn (中华人民共和国文化和旅游部): no terms stated (checked 2026-11-19).
+    www.mee.gov.cn (中华人民共和国生态环境部): "生态环境部网站内容由生态环境部、生态环境厅（局）、直属机构及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。" (+1 more sentences on that page) - https://www.mee.gov.cn/home/wzsm/, read 2026-11-19.
+    www.mem.gov.cn (中华人民共和国应急管理部): statement page https://www.mem.gov.cn/wzdt/ states no reuse terms (read
+      2026-11-19).
+    www.mfa.gov.cn (中华人民共和国外交部): no terms stated (checked 2026-11-19).
+    www.miit.gov.cn (中华人民共和国工业和信息化部): no terms stated (checked 2026-11-19).
+    www.mnr.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.moa.gov.cn (中华人民共和国农业农村部): "1.凡本网注明“来源：农业农村部、农业农村部门户网站、农业农村部各有关单位”或带有农业农村部门户网站LOGO、水印的所有文字、图片和音频视频稿件，
+      版权均属农业农村部门户网站所有，任何媒体、网站或单位和个人未经农业农村部信息中心书面授权不得转载、链接、转贴或以其他方式复制发表。已经农业农村部信息中心书面授权的媒体、网站，
+      在下载使用时必须注明“稿件来源：农业农村部门户网站”，否则，本网将依法追究其法律责任。" (+2 more sentences on that page) -
+      https://www.moa.gov.cn/sy_23468/homeinfo/wzsm/, read 2026-11-19.
+    www.mod.gov.cn (中华人民共和国国防部): "凡本网注明 “来源：XXX（非国防部网站）” 的作品，均由其他媒体及相关单位提供。任何媒体或互联网站如需转载，必须与相应提供单位直接联系获得合法授权。" (+1
+      more sentences on that page) - http://www.mod.gov.cn/zjlm/wzdt_226173/index.html#S3, read 2026-11-19.
+    www.moe.gov.cn (中华人民共和国教育部政府门户网站): "本网站内容由教育部直属机关、单位网站以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。" - http://www.moe.gov.cn/jyb_sy/s3634/201005/t20100504_87292.html, read 2026-11-19.
+    www.mof.gov.cn (no title): no terms stated (checked 2026-11-19).
+    www.mofcom.gov.cn (中华人民共和国商务部): no terms stated (checked 2026-11-19).
+    www.mohrss.gov.cn (no title): no terms stated (checked 2026-11-19).
+    www.mohurd.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.most.gov.cn (no title): no terms stated (checked 2026-11-19).
+    www.mot.gov.cn (中华人民共和国交通运输部): "交通运输部网站内容由交通运输部、交通厅（局、委）、直属机构及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属，所提供的资料如与相关纸质文本不符，以纸质文本为准。" (+1 more sentences on that page) -
+      https://www.mot.gov.cn/wangzhangongneng/202512/t20251216_4181727.html, read 2026-11-19.
+    www.mps.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.mva.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.mwr.gov.cn (中华人民共和国水利部): "本网站内容由水利部机关各司局、各直属单位、各省(自治区、直辖市)水利(水务)厅(局)、各计划单列市水利(水务)局、新疆生产建设兵团水利局等提供。任何媒体、
+      互联网站和商业机构不得利用本网站发布的内容进行商业性转载，也不得歪曲和篡改本网站所发布的内容。" (+1 more sentences on that page) -
+      http://www.mwr.gov.cn/qt/wzsm/, read 2026-11-19.
+    www.natcm.gov.cn (国家中医药管理局政府网站): no terms stated (checked 2026-11-19).
+    www.ncac.gov.cn (国家版权局网): statement page https://www.ncac.gov.cn/xxfb/tzgg/202611/t20261119_1017266.html gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.ncha.gov.cn (国家文物局): no terms stated (checked 2026-11-19).
+    www.ndcpa.gov.cn (国家疾病预防控制局): "本网站内容由国家疾病预防控制局及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容。
+      本网站所涉及到的版权归本网站所属。" (+1 more sentences on that page) -
+      https://www.ndcpa.gov.cn/jbkzzx/c100071/common/content/content_1656508289844580352.html, read 2026-11-19.
+    www.ndrc.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.nea.gov.cn (国家能源局): no terms stated (checked 2026-11-19).
+    www.neac.gov.cn (国家民族事务委员会): no terms stated (checked 2026-11-19).
+    www.nfra.gov.cn (国家金融监督管理总局): no terms stated (checked 2026-11-19).
+    www.nhc.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.nhsa.gov.cn (国家医疗保障局): no terms stated (checked 2026-11-19).
+    www.nia.gov.cn (国家移民管理局): no terms stated (checked 2026-11-19).
+    www.nmpa.gov.cn: not used (did not answer or refused on 2026-11-19).
+    www.nppa.gov.cn (国家新闻出版署): no terms stated (checked 2026-11-19).
+    www.nra.gov.cn (国家铁路局): statement page https://www.nra.gov.cn/zdxx/wzsm/ states no reuse terms (read 2026-11-19).
+    www.nrta.gov.cn (国家广播电视总局): no terms stated (checked 2026-11-19).
+    www.oscca.gov.cn (国家密码管理局): "本网站信息内容由国家密码管理局、各省(区、市)密码管理局以及相关单位提供。任何媒体、
+      互联网站和商业机构,不得利用本网站发布的信息内容进行商业性的原版原式转载,也不得歪曲和篡改本网站所发布的信息内容。本网站所涉及到的版权归本网站所有。" (+1 more sentences on that page) -
+      https://www.oscca.gov.cn/sca/c100044/column_common.shtml, read 2026-11-19.
+    www.pbc.gov.cn (中国人民银行): no terms stated (checked 2026-11-19).
+    www.saac.gov.cn (中华人民共和国国家档案局): no terms stated (checked 2026-11-19).
+    www.safe.gov.cn (国家外汇管理局门户网站): "本网所有资料，凡未经特殊注明的，版权均属国家外汇管理局所有。任何媒体、互联网站和商业机构不得利用本网发布的内容进行商业性转载，也不得歪曲和篡改本网发布的内容。
+      经许可的媒体、网站可对本网内容进行非商业性转载，并注明“信息来源：国家外汇管理局网站”，违者将依法追究责任。" - https://www.safe.gov.cn/safe/flsm/index.html, read
+      2026-11-19.
+    www.samr.gov.cn (国家市场监督管理总局): no terms stated (checked 2026-11-19).
+    www.sasac.gov.cn (国务院国有资产监督管理委员会): no terms stated (checked 2026-11-19).
+    www.sastind.gov.cn (国家国防科技工业局): no terms stated (checked 2026-11-19).
+    www.spb.gov.cn (中华人民共和国国家邮政局): "国家邮政局网站内容由国家邮政局、各省（区、市）邮政管理局、直属下属单位等提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属，所提供的资料如与相关纸质文本不符，以纸质文本为准。" (+1 more sentences on that page) -
+      https://www.spb.gov.cn/gjyzj/c100039/202111/941fd9a338e646f387899bde3a02f51f.shtml, read 2026-11-19.
+    www.sport.gov.cn (国家体育总局): no terms stated (checked 2026-11-19).
+    www.stats.gov.cn (国家统计局): "2.欢迎转载或引用本网所载内容，但以下内容除外：" (+6 more sentences on that page) -
+      https://www.stats.gov.cn/wzgl/202302/t20230217_1912857.html, read 2026-11-19.
+    www.tobacco.gov.cn: not used (did not answer or refused on 2026-11-19).
+
+2.4 Provinces, cities, prefectures and counties (local law, local gazettes)
+
+    Grouped by province: host (the unit and body whose site it is): terms. Hosts that did not answer or
+    refused on 2026-11-19 are listed as not used.
+
+  北京市
+    www.beijing.gov.cn (北京市人民政府): no terms stated (checked 2026-11-19).
+    www.bjrd.gov.cn (北京市人大常委会): no terms stated (checked 2026-11-19).
+  天津市
+    www.tj.gov.cn (天津市人民政府): "他人将《天津政务网》提供的内容与服务用于商业、盈利、广告性目的时，需征得天津市人民政府办公厅或相关权利人的许可，注明作者及文章出处，并保护权利人合法权益。
+      使用者将《天津政务网》提供的内容与服务用于非商业用途时，应遵守著作权法以及其他相关法律的规定，不得侵犯《天津政务网》及相关权利人的权益。" (+2 more sentences on that page) -
+      https://www.tj.gov.cn/glllm_55512/glsy/flsm/, read 2026-11-19.
+    www.tjrd.gov.cn (天津市人大常委会): not used (did not answer or refused on 2026-11-19).
+  河北省
+    www.baoding.gov.cn (保定市人民政府): "使用者将保定市人民政府网站提供的内容与服务用于商业、盈利、广告性目的时，需征得保定市人民政府办公室或相关权力人的许可，注明作者及文章出处，并依法向权力人支付报酬。"
+      (+3 more sentences on that page) - https://www.baoding.gov.cn/content-170-225.html, read 2026-11-19.
+    www.gov.cn (保定市政府公报): "本网站内容由中央和地方各级政府、政府网站以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容。
+      本网站所涉及到的版权归本网站所属。" (+2 more sentences on that page) - https://www.gov.cn/home/2014-02/23/content_5046258.htm,
+      read 2026-11-19.
+    www.hbrd.gov.cn (河北省人大常委会): no terms stated (checked 2026-11-19).
+    www.hdrd.gov.cn (邯郸市人大常委会): no terms stated (checked 2026-11-19).
+    www.hebei.gov.cn (河北省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.sjz.gov.cn (石家庄市人民政府): "本网站内容由石家庄市各县（市、区）政府、市政府各部门以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及的版权归本网站所属。" (+1 more sentences on that page) -
+      https://www.sjz.gov.cn/columns/9b748742-a496-428f-8c8f-2828327826d5/index.html, read 2026-11-19.
+    www.sjzrd.gov.cn (石家庄市人大常委会): no terms stated (checked 2026-11-19).
+    www.zjkrd.gov.cn (张家口市人大常委会): no terms stated (checked 2026-11-19).
+  山西省
+    www.dt.gov.cn (大同市人民政府): "对于＂大同市人民政府门户网站＂专有信息，未经＂大同市人民政府门户网站＂书面同意，不得以任何形式侵犯＂大同市人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，
+      不得以任何方式建立镜像站点。" (+1 more sentences on that page) -
+      https://www.dt.gov.cn/dtszf/mzsm/201608/253e770c24094c4daf289fd01f74ff56.shtml, read 2026-11-19.
+    www.jcgov.gov.cn (晋城市人民政府): "1、凡本网注明"稿件来源：晋城在线"的所有文字、图片和音视频等稿件，版权均属晋城市数据局所有，任何媒体、网站或个人未经本网协议授权不得转载、链接、
+      转贴或以其他方式复制发表。已经本网协议授权的媒体、网站，在下载使用时必须注明"稿件来源：晋城在线"，违者本网将依法追究责任。" (+1 more sentences on that page) -
+      https://www.jcgov.gov.cn/wzgl/wzsm/201806/t20180609_276569.shtml, read 2026-11-19.
+    www.lvliang.gov.cn (吕梁市人民政府): "(1)凡本网注明“信息来源：吕梁市人民政府门户网站”的所有文字、图片和音视频信息，版权均属吕梁市政府政策研究和信息服务中心所有，任何媒体、
+      网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表。已经本网协议授权的媒体、网站，在下载使用时必须注明"信息来源：吕梁市人民政府门户网站"，违者本网将依法追究责任。" (+1 more sentences
+      on that page) - http://www.lvliang.gov.cn/wzsm/, read 2026-11-19.
+    www.shanxi.gov.cn (山西省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.shuozhou.gov.cn (朔州市人民政府): statement page http://www.shuozhou.gov.cn/wzgl/wzsm/ states no reuse terms (read
+      2026-11-19).
+    www.sxpc.gov.cn (山西省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.yuncheng.gov.cn (运城市人民政府): "版权所有 @ 2017-2025 未经许可 禁止转载 建议使用分辨率1024＊768" -
+      https://www.yuncheng.gov.cn/doc/2019/10/29/2284.shtml, read 2026-11-19.
+    xxgk.jcgov.gov.cn (晋城市政府公报): no terms stated (checked 2026-11-19).
+  内蒙古自治区
+    rd.wulanchabu.gov.cn (乌兰察布市人大常委会): not used (did not answer or refused on 2026-11-19).
+    renda.tongliao.gov.cn (通辽市人大常委会): no terms stated (checked 2026-11-19).
+    www.btrd.gov.cn (包头市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.bynerd.gov.cn (巴彦淖尔市人大常委会): no terms stated (checked 2026-11-19).
+    www.bynr.gov.cn (巴彦淖尔市人民政府): statement page https://www.bynr.gov.cn/fzlm/wzsm/ states no reuse terms (read
+      2026-11-19).
+    www.cfrd.gov.cn (赤峰市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.chifeng.gov.cn (赤峰市人民政府): "请用户使用本网站前仔细阅读本法律声明。您一旦使用本网站则表明您已明知并接受这些条款。用户必须按照法律法规的规定和本声明的要求使用本网站的信息和服务，
+      否则本网站将依法追究有关当事人的法律责任。" (+5 more sentences on that page) -
+      https://www.chifeng.gov.cn/dbxx/flsm/202101/t20210120_191062.html, read 2026-11-19.
+    www.hhhtrd.gov.cn (呼和浩特市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.hlberd.gov.cn (呼伦贝尔市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.nmgrd.gov.cn (内蒙古自治区人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.ordos.gov.cn (鄂尔多斯市人民政府): statement page https://www.ordos.gov.cn/wzxx/wzsm/ states no reuse terms (read
+      2026-11-19).
+    www.ordosrd.gov.cn (鄂尔多斯市人大常委会): no terms stated (checked 2026-11-19).
+    www.tongliao.gov.cn (通辽市人民政府): "本网站内容由通辽市和旗县市区各级政府、政府网站以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属。本网站提供的资料如与相关纸质文本不符，以纸质文本为准。任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，
+      必须与相应提供单位直接联系获得合法授权。" - https://www.tongliao.gov.cn/wzsm/, read 2026-11-19.
+    www.wuhai.gov.cn (乌海市人民政府): no terms stated (checked 2026-11-19).
+  辽宁省
+    dalian.chinatax.gov.cn (大连市人民政府): no terms stated (checked 2026-11-19).
+    qingyuan.gov.cn (清原满族自治县人民政府): no terms stated (checked 2026-11-19).
+    rd.benxi.gov.cn (本溪市人大常委会): no terms stated (checked 2026-11-19).
+    www.anshan.gov.cn (鞍山市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.benxi.gov.cn (本溪市人民政府): "请用户使用本网站前仔细阅读本法律声明。您一旦使用本网站则表明您已明知并接受这些条款。用户必须按照法律法规的规定和本声明的要求使用本网站的信息和服务，
+      否则本网站将依法追究有关当事人的法律责任。" (+6 more sentences on that page) - https://www.benxi.gov.cn/wzxg/flsm, read 2026-11-19.
+    www.chaoyang.gov.cn (朝阳市人民政府): no terms stated (checked 2026-11-19).
+    www.dandong.gov.cn (丹东市人民政府): no terms stated (checked 2026-11-19).
+    www.ddsrd.gov.cn (丹东市人大常委会): no terms stated (checked 2026-11-19).
+    www.fmx.gov.cn (阜新蒙古族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.fssrd.gov.cn (抚顺市人大常委会): "主办：抚顺市人民代表大会常务委员会 未经许可严禁复制或镜像" (page footer or statement), read 2026-11-19.
+    www.fushun.gov.cn (抚顺市人民政府): no terms stated (checked 2026-11-19).
+    www.fuxin.gov.cn (阜新市人民政府): no terms stated (checked 2026-11-19).
+    www.hld.gov.cn (葫芦岛市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.jz.gov.cn (锦州市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.ln.gov.cn (辽宁省人民政府): no terms stated (checked 2026-11-19).
+    www.lnkd.gov.cn (宽甸满族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.lnrd.gov.cn (辽宁省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.panjin.gov.cn (盘锦市人民政府): no terms stated (checked 2026-11-19).
+    www.pjrd.gov.cn (盘锦市人大常委会): no terms stated (checked 2026-11-19).
+    www.shenyang.gov.cn (沈阳市人民政府): "本网站所发布的内容由各区、县(市)党委和人民政府，市委各部委，市政府各部门，以及市属相关单位提供，由市委、市政府授权发布，
+      仅限于在中国沈阳门户网站及我市各级政府网站共享使用。本网站信息版权归本网站所有。中国沈阳门户网站以外的任何媒体、互联网站和商业机构不得用于商业性转载，或其他盈利性活动，也不得歪曲和篡改本网站所发布的信息内容。如需转载、引用、
+      链接，必须与我网站直接联系，获得合法授权，否则，由此引起的一切后果由转载、引用、链接者负责。" (+1 more sentences on that page) -
+      https://www.shenyang.gov.cn/zx/wzsm/, read 2026-11-19.
+    www.syrd.gov.cn (沈阳市人大常委会): no terms stated (checked 2026-11-19).
+    www.tieling.gov.cn (铁岭市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.xinbin.gov.cn (新宾满族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.xiuyan.gov.cn (岫岩满族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.yingkou.gov.cn (营口市人民政府): no terms stated (checked 2026-11-19).
+    www.ykrd.gov.cn (营口市人大常委会): no terms stated (checked 2026-11-19).
+  吉林省
+    rd.liaoyuan.gov.cn (辽源市人大常委会): not used (did not answer or refused on 2026-11-19).
+    renda.changchun.gov.cn (长春市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.bssrd.gov.cn (白山市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.cbs.gov.cn (白山市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.changbai.gov.cn (长白朝鲜族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.changchun.gov.cn (长春市人民政府): no terms stated (checked 2026-11-19).
+    www.jl.gov.cn (吉林省人民政府): no terms stated (checked 2026-11-19).
+    www.jlbc.gov.cn (白城市人民政府): "一、各类出版物在使用本网站信息时，须事先征得白城市政府网站管理办公室的许可。" - http://www.jlbc.gov.cn/wzsm/, read
+      2026-11-19.
+    www.jlcity.gov.cn (吉林市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.jlrd.gov.cn (吉林省人大常委会): no terms stated (checked 2026-11-19).
+    www.jlsrd.gov.cn (吉林市人大常委会): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容。" (+1 more sentences on
+      that page) - http://www.jlsrd.gov.cn/jlrd/4/939.html, read 2026-11-19.
+    www.liaoyuan.gov.cn (辽源市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.siping.gov.cn (四平市人民政府): no terms stated (checked 2026-11-19).
+    www.tonghua.gov.cn (通化市人民政府): no terms stated (checked 2026-11-19).
+    www.yanbian.gov.cn (延边朝鲜族自治州人民政府): no terms stated (checked 2026-11-19).
+    www.ybrd.gov.cn (延边朝鲜族自治州人大常委会): no terms stated (checked 2026-11-19).
+    www.yitong.gov.cn (伊通满族自治县人民政府): no terms stated (checked 2026-11-19).
+    xxgk.jlcity.gov.cn (吉林市政府公报): no terms stated (checked 2026-11-19).
+    zfxxgk.yanbian.gov.cn (延边朝鲜族自治州政府公报): no terms stated (checked 2026-11-19).
+  黑龙江省
+    mp.weixin.qq.com (双鸭山市政府公报): no terms stated (checked 2026-11-19).
+    www.daqing.gov.cn (大庆市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.drbt.gov.cn (杜尔伯特蒙古族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.harbin.gov.cn (哈尔滨市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hegang.gov.cn (鹤岗市人民政府): no terms stated (checked 2026-11-19).
+    www.heihe.gov.cn (黑河市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hlj.gov.cn (黑龙江省人民政府): no terms stated (checked 2026-11-19).
+    www.hljrd.gov.cn (黑龙江省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.hrbsrd.gov.cn (哈尔滨市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.jixi.gov.cn (鸡西市人民政府): "本网站发布的内容,除在信息内容中特别说明的之外,版权归本网站所有,鸡西市政府系统以外的其他媒体、网站或商业机构,不得用于商业性转载或盈利活动,也不得歪曲、篡改或原文转载。
+      如需转载、链接,必须经我网站或原内容提供单位同意,获得合法授权,否则,由此引起的一切后果由转载、链接者负责。" -
+      https://www.jixi.gov.cn/jixi/c100442/202102/c06_4189.shtml, read 2026-11-19.
+    www.jms.gov.cn (佳木斯市人民政府): statement page https://www.jms.gov.cn/jms/c100206/tt.shtml gives privacy, trademark or
+      disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.mdj.gov.cn (牡丹江市人民政府): statement page https://www.mdj.gov.cn/mdjsrmzf/c100227/nav_f_content.shtml states no
+      reuse terms (read 2026-11-19).
+    www.qqhr.gov.cn (齐齐哈尔市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.qth.gov.cn (七台河市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.suihua.gov.cn (绥化市人民政府): no terms stated (checked 2026-11-19).
+    www.sysjs.gov.cn (双鸭山市人民政府): no terms stated (checked 2026-11-19).
+    www.yc.gov.cn (伊春市人民政府): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容。本网站所涉及的版权归本网站所属。" (+1 more
+      sentences on that page) - https://www.yc.gov.cn/ycsrmzf/c104801/202503/397357.shtml, read 2026-11-19.
+    ycrdw.gov.cn (伊春市人大常委会): no terms stated (checked 2026-11-19).
+  上海市
+    www.shanghai.gov.cn (上海市人民政府): no terms stated (checked 2026-11-19).
+  江苏省
+    rd.changzhou.gov.cn (常州市人大常委会): no terms stated (checked 2026-11-19).
+    rd.huaian.gov.cn (淮安市人大常委会): no terms stated (checked 2026-11-19).
+    rd.lyg.gov.cn (连云港市人大常委会): not used (did not answer or refused on 2026-11-19).
+    rd.wuxi.gov.cn (无锡市人大常委会): no terms stated (checked 2026-11-19).
+    tzrd.taizhou.gov.cn (泰州市人大常委会): no terms stated (checked 2026-11-19).
+    www.changzhou.gov.cn (常州市人民政府): no terms stated (checked 2026-11-19).
+    www.huaian.gov.cn (淮安市人民政府): no terms stated (checked 2026-11-19).
+    www.jiangsu.gov.cn (江苏省人民政府): no terms stated (checked 2026-11-19).
+    www.jsrd.gov.cn (江苏省人大常委会): no terms stated (checked 2026-11-19).
+    www.lyg.gov.cn (连云港市人民政府): no terms stated (checked 2026-11-19).
+    www.nanjing.gov.cn (南京市人民政府): no terms stated (checked 2026-11-19).
+    www.njrd.gov.cn (南京市人大常委会): no terms stated (checked 2026-11-19).
+    www.rd.suzhou.gov.cn (苏州市人大常委会): no terms stated (checked 2026-11-19).
+    www.suzhou.gov.cn (苏州市人民政府): no terms stated (checked 2026-11-19).
+    www.taizhou.gov.cn (泰州市人民政府): no terms stated (checked 2026-11-19).
+    www.wuxi.gov.cn (无锡市人民政府): "凡无锡市人民政府门户网站注明稿件来源的所有文字、图片和音视频稿件，版权均属原作者所有，任何媒体、网站或个人未经授权不得转载、链接、转贴或以其他方式复制发表。" (+1
+      more sentences on that page) - https://www.wuxi.gov.cn/doc/2015/07/08/2563147.shtml, read 2026-11-19.
+    www.xzrd.gov.cn (徐州市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.yancheng.gov.cn (盐城市人民政府): no terms stated (checked 2026-11-19).
+    www.ycpc.gov.cn (盐城市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.zjrdw.gov.cn (镇江市人大常委会): not used (did not answer or refused on 2026-11-19).
+  浙江省
+    renda.huzhou.gov.cn (湖州市人大常委会): no terms stated (checked 2026-11-19).
+    sxrd.sx.gov.cn (绍兴市人大常委会): no terms stated (checked 2026-11-19).
+    www.hzrd.gov.cn (杭州市人大常委会): no terms stated (checked 2026-11-19).
+    www.jxrenda.gov.cn (嘉兴市人大常委会): no terms stated (checked 2026-11-19).
+    www.nbrd.gov.cn (宁波市人大常委会): no terms stated (checked 2026-11-19).
+    www.zj.gov.cn (浙江省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.zjrd.gov.cn (浙江省人大常委会): not used (did not answer or refused on 2026-11-19).
+  安徽省
+    www.ahrd.gov.cn (安徽省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.ahsz.gov.cn (宿州市人民政府): "任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，必须与相应提供单位直接联系获得合法授权。对于使用本网站链接的其他网站或网页而引起的任何损害，
+      本网站不承担任何法律责任。" (+1 more sentences on that page) - https://www.ahsz.gov.cn/wzgl/flsm/index.html, read 2026-11-19.
+    www.chizhou.gov.cn (池州市人民政府): "任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，必须与相应提供单位直接联系获得合法授权。
+      对于使用本网站链接的其他网站或网页而引起的任何损害，本网站不承担任何法律责任。" - https://www.chizhou.gov.cn/Content/showList/36/page_1.html, read
+      2026-11-19.
+    www.huaibei.gov.cn (淮北市人民政府): no terms stated (checked 2026-11-19).
+    www.huainan.gov.cn (淮南市人民政府): no terms stated (checked 2026-11-19).
+    www.luan.gov.cn (六安市人民政府): no terms stated (checked 2026-11-19).
+    www.tl.gov.cn (铜陵市人民政府): "铜陵市人民政府网版权所有，未经书面授权禁止使用" (page footer or statement), read 2026-11-19.
+    www.tlsrd.gov.cn (铜陵市人大常委会): no terms stated (checked 2026-11-19).
+    www.wuhu.gov.cn (芜湖市人民政府): no terms stated (checked 2026-11-19).
+    www.xuancheng.gov.cn (宣城市人民政府): "任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，必须与相应提供单位直接联系获得合法授权。
+      对于使用本网站链接的其他网站或网页而引起的任何损害，本网站不承担任何法律责任。" - https://www.xuancheng.gov.cn/PublicInformation/instruction/, read
+      2026-11-19.
+  福建省
+    rd.fuzhou.gov.cn (福州市人大常委会): no terms stated (checked 2026-11-19).
+    www.fjrd.gov.cn (福建省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.fujian.gov.cn (福建省人民政府): no terms stated (checked 2026-11-19).
+    www.fuzhou.gov.cn (福州市人民政府): no terms stated (checked 2026-11-19).
+    www.longyan.gov.cn (龙岩市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.np.gov.cn (南平市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.putian.gov.cn (莆田市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.quanzhou.gov.cn (泉州市人民政府): no terms stated (checked 2026-11-19).
+    www.sm.gov.cn (三明市人民政府): no terms stated (checked 2026-11-19).
+    www.smrd.gov.cn (三明市人大常委会): no terms stated (checked 2026-11-19).
+    www.xmrd.gov.cn (厦门市人大常委会): no terms stated (checked 2026-11-19).
+    www.zhangzhou.gov.cn (漳州市人民政府): not used (did not answer or refused on 2026-11-19).
+    xiamen.pbc.gov.cn (厦门市人民政府): "禁止非法制售和使用“人民币版”冥币" (page footer or statement), read 2026-11-19.
+    zfgb.fujian.gov.cn (福建省政府公报): no terms stated (checked 2026-11-19).
+  江西省
+    jdzrd.jdz.gov.cn (景德镇市人大常委会): no terms stated (checked 2026-11-19).
+    www.ganzhou.gov.cn (赣州市人民政府): "赣州市人民政府网政府门户网站是赣州市政务类信息的发布源，同时还组织了大量的反映赣州经济、文化和社会风貌的新闻类、文献类、服务类等方面的信息。本网站在自行采写新闻类、
+      文献类、服务类等方面的信息同时，也在国内公开发行的书籍、刊物中选用了一些介绍赣州的文章、图片等资料。被选用的文章、图片等资料的作者，如认为直接选用不妥，恳请及时与我们联系，我们将予以当即删除等妥当处理。
+      一些单位和部门需要转载本网站上的文字图片等资料时，必须直接与作者联系征得同意，请勿直接转载。" - https://www.ganzhou.gov.cn/gzszf/bqsm/ott.shtml, read
+      2026-11-19.
+    www.gzsrd.gov.cn (赣州市人大常委会): no terms stated (checked 2026-11-19).
+    www.jiangxi.gov.cn (江西省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.jxrd.gov.cn (江西省人大常委会): not used (did not answer or refused on 2026-11-19).
+  山东省
+    qingdao.chinatax.gov.cn (青岛市人民政府): no terms stated (checked 2026-11-19).
+    www.heze.gov.cn (菏泽市人民政府): "本网站包含的所有内容（包括但不限于：文本、图形、图片、视像及声音内容、LOGO标识，版面设计，专栏目录与名称、内容分类）的所有权归菏泽市人民政府所有。任何媒体、
+      互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容。" (+2 more sentences on that page) -
+      http://www.heze.gov.cn/flsm/, read 2026-11-19.
+    www.jinan.gov.cn (济南市人民政府): no terms stated (checked 2026-11-19).
+    www.jining.gov.cn (济宁市人民政府): no terms stated (checked 2026-11-19).
+    www.linyi.gov.cn (临沂市人民政府): no terms stated (checked 2026-11-19).
+    www.sdrd.gov.cn (山东省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.shandong.gov.cn (山东省人民政府): no terms stated (checked 2026-11-19).
+    www.taian.gov.cn (泰安市人民政府): no terms stated (checked 2026-11-19).
+    www.weihai.gov.cn (威海市人民政府): "威海市人民政府关于调整禁止使用高排放非道路移动机械区域的通告" (page footer or statement), read 2026-11-19.
+    www.weihairenda.gov.cn (威海市人大常委会): no terms stated (checked 2026-11-19).
+    www.yantai.gov.cn (烟台市人民政府): "文字解读丨关于修改并继续执行《烟台市人民政府关于划定禁止使用高排放非道路移动机械区域的通告》的通知" (page footer or statement), read
+      2026-11-19.
+    www.zqrd.gov.cn (济南市人大常委会): no terms stated (checked 2026-11-19).
+  河南省
+    public.zhengzhou.gov.cn (郑州市政府公报): "郑州市人民政府关于划定禁止使用高排放非道路移动机械区域的通告" (page footer or statement), read 2026-11-19.
+    www.pds.gov.cn (平顶山市人民政府): "平顶山市人民政府网站及其注册用户及本网页内的资料提供者拥有此网页内所有资料的版权。未经平顶山市人民政府网站的明确书面许可，
+      任何人不得复制或在非平顶山市人民政府网站所属的服务器上做镜像。 平顶山市人民政府网站不保证为向用户提供便利而设置的外部链接的准确性和完整性。
+      本网站内所有资料的版权归平顶山市人民政府网站（www.pds.gov.cn）及本网站的资料提供者拥有。未经平顶山市人民政府网站的明确书面许可，任何人不得复制或仿造本网站内容，
+      也不得在非平顶山市人民政府网站所属的服务器上做镜像。平顶山市人民政府网站对其…" - https://www.pds.gov.cn/contents/5330/16666.html, read 2026-11-19.
+    www.puyang.gov.cn (濮阳市人民政府): no terms stated (checked 2026-11-19).
+    www.smx.gov.cn (三门峡市人民政府): no terms stated (checked 2026-11-19).
+    www.xinxiang.gov.cn (新乡市人民政府): no terms stated (checked 2026-11-19).
+    www.xuchang.gov.cn (许昌市人民政府): no terms stated (checked 2026-11-19).
+    www.zhengzhou.gov.cn (郑州市人民政府): no terms stated (checked 2026-11-19).
+    www.zhoukou.gov.cn (周口市人民政府): no terms stated (checked 2026-11-19).
+    www.zzrd.gov.cn (郑州市人大常委会): no terms stated (checked 2026-11-19).
+    xinyang.gov.cn (信阳市人民政府): "信阳市人民政府关于划定禁止使用高排放非道路移动机械区域的通告" (page footer or statement), read 2026-11-19.
+  湖北省
+    ezhou.gov.cn (鄂州市人民政府): no terms stated (checked 2026-11-19).
+    www.hgrd.gov.cn (黄冈市人大常委会): no terms stated (checked 2026-11-19).
+    www.hppc.gov.cn (湖北省人大常委会): no terms stated (checked 2026-11-19).
+    www.hsrdw.gov.cn (黄石市人大常委会): no terms stated (checked 2026-11-19).
+    www.huangshi.gov.cn (黄石市人民政府): no terms stated (checked 2026-11-19).
+    www.suizhou.gov.cn (随州市人民政府): "随州市人民政府门户网站是随州市政务类信息的发布源，同时还组织了大量反映随州经济、文化和社会风貌的新闻类、文献类、服务类等方面的信息。
+      本网站组织各类信息时会选用一些介绍随州的文章、图片等资料，被选用的文章、图片等资料的作者，如认为直接选用不妥，请及时与我们联系，我们将及时处理。其他单位和部门需要转载本网站上的文字图片等资料时，必须征得作者同意，
+      请勿直接转载。" - http://www.suizhou.gov.cn/fzlm/gywz/202003/t20200320_743342.shtml, read 2026-11-19.
+    www.wuhan.gov.cn (武汉市人民政府): statement page https://www.wuhan.gov.cn/sy/qt/202211/t20221114_2093617.shtml gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.xianning.gov.cn (咸宁市人民政府): "本网站内容由咸宁市政府和各级地方政府网站以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及的版权归本网站所属。" (+1 more sentences on that page) -
+      http://www.xianning.gov.cn/zddt/201807/t20180728_975530.shtml, read 2026-11-19.
+  湖南省
+    www.cdsrd.gov.cn (常德市人大常委会): no terms stated (checked 2026-11-19).
+    www.changde.gov.cn (常德市人民政府): no terms stated (checked 2026-11-19).
+    www.chengbu.gov.cn (城步苗族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.chnzj.gov.cn (芷江侗族自治县人民政府): statement page https://www.chnzj.gov.cn/chnzj/c102633/list_tt.shtml gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.czs.gov.cn (郴州市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.furong.gov.cn (长沙市人民政府): no terms stated (checked 2026-11-19).
+    www.hhrd.cn (怀化市人大常委会): no terms stated (checked 2026-11-19).
+    www.hnloudi.gov.cn (娄底市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hnrd.gov.cn (湖南省人大常委会): no terms stated (checked 2026-11-19).
+    www.hnsyrd.gov.cn (邵阳市人大常委会): no terms stated (checked 2026-11-19).
+    www.hnxxrd.gov.cn (湘西土家族苗族自治州人大常委会): no terms stated (checked 2026-11-19).
+    www.huaihua.gov.cn (怀化市人民政府): no terms stated (checked 2026-11-19).
+    www.hunan.gov.cn (湖南省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.jh.gov.cn (江华瑶族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.mayang.gov.cn (麻阳苗族自治县人民政府): "麻阳苗族自治县人民政府关于划定禁止使用高排放非道路移动柴油机械区域的通告" (page footer or statement), read
+      2026-11-19.
+    www.shaoyang.gov.cn (邵阳市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.tongdao.gov.cn (通道侗族自治县人民政府): "关于征求《通道侗族自治县人民政府关于划定禁止使用高排..." (page footer or statement), read 2026-11-19.
+    www.xiangtan.gov.cn (湘潭市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.xinhuang.gov.cn (新晃侗族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.yiyang.gov.cn (益阳市人民政府): no terms stated (checked 2026-11-19).
+    www.yueyang.gov.cn (岳阳市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.yzcity.gov.cn (永州市人民政府): no terms stated (checked 2026-11-19).
+    www.yzrdw.gov.cn (永州市人大常委会): no terms stated (checked 2026-11-19).
+    www.zhuzhou.gov.cn (株洲市人民政府): not used (did not answer or refused on 2026-11-19).
+  广东省
+    dgrd.dg.gov.cn (东莞市人大常委会): no terms stated (checked 2026-11-19).
+    hzpc.gov.cn (惠州市人大常委会): not used (did not answer or refused on 2026-11-19).
+    rd.heyuan.gov.cn (河源市人大常委会): not used (did not answer or refused on 2026-11-19).
+    rd.jiangmen.cn (江门市人大常委会): not used (did not answer or refused on 2026-11-19).
+    rd.maoming.gov.cn (茂名市人大常委会): not used (did not answer or refused on 2026-11-19).
+    rd.shantou.gov.cn (汕头市人大常委会): no terms stated (checked 2026-11-19).
+    www.czrd.gd.cn (潮州市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.dg.gov.cn (东莞市人民政府): no terms stated (checked 2026-11-19).
+    www.gd.gov.cn (广东省人民政府): "gov.cn、广东省人民政府等注册域名、商标标识及专有名称均受相关法律保护，未经广东省人民政府办公厅同意，任何单位或个人不得将上述域名、
+      商标及专有名称进行容易引起混淆或歧义的使用" (page footer or statement, http://www.gd.gov.cn/yw/content/post_2169593.html), read
+      2026-11-19.
+    www.gdls.gov.cn (连山壮族瑶族自治县人民政府): statement page http://www.gdls.gov.cn/wzxx/content/post_1957699.html gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.gdpc.gov.cn (广东省人大常委会): no terms stated (checked 2026-11-19).
+    www.gdzjrd.gov.cn (湛江市人大常委会): no terms stated (checked 2026-11-19).
+    www.gz.gov.cn (广州市人民政府): "(三) 本网站认为有必要收集未成年人的个人资料时，仅为回复未成年人特定要求的目的，一旦回复完毕即从记录中删除，不保留或使用这些资料，并保证不会要求未成年人提供额外的个人资料，
+      作为允许其参与网上活动的条件。" (+1 more sentences on that page) - https://www.gz.gov.cn/gywz/yssm/index.html, read 2026-11-19.
+    www.jiangmen.gov.cn (江门市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.jyrdw.gov.cn (揭阳市人大常委会): no terms stated (checked 2026-11-19).
+    www.liannan.gov.cn (连南瑶族自治县人民政府): statement page https://www.liannan.gov.cn/wzdbcd/mzsm/index.html states no
+      reuse terms (read 2026-11-19).
+    www.maoming.gov.cn (茂名市人民政府): statement page http://www.maoming.gov.cn/yw/mzsm/content/post_78631.html gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.mzrd.gov.cn (梅州市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.qyrd.gov.cn (清远市人大常委会): no terms stated (checked 2026-11-19).
+    www.rd.gz.cn (广州市人大常委会): no terms stated (checked 2026-11-19).
+    www.ruyuan.gov.cn (乳源瑶族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.sg.gov.cn (韶关市人民政府): "韶关市人民政府门户网站是韶关市政务类信息的发布源,同时还组织了大量反映韶关经济、文化和社会风貌的新闻类、文献类、服务类等方面的信息。
+      本网站组织各类信息时会选用一些介绍韶关的文章、图片等资料,被选用的文章、图片等资料的作者,如认为直接选用不妥,恳请及时与我们联系,我们将予以当即删除等妥当处理。
+      一些单位和部门需要转载本网站上的文字图片等资料时,必须直接与作者联系征得同意,请勿直接转载。" - https://www.sg.gov.cn/fzgn/bqsm/index.html, read 2026-11-19.
+    www.sgrd.gov.cn (韶关市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.shantou.gov.cn (汕头市人民政府): no terms stated (checked 2026-11-19).
+    www.shanwei.gov.cn (汕尾市人民政府): no terms stated (checked 2026-11-19).
+    www.swrd.gov.cn (汕尾市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.yjsrd.gov.cn (阳江市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.yunfu.gov.cn (云浮市人民政府): statement page https://www.yunfu.gov.cn/gywz/yssm/index.html states no reuse terms
+      (read 2026-11-19).
+    www.zhanjiang.gov.cn (湛江市人民政府): "本站对任何损害概不负责，无论这些损害是否由于使用、或不能使用本站的结果、与本站链接的任何网站或者任何这类网站中包含的信息所引起，也不管它们是否有保证、合同、
+      侵权行为或任何其它法律根据以及事前已得到这类损害可能发生的忠告。如果您由于使用本站的信息而导致需要对设备或数据进行维护、修理或纠正，您应意识到须自行承担必须承担由此而造成的所有费用。
+      本站在发生下列情况时不承担责任：信息的传输是由网络服务提供者（本站及其授权人）以外的人发起的；信息的传输、路由、提供连接及存储是通过必要的自动的技术处理过程实现的，信息未经网络…" -
+      https://www.zhanjiang.gov.cn/zjzfw/wzsm/content/post_1203860.html, read 2026-11-19.
+    www.zhrd.gov.cn (珠海市人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.zhuhai.gov.cn (珠海市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.zqsrd.gov.cn (肇庆市人大常委会): not used (did not answer or refused on 2026-11-19).
+  广西壮族自治区
+    gxhzrd.gov.cn (贺州市人民政府): not used (did not answer or refused on 2026-11-19).
+    lzrd.liuzhou.gov.cn (柳州市人大常委会): no terms stated (checked 2026-11-19).
+    www.beihai.gov.cn (北海市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.fcgrd.gov.cn (防城港市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.ggrd.gov.cn (贵港市人大常委会): no terms stated (checked 2026-11-19).
+    www.glrd.gov.cn (桂林市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.gxbsrd.gov.cn (百色市人大常委会): no terms stated (checked 2026-11-19).
+    www.gxczrd.gov.cn (崇左市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.gxlbrd.gov.cn (来宾市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.gxqzrd.gov.cn (钦州市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.gxrd.gov.cn (广西壮族自治区人大常委会): no terms stated (checked 2026-11-19).
+    www.gxwzrd.gov.cn (梧州市人大常委会): no terms stated (checked 2026-11-19).
+    www.gxylrd.cn (玉林市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.gxzf.gov.cn (广西壮族自治区人民政府): not used (did not answer or refused on 2026-11-19).
+    www.longlin.gov.cn (隆林各族自治县人民政府): no terms stated (checked 2026-11-19).
+  海南省
+    rd.danzhou.gov.cn (儋州市人大常委会): no terms stated (checked 2026-11-19).
+    rd.sanya.gov.cn (三亚市人大常委会): "主办单位：三亚市人民代表大会常务委员会 @版权所有 未经许可 不得复制" (page footer or statement), read 2026-11-19.
+    spcsc.haikou.gov.cn (海口市人大常委会): no terms stated (checked 2026-11-19).
+    www.danzhou.gov.cn (儋州市人民政府): no terms stated (checked 2026-11-19).
+    www.haikou.gov.cn (海口市人民政府): "本网站内容由海口市政府、市各职能部门和各区政府、各区职能部门以及相关责任单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及的版权归本网站所属。" (+1 more sentences on that page) -
+      https://www.haikou.gov.cn/wywm/201901/t334286.shtml, read 2026-11-19.
+    www.hainan.gov.cn (海南省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hainanpc.gov.cn (海南省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.sanya.gov.cn (三亚市人民政府): no terms stated (checked 2026-11-19).
+  重庆市
+    www.cq.gov.cn (重庆市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.cqrd.gov.cn (重庆市人大常委会): statement page https://www.cqrd.gov.cn/web/column/col1839969.html gives privacy,
+      trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+  四川省
+    rd.panzhihua.gov.cn (攀枝花市人大常委会): no terms stated (checked 2026-11-19).
+    www.abazhou.gov.cn (阿坝藏族羌族自治州人民政府): no terms stated (checked 2026-11-19).
+    www.abrd.gov.cn (阿坝藏族羌族自治州人大常委会): statement page https://www.abrd.gov.cn/zrdcwh/c104581/common_dp.shtml gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.eb.gov.cn (峨边彝族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.guang-an.gov.cn (广安市人民政府): "广安市人民政府网内容由各县（市、区）人民政府、园区管委会、市级各部门、市属国有企业及广安日报社、广安市广播电视台提供。任何媒体、
+      互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式转载，也不得歪曲和篡改本网站所发布的内容。本网站所涉及的版权归本网站所属。本网站提供的资料如与相关纸质正式文本不符，以纸质正式文本为准。" (+1 more
+      sentences on that page) -
+      https://www.guang-an.gov.cn/gasrmzfw/flsm/pc/content/content_1717178077143838720.html, read 2026-11-19.
+    www.gyrd.gov.cn (广元市人大常委会): no terms stated (checked 2026-11-19).
+    www.gzzrd.gov.cn (甘孜藏族自治州人大常委会): no terms stated (checked 2026-11-19).
+    www.leshan.gov.cn (乐山市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.mabian.gov.cn (马边彝族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.ncrd.gov.cn (南充市人大常委会): statement page https://www.ncrd.gov.cn/index.php?m=content&c=index&a=lists&catid=4
+      gives privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.panzhihua.gov.cn (攀枝花市人民政府): "使用者将攀枝花市人民政府网提供的内容与服务用于非商业用途时，应遵守著作权法以及其他相关法律的规定，不得侵犯攀枝花市人民政府网及相关权利人的权益。" (+4
+      more sentences on that page) - http://www.panzhihua.gov.cn/fzlm/wzsm/flsm/517552.shtml, read 2026-11-19.
+    www.sc.gov.cn (四川省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.scspc.gov.cn (四川省人大常委会): no terms stated (checked 2026-11-19).
+    www.yasrdw.gov.cn (雅安市人大常委会): no terms stated (checked 2026-11-19).
+    ybsrd.gov.cn (宜宾市人大常委会): not used (did not answer or refused on 2026-11-19).
+  贵州省
+    www.guizhou.gov.cn (贵州省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.gzrd.gov.cn (贵州省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.tongren.gov.cn (铜仁市人民政府): "本单位网站系该网站上所有页面设计、页面内容的著作权人，对该网站所载、凡注明“来源：铜仁网”的作品，包括但不限于网站所载的文字、数据、图形、照片、有声文件、动画文件、
+      音视频资料等拥有完整的版权，受著作权法保护。严禁任何媒体、网站、个人或组织以任何形式或出于任何目的在未经本公司书面授权的情况下抄袭、转载、摘编、修改本网站内容，或链接、转贴或以其他方式复制用于商业目的或发行，
+      或稍作修改后在其他网站上使用，前述行为均将构成对本网站版权之侵犯，本网站将依法追究其法律责任。" - https://www.tongren.gov.cn/about/copyright.shtml, read
+      2026-11-19.
+    www.yjw.gov.cn (印江土家族苗族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.yp.gov.cn (玉屏侗族自治县人民政府): no terms stated (checked 2026-11-19).
+  云南省
+    www.baoshan.gov.cn (保山市人民政府): no terms stated (checked 2026-11-19).
+    www.dali.gov.cn (大理白族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.dh.gov.cn (德宏傣族景颇族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hh.gov.cn (红河哈尼族彝族自治州人民政府): "本网站内容由红河哈尼族彝族自治州各级政府及有关部门提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外。" (+1 more sentences on that page) -
+      https://www.hh.gov.cn/wzsm.htm, read 2026-11-19.
+    www.hhhk.gov.cn (河口瑶族自治县人民政府): "本网站内容由河口县各乡镇及县级有关部门提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有；法律另有规定的除外。" (+1 more sentences on that page) - https://www.hhhk.gov.cn/wzsm.htm, read
+      2026-11-19.
+    www.hhjp.gov.cn (金平苗族瑶族傣族自治县人民政府): "本网站内容由金平县人民政府及有关部门提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外。" (+1 more sentences on that page) -
+      https://www.hhjp.gov.cn/wzsm.htm, read 2026-11-19.
+    www.hhpb.gov.cn (屏边苗族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.km.gov.cn (昆明市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.lijiang.gov.cn (丽江市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.lincang.gov.cn (临沧市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.nujiang.gov.cn (怒江傈僳族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.puershi.gov.cn (普洱市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.qj.gov.cn (曲靖市人民政府): no terms stated (checked 2026-11-19).
+    www.qjrd.gov.cn (曲靖市人大常委会): no terms stated (checked 2026-11-19).
+    www.xinping.gov.cn (新平彝族傣族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.xsbn.gov.cn (西双版纳傣族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.yjx.gov.cn (元江哈尼族彝族傣族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.yn.gov.cn (云南省人民政府): statement page https://www.yn.gov.cn/yewei/wzsm/ states no reuse terms (read 2026-11-19).
+    www.ynrd.gov.cn (云南省人大常委会): no terms stated (checked 2026-11-19).
+    www.ynws.gov.cn (文山壮族苗族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.yuxi.gov.cn (玉溪市人民政府): no terms stated (checked 2026-11-19).
+    www.yxes.gov.cn (峨山彝族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.zt.gov.cn (昭通市人民政府): not used (did not answer or refused on 2026-11-19).
+  西藏自治区
+    www.changdu.gov.cn (昌都市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.lasa.gov.cn (拉萨市人民政府): "本网站信息内容由拉萨市人民政府、及其门户网站以及拉萨市相关部门单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属。" (+1 more sentences on that page) -
+      https://www.lasa.gov.cn/lasa/wzsm/tydp.shtml, read 2026-11-19.
+    www.linzhi.gov.cn (林芝市人民政府): statement page https://www.linzhi.gov.cn/linzhi/wzfz/wzsm.shtml states no reuse
+      terms (read 2026-11-19).
+    www.rikaze.gov.cn (日喀则市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.shannan.gov.cn (山南市人民政府): not used (did not answer or refused on 2026-11-19).
+    www.xizang.gov.cn (西藏自治区人民政府): statement page https://www.xizang.gov.cn/qt/wzsm/ states no reuse terms (read
+      2026-11-19).
+    www.xizangrd.gov.cn (西藏自治区人大常委会): not used (did not answer or refused on 2026-11-19).
+  陕西省
+    rd.ankang.gov.cn (安康市人大常委会): no terms stated (checked 2026-11-19).
+    rd.hanzhong.gov.cn (汉中市人大常委会): no terms stated (checked 2026-11-19).
+    www.ankang.gov.cn (安康市人民政府): "用户使用本网站前请仔细阅读本网站声明。您一旦使用本网站则表明您已明知并接受这些条款。用户必须按照法律法规的规定和本声明的要求使用本网站的信息和服务，
+      否则本网站将依法追究有关当事人的法律责任。" (+3 more sentences on that page) - https://www.ankang.gov.cn/Node-3133.html, read
+      2026-11-19.
+    www.baoji.gov.cn (宝鸡市人民政府): statement page https://www.baoji.gov.cn/col315/col320/ states no reuse terms (read
+      2026-11-19).
+    www.bjsrd.gov.cn (宝鸡市人大常委会): no terms stated (checked 2026-11-19).
+    www.hanzhong.gov.cn (汉中市人民政府): "网站内容由汉中市人民政府和县区政府、市级各政府部门网站以及相关单位提供。任何媒体、互联网站、商业机构或个人不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属，违者本网站将依法追究责任。" (+1 more sentences on that page) -
+      https://www.hanzhong.gov.cn/hzszf/wzsm/202301/42dc56676b094e3d88aeebb4104713eb.shtml, read 2026-11-19.
+    www.shaanxi.gov.cn (陕西省人民政府): not used (did not answer or refused on 2026-11-19).
+    www.slrd.gov.cn (商洛市人大常委会): "本网所有，任何媒体未经授权不得转载" (page footer or statement), read 2026-11-19.
+    www.sxrd.gov.cn (陕西省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.xa.gov.cn (西安市人民政府): "本网站内容由西安市各区县政府、市级各政府部门以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及的版权归本网站所属。本网站提供的资料如与相关纸质文本不符，以纸质文本为准。任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，
+      必须与相应提供单位直接联系获得合法授权。" - https://www.xa.gov.cn/index/gywm/5d501187f99d655a2e2e45bf.html, read 2026-11-19.
+  甘肃省
+    cpc.people.com.cn (临夏回族自治州政府公报): no terms stated (checked 2026-11-19).
+    rd.pingliang.gov.cn (平凉市人大常委会): no terms stated (checked 2026-11-19).
+    www.bysrdw.cn (白银市人大常委会): no terms stated (checked 2026-11-19).
+    www.dingxi.gov.cn (定西市人民政府): no terms stated (checked 2026-11-19).
+    www.gsrdw.gov.cn (甘肃省人大常委会): "甘肃省人大常委会版权所有 未经许可严禁复制或镜像 主办:甘肃省人大常委会办公厅" (page footer or statement), read
+      2026-11-19.
+    www.jss.gov.cn (积石山保安族东乡族撒拉族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.jyg.gov.cn (嘉峪关市人民政府): no terms stated (checked 2026-11-19).
+    www.jygrd.cn (嘉峪关市人大常委会): no terms stated (checked 2026-11-19).
+    www.linxia.gov.cn (临夏回族自治州人民政府): no terms stated (checked 2026-11-19).
+    www.longnan.gov.cn (陇南市人民政府): no terms stated (checked 2026-11-19).
+    www.lxzrdw.gov.cn (临夏回族自治州人大常委会): no terms stated (checked 2026-11-19).
+    www.pingliang.gov.cn (平凉市人民政府): no terms stated (checked 2026-11-19).
+    www.zhangye.gov.cn (张掖市人民政府): statement page https://www.zhangye.gov.cn/ggbf/bqsm/ states no reuse terms (read
+      2026-11-19).
+  青海省
+    haixi.gov.cn (海西蒙古族藏族自治州人民政府): no terms stated (checked 2026-11-19).
+    www.datong.gov.cn (大通回族土族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.haibei.gov.cn (海北藏族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.haidong.gov.cn (海东市人民政府): no terms stated (checked 2026-11-19).
+    www.hainanzhou.gov.cn (海南藏族自治州人民政府): "本网站内容由州属五县政府、州级部门以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属。" (+1 more sentences on that page) -
+      https://www.hainanzhou.gov.cn/wzxg/wzsm, read 2026-11-19.
+    www.henanxian.gov.cn (河南蒙古族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hualongxian.gov.cn (化隆回族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.huzhu.gov.cn (互助土族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.menyuan.gov.cn (门源回族自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.minhe.gov.cn (民和回族土族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.qhrd.gov.cn (青海省人大常委会): not used (did not answer or refused on 2026-11-19).
+    www.qinghai.gov.cn (青海省人民政府): "本网站内容由省政府各部门和各级地方政府以及相关单位提供。任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容。本网站所涉及到的版权归本网站所属。" (+1 more sentences on that page) -
+      http://www.qinghai.gov.cn/about/wzsm.html, read 2026-11-19.
+    www.xunhua.gov.cn (循化撒拉族自治县人民政府): no terms stated (checked 2026-11-19).
+    www.yushuzhou.gov.cn (玉树藏族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+  宁夏回族自治区
+    rd.yinchuan.gov.cn (银川市人大常委会): no terms stated (checked 2026-11-19).
+    www.nx.gov.cn (宁夏回族自治区人民政府): statement page https://www.nx.gov.cn/qt/wzsm/ states no reuse terms (read
+      2026-11-19).
+    www.nxgy.gov.cn (固原市人民政府): no terms stated (checked 2026-11-19).
+    www.nxrd.gov.cn (宁夏回族自治区人大常委会): no terms stated (checked 2026-11-19).
+    www.nxzw.gov.cn (中卫市人民政府): no terms stated (checked 2026-11-19).
+    www.shizuishan.gov.cn (石嘴山市人民政府): statement page https://www.shizuishan.gov.cn/ggqy/wzsm/ states no reuse terms
+      (read 2026-11-19).
+    www.wuzhong.gov.cn (吴忠市人民政府): statement page https://www.wuzhong.gov.cn/ggqy/yssm/ states no reuse terms (read
+      2026-11-19).
+    www.yinchuan.gov.cn (银川市人民政府): statement page https://www.yinchuan.gov.cn/gyqy/yj/flsm/ states no reuse terms
+      (read 2026-11-19).
+  新疆维吾尔自治区
+    rd.wlmq.gov.cn (乌鲁木齐市人大常委会): no terms stated (checked 2026-11-19).
+    rd.xjyl.gov.cn (伊犁哈萨克自治州人大常委会): no terms stated (checked 2026-11-19).
+    www.cj.gov.cn (昌吉回族自治州人民政府): not used (did not answer or refused on 2026-11-19).
+    www.hami.gov.cn (哈密市人民政府): no terms stated (checked 2026-11-19).
+    www.klmy.gov.cn (克拉玛依市人民政府): statement page https://www.klmy.gov.cn/klmys/wzsm/connect.shtml states no reuse
+      terms (read 2026-11-19).
+    www.mlx.gov.cn (木垒哈萨克自治县人民政府): not used (did not answer or refused on 2026-11-19).
+    www.tlf.gov.cn (吐鲁番市人民政府): no terms stated (checked 2026-11-19).
+    www.tskeg.gov.cn (塔什库尔干塔吉克自治县人民政府): no terms stated (checked 2026-11-19).
+    www.wlmq.gov.cn (乌鲁木齐市人民政府): no terms stated (checked 2026-11-19).
+    www.xinjiang.gov.cn (新疆维吾尔自治区人民政府): "用户在使用本网站上部分功能时（如网上邮箱、在线问答、在线申请、在线查询等），可能需要向本网站提供个人资料，包括但不限于用户的姓名、出生日期、性别、
+      联络资料、身份证号码、电子邮件地址、教育程度、职业等。用户必须保证提供的资料真实、准确、有效和完整。" - https://www.xinjiang.gov.cn/xinjiang/wzsm/tydp.shtml,
+      read 2026-11-19.
+    www.xjblk.gov.cn (巴里坤哈萨克自治县人民政府): no terms stated (checked 2026-11-19).
+    www.xjboz.gov.cn (博尔塔拉蒙古自治州人民政府): no terms stated (checked 2026-11-19).
+    www.xjbz.gov.cn (巴音郭楞蒙古自治州人民政府): statement page https://www.xjbz.gov.cn/xjbz/bqsm/Anarticle.shtml gives privacy,
+      trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+    www.xjcbcr.gov.cn (察布查尔锡伯自治县人民政府): no terms stated (checked 2026-11-19).
+    www.xjhbk.gov.cn (和布克赛尔蒙古自治县人民政府): no terms stated (checked 2026-11-19).
+    www.xjkz.gov.cn (克孜勒苏柯尔克孜自治州人民政府): "请用户使用本网站前仔细阅读本法律声明。您一旦使用本网站则表明您已明知并接受这些条款。用户必须按照法律法规的规定和本声明的要求使用本网站的信息和服务，
+      否则本网站将依法追究有关当事人的法律责任。" (+5 more sentences on that page) - https://www.xjkz.gov.cn/xjkz/c102466/xzzfjdts.shtml,
+      read 2026-11-19.
+    www.xjyl.gov.cn (伊犁哈萨克自治州人民政府): no terms stated (checked 2026-11-19).
+    www.xjyq.gov.cn (焉耆回族自治县人民政府): statement page https://www.xjyq.gov.cn/xjyqx/c109883/jump_article.shtml gives
+      privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
+
+2.6 Personal data
+
+    Official documents can name private persons. They are kept as published, except that in gazettes and local
+    documents a private person's name or address is replaced inline ([姓名略], [地址略]). A document essentially
+    about a private person is kept as metadata only. Court judgments are not in this repository.
+
+3. No warranty
+
+    The texts are copies of the official publications made with care; they are not the official publication. For
+    anything that matters, read the official text (each commit names its source page).
+

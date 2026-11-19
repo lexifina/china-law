@@ -79,7 +79,7 @@ Each change is credited to the act that made it, as 中国人大网 names it (`�
 
 ## Licence
 
-See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. The tools and documentation are by Lexifina, under the MIT licence.
+See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. Everything Lexifina made here (the history as commits, the commit messages, the folder layout, the data, the tools and the documentation) is dedicated to the public domain under CC0 1.0; [`LICENSE`](LICENSE) lists every source with its own terms, as read on 19 November 2026.
 
 No AI model wrote or changed legal text, and none runs when the history is built; an AI model researched the source and wrote the scripts and the documentation (see [`REPRODUCE.md`](REPRODUCE.md)).
 
