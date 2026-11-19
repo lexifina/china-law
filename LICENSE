@@ -13,8 +13,8 @@ You can copy, modify, distribute and perform the work, even for commercial purpo
 Full legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
 This dedication covers everything Lexifina made: the history as commits, the commit messages, the folder layout and
-file names, the indexes and tables (data/), the tools (tools/), the READMEs, REPRODUCE.md and this file. It replaces
-the MIT licence that tools/ and the documentation carried before 20 November 2026. It does not cover the texts listed
+file names, the indexes and tables (data/), the tools (tools/), the READMEs, REPRODUCE.md and this file. It covers
+all of it, from the first commit of this repository. It does not cover the texts listed
 in section 2, which come from their publishers and keep whatever terms those publishers give them.
 
 2. Texts from their publishers

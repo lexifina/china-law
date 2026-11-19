@@ -181,27 +181,13 @@ Laws, regulations, resolutions, decisions and orders of state organs and their o
 protected by copyright in the People's Republic of China (中华人民共和国著作权法第五条). The texts here come from
 中国人大网 (www.npc.gov.cn). Source: 中国人大网, https://www.npc.gov.cn/.
 
-The 中国人大网 site publishes no reuse terms for this section that we could find; this repository stays private
-until reuse is confirmed.
+The 中国人大网 site publishes no reuse terms for this section that we could find.
 
-Tools and documentation
+Lexifina's own work
 
-The scripts in tools/ and the documentation are by Lexifina, MIT licence:
-
-Copyright (c) 2026 Lexifina
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
-documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
-persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
-Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Everything Lexifina made here (the history as commits, the commit messages, the folder layout, the
+data, the tools and the documentation) is dedicated to the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
 """
 
     page_rows = '\n'.join(f'| {p["key"]} | {p["url"]} | {p["retrieved"]} | `{p["sha256"][:16]}` |' for p in pages)
