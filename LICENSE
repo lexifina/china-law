@@ -722,6 +722,1201 @@ in section 2, which come from their publishers and keep whatever terms those pub
     documents a private person's name or address is replaced inline ([姓名略], [地址略]). A document essentially
     about a private person is kept as metadata only. Court judgments are not in this repository.
 
+2.7 County, district and department sites (added from 2026-11-20)
+
+    Sites of county and district people's governments and of provincial, city and county departments
+    (厅/局/委/办), found from links on the units' own portals. Each was read once for its robots.txt, home page
+    and statement page before any other request; the same rules apply as in 2.1. Grouped by province:
+    host (the body whose site it is): terms.
+
+  云南省
+    audit.yn.gov.cn (云南省审计厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://audit.yn.gov.cn/wzsm/, read 2026-11-20. Official texts: art.
+      5.
+    bssbmj.gov.cn (保山市保密局): no terms stated (checked 2026-11-20).
+    czj.qj.gov.cn (曲靖市财政局): no terms stated (checked 2026-11-20).
+    czt.yn.gov.cn (云南省财政厅): no terms stated (checked 2026-11-20).
+    dzys.yn.gov.cn (云南省滇中引水工程建设管理局): no terms stated (checked 2026-11-20).
+    gxt.yn.gov.cn (云南省工业和信息化厅): statement page https://gxt.yn.gov.cn/ggbf/bqsm/ states no reuse terms (read 2026-11-20).
+    gzw.yn.gov.cn (云南省人民政府国有资产监督管理委员会): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载"
+      (+1 more) - https://gzw.yn.gov.cn/ggbf/wzsm/, read 2026-11-20. Official texts: art. 5.
+    invest.yn.gov.cn (云南省投资促进局): statement page https://invest.yn.gov.cn/ggbf/bqsm/ states no reuse terms (read 2026-11-20).
+    jdglj.yn.gov.cn (云南省戒毒管理局): no terms stated (checked 2026-11-20).
+    jtyst.yn.gov.cn (云南省交通运输厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外" - https://jtyst.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    kjt.yn.gov.cn (云南省科学技术厅): statement page https://kjt.yn.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    lcj.yn.gov.cn (云南省林业和草原局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有;法律另有规定的除外" (+1 more) - https://lcj.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    lswz.yn.gov.cn (云南省粮食和物资储备局): no terms stated (checked 2026-11-20).
+    mpa.yn.gov.cn (云南省药品监督管理局): no terms stated (checked 2026-11-20).
+    mz.yn.gov.cn (云南省民族事务委员会): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://mz.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    nyj.yn.gov.cn (云南省能源局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://nyj.yn.gov.cn/ggbf/wzsm/, read 2026-11-20. Official texts: art.
+      5.
+    nync.yn.gov.cn (云南省农业农村厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://nync.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    qeda.qj.gov.cn (曲靖市经济技术开发区管理委员会): no terms stated (checked 2026-11-20).
+    sft.yn.gov.cn (云南省司法厅): statement page https://sft.yn.gov.cn/ggbf/bqsm/ states no reuse terms (read 2026-11-20).
+    sjj.yn.gov.cn (云南省数据局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://sjj.yn.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    stats.yn.gov.cn (云南省统计局): no terms stated (checked 2026-11-20).
+    sthjt.yn.gov.cn (云南省生态环境厅): no terms stated (checked 2026-11-20).
+    swt.yn.gov.cn (云南省商务厅): no terms stated (checked 2026-11-20).
+    tyj.yn.gov.cn (云南省体育局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://tyj.yn.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    tyjrsw.yn.gov.cn (云南省退役军人事务厅): no terms stated (checked 2026-11-20).
+    wcb.yn.gov.cn (云南省水利厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有;法律另有规定的除外" (+1 more) - https://wcb.yn.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    www.longling.gov.cn (龙陵县人民政府): no terms stated (checked 2026-11-20).
+    www.longyang.gov.cn (隆阳区人民政府): statement page https://www.longyang.gov.cn/info/1072/10573.htm states no reuse terms (read 2026-11-20).
+    www.shidian.gov.cn (施甸县人民政府): no terms stated (checked 2026-11-20).
+    www.tengchong.gov.cn (腾冲市人民政府): no terms stated (checked 2026-11-20).
+    www.yncn.gov.cn (昌宁县人民政府): no terms stated (checked 2026-11-20).
+    www.yndzj.gov.cn (云南省地震局): statement page https://www.yndzj.gov.cn/yndzj/wzgl/wzsm/index.html states no reuse terms (read 2026-11-20).
+    xfservice.yn.gov.cn (云南省信访局): statement page https://xfservice.yn.gov.cn/ggbf/bqsm/ states no reuse terms (read 2026-11-20).
+    yfao.yn.gov.cn (云南省人民政府外事办公室): no terms stated (checked 2026-11-20).
+    ygj.yn.gov.cn (云南省机关事务管理局): no terms stated (checked 2026-11-20).
+    yjglt.yn.gov.cn (云南省应急管理厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://yjglt.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    ylbz.yn.gov.cn (云南省医疗保障局): no terms stated (checked 2026-11-20).
+    ynca.miit.gov.cn (云南省通信管理局): no terms stated (checked 2026-11-20).
+    yndrc.yn.gov.cn (云南省发展和改革委员会): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://yndrc.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    yngd.yn.gov.cn (云南省人民政府国防动员办公室): no terms stated (checked 2026-11-20).
+    ynjy.yn.gov.cn (云南省监狱管理局): no terms stated (checked 2026-11-20).
+    ynmz.yn.gov.cn (云南省民政厅): statement page https://ynmz.yn.gov.cn/ggbf/mzsm/ states no reuse terms (read 2026-11-20).
+    ynsgbdsj.yn.gov.cn (云南省广播电视局): "任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如须转载，
+      须获得相应提供单位的合法授权、并注明来源，本网站努力确保自身发布的政务信息、资料等内容的真实性和准确性" (+1 more)
+      - https://ynsgbdsj.yn.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    ynsjkj.yn.gov.cn (云南省疾病预防控制局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容；本网站所涉及到的版权归本网站所有；法律另有规定的除外" (+1 more) - https://ynsjkj.yn.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    zfcxjst.yn.gov.cn (云南省住房和城乡建设厅): no terms stated (checked 2026-11-20).
+  内蒙古自治区
+    amr.nmg.gov.cn (内蒙古自治区市场监督管理局): statement page https://amr.nmg.gov.cn/2025_fzlm/2025_wzsm/ states no reuse terms (read 2026-11-20).
+    amr.tongliao.gov.cn (通辽市市场监督管理局): statement page https://amr.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    czj.bynr.gov.cn (巴彦淖尔市财政局): no terms stated (checked 2026-11-20).
+    czj.chifeng.gov.cn (赤峰市财政局): no terms stated (checked 2026-11-20).
+    czj.ordos.gov.cn (鄂尔多斯市财政局): no terms stated (checked 2026-11-20).
+    czj.tongliao.gov.cn (通辽市财政局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://czj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    czt.nmg.gov.cn (内蒙古自治区财政厅): "政厅网站LOGO、水印的所有文字、图片和音频视频稿件，版权均属内蒙古自治区财政厅门户网站所有，
+      任何媒体、网站或单位和个人未经内蒙古自治区财政厅书面授权不得转载、链接、转贴或以其他方式复制发表" (+1 more) - https://czt.nmg.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    fao.ordos.gov.cn (鄂尔多斯市人民政府外事办公室): no terms stated (checked 2026-11-20).
+    fgw.bynr.gov.cn (巴彦淖尔市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.chifeng.gov.cn (赤峰市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.ordos.gov.cn (鄂尔多斯市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.tongliao.gov.cn (通辽市发展和改革委员会): statement page https://fgw.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    ga.ordos.gov.cn (鄂尔多斯市公安局): no terms stated (checked 2026-11-20).
+    gaj.bynr.gov.cn (巴彦淖尔市公安局): no terms stated (checked 2026-11-20).
+    gaj.chifeng.gov.cn (赤峰市公安局): no terms stated (checked 2026-11-20).
+    gaj.tongliao.gov.cn (通辽市公安局): statement page https://gaj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    gxj.bynr.gov.cn (巴彦淖尔市工信局): no terms stated (checked 2026-11-20).
+    gxj.chifeng.gov.cn (赤峰市工业和信息化局): no terms stated (checked 2026-11-20).
+    gxj.ordos.gov.cn (鄂尔多斯市工业和信息化局): no terms stated (checked 2026-11-20).
+    gxj.tongliao.gov.cn (通辽市工业和信息化局): statement page https://gxj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    gzw.bynr.gov.cn (巴彦淖尔市国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    gzw.ordos.gov.cn (鄂尔多斯市国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    jrb.tongliao.gov.cn (通辽市金融工作办公室): no terms stated (checked 2026-11-20).
+    jtj.bynr.gov.cn (巴彦淖尔市交通运输局): no terms stated (checked 2026-11-20).
+    jtj.chifeng.gov.cn (赤峰市交通运输局): no terms stated (checked 2026-11-20).
+    jtj.ordos.gov.cn (鄂尔多斯市交通运输局): no terms stated (checked 2026-11-20).
+    jtj.tongliao.gov.cn (通辽市交通运输局): statement page https://jtj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    jyj.chifeng.gov.cn (赤峰市教育局): no terms stated (checked 2026-11-20).
+    jyj.tongliao.gov.cn (通辽市教育局): statement page https://jyj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    jytyj.ordos.gov.cn (鄂尔多斯市教育体育局): no terms stated (checked 2026-11-20).
+    kjj.bynr.gov.cn (巴彦淖尔市科技局): no terms stated (checked 2026-11-20).
+    kjj.ordos.gov.cn (鄂尔多斯市科学技术局): no terms stated (checked 2026-11-20).
+    kjj.tongliao.gov.cn (通辽市科学技术局): "技术局网站LOGO、水印的所有文字、图片和音频视频稿件，版权均属通辽市科学技术局门户网站所有，
+      任何媒体、网站或单位和个人未经通辽市科学技术局书面授权不得转载、链接、转贴或以其他方式复制发表" (+1 more) - https://kjj.tongliao.gov.cn/wzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    lcj.bynr.gov.cn (巴彦淖尔市林业和草原局): no terms stated (checked 2026-11-20).
+    lcj.chifeng.gov.cn (赤峰市林业和草原局): no terms stated (checked 2026-11-20).
+    lcj.ordos.gov.cn (鄂尔多斯市林业和草原局): statement page https://lcj.ordos.gov.cn/xb/wzdt/ states no reuse terms (read 2026-11-20).
+    lcj.tongliao.gov.cn (通辽市林业和草原局): statement page https://lcj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    mw.chifeng.gov.cn (赤峰市民族事务委员会): ".gov.cn以及本网站的其他注册域名及专有名称均受相关法律保护，未经赤峰市民族事务委员会门户网站同意，
+      任何单位及个人均不得将上述域名及专有名称进行容易引起混淆或歧义的使用" (+1 more) - https://mw.chifeng.gov.cn/flsm/202109/t20210903_1300043.html,
+      read 2026-11-20. Official texts: art. 5.
+    mw.ordos.gov.cn (鄂尔多斯市民族事务委员会): no terms stated (checked 2026-11-20).
+    mw.tongliao.gov.cn (通辽市民族事务委员会): "cn/以及本网站的其他注册域名及专有名称均受相关法律保护，未经通辽市民族事务民族事务委员会门户网站同意，
+      任何单位及个人均不得将上述域名及专有名称进行容易引起混淆或歧义的使用" (+1 more) - https://mw.tongliao.gov.cn/wzsm/, read 2026-11-20.
+      Official texts: art. 5.
+    mzj.bynr.gov.cn (巴彦淖尔市民政局): no terms stated (checked 2026-11-20).
+    mzj.chifeng.gov.cn (赤峰市民政局): no terms stated (checked 2026-11-20).
+    mzj.ordos.gov.cn (鄂尔多斯市民政局): no terms stated (checked 2026-11-20).
+    mzj.tongliao.gov.cn (通辽市民政局): statement page https://mzj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    nmj.bynr.gov.cn (巴彦淖尔市农牧局): no terms stated (checked 2026-11-20).
+    nmj.chifeng.gov.cn (赤峰市农牧局): statement page https://nmj.chifeng.gov.cn/gywm/flsm/ states no reuse terms (read 2026-11-20).
+    nmj.ordos.gov.cn (鄂尔多斯市农牧局): no terms stated (checked 2026-11-20).
+    nmj.tongliao.gov.cn (通辽市农牧局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://nmj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    nyj.ordos.gov.cn (鄂尔多斯市能源局): no terms stated (checked 2026-11-20).
+    rfb.chifeng.gov.cn (赤峰市国防动员办公室): no terms stated (checked 2026-11-20).
+    rsj.bynr.gov.cn (巴彦淖尔市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rsj.chifeng.gov.cn (赤峰市人力资源和社会保障局): statement page https://rsj.chifeng.gov.cn/flsm/ states no reuse terms (read 2026-11-20).
+    rsj.ordos.gov.cn (鄂尔多斯市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rsj.tongliao.gov.cn (通辽市人力资源和社会保障局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://rsj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    scjdglj.ordos.gov.cn (鄂尔多斯市市场监督管理局): no terms stated (checked 2026-11-20).
+    scjgj.bynr.gov.cn (巴彦淖尔市市场监督管理局): no terms stated (checked 2026-11-20).
+    scjgj.chifeng.gov.cn (赤峰市市场监督管理局): no terms stated (checked 2026-11-20).
+    sfj.bynr.gov.cn (巴彦淖尔市司法局): no terms stated (checked 2026-11-20).
+    sfj.chifeng.gov.cn (赤峰市司法局): no terms stated (checked 2026-11-20).
+    sfj.ordos.gov.cn (鄂尔多斯市司法局): no terms stated (checked 2026-11-20).
+    sfj.tongliao.gov.cn (通辽市司法局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://sfj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    shuiwuju.tongliao.gov.cn (通辽市水务局): statement page https://shuiwuju.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    sjj.chifeng.gov.cn (赤峰市审计局): no terms stated (checked 2026-11-20).
+    sjj.ordos.gov.cn (鄂尔多斯市审计局): no terms stated (checked 2026-11-20).
+    sjj.tongliao.gov.cn (通辽市审计局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://sjj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    slj.bynr.gov.cn (巴彦淖尔市水利局): no terms stated (checked 2026-11-20).
+    slj.chifeng.gov.cn (赤峰市水利局): no terms stated (checked 2026-11-20).
+    slj.ordos.gov.cn (鄂尔多斯市水利局): no terms stated (checked 2026-11-20).
+    sthjj.bynr.gov.cn (巴彦淖尔市生态环境局): no terms stated (checked 2026-11-20).
+    sthjj.chifeng.gov.cn (赤峰市生态环境局): no terms stated (checked 2026-11-20).
+    sthjj.ordos.gov.cn (鄂尔多斯市生态环境局): no terms stated (checked 2026-11-20).
+    sthjj.tongliao.gov.cn (通辽市生态环境局): "任何媒体、与联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://sthjj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    swj.bynr.gov.cn (巴彦淖尔市商务局): no terms stated (checked 2026-11-20).
+    swj.chifeng.gov.cn (赤峰市商务局): no terms stated (checked 2026-11-20).
+    swj.tongliao.gov.cn (通辽市商务局): statement page https://swj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    tjj.bynr.gov.cn (巴彦淖尔市统计局): no terms stated (checked 2026-11-20).
+    tjj.chifeng.gov.cn (赤峰市统计局): "cn、赤峰市统计局网以及本网站的其他注册域名、商标标识及专有名称均受相关法律保护，未经赤峰市统计局同意，
+      任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用" (+3 more) - https://tjj.chifeng.gov.cn/flsm/202108/t20210812_1260177.html,
+      read 2026-11-20. Official texts: art. 5.
+    tjj.ordos.gov.cn (鄂尔多斯市统计局): no terms stated (checked 2026-11-20).
+    tjj.tongliao.gov.cn (通辽市统计局): statement page https://tjj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    tyj.bynr.gov.cn (巴彦淖尔市体育局): no terms stated (checked 2026-11-20).
+    tyj.tongliao.gov.cn (通辽市体育局): statement page https://tyj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    tyjrswj.bynr.gov.cn (巴彦淖尔市退役军人事务局): no terms stated (checked 2026-11-20).
+    tyjrswj.chifeng.gov.cn (赤峰市退役军人事务局): no terms stated (checked 2026-11-20).
+    tyjrswj.ordos.gov.cn (鄂尔多斯市退役军人事务局): no terms stated (checked 2026-11-20).
+    tyjrswj.tongliao.gov.cn (通辽市退役军人事务局): statement page https://tyjrswj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    wjw.bynr.gov.cn (巴彦淖尔市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.chifeng.gov.cn (赤峰市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.ordos.gov.cn (鄂尔多斯市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.tongliao.gov.cn (通辽市卫生健康委员会): statement page https://wjw.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    wlgdj.bynr.gov.cn (巴彦淖尔市文化旅游广电局): no terms stated (checked 2026-11-20).
+    wlj.chifeng.gov.cn (赤峰市文化和旅游局): no terms stated (checked 2026-11-20).
+    wlj.ordos.gov.cn (鄂尔多斯市文化和旅游局): no terms stated (checked 2026-11-20).
+    wlj.tongliao.gov.cn (通辽市文化旅游广电局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://wlj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    www.ahq.gov.cn (敖汉旗人民政府): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容" (+3
+      more) - https://www.ahq.gov.cn/flsm/, read 2026-11-20. Official texts: art. 5.
+    www.alkeqq.gov.cn (阿鲁科尔沁旗人民政府): no terms stated (checked 2026-11-20).
+    www.blyq.gov.cn (巴林右旗人民政府): no terms stated (checked 2026-11-20).
+    www.blzq.gov.cn (巴林左旗人民政府): no terms stated (checked 2026-11-20).
+    www.ds.gov.cn (东胜区人民政府): no terms stated (checked 2026-11-20).
+    www.hlgls.gov.cn (霍林郭勒市人民政府): statement page http://www.hlgls.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    www.hongshanqu.gov.cn (红山区人民政府): ".cn、赤峰·红山以及本网站的其他注册域名及专有名称均受相关法律保护，未经赤峰市红山区政府门户网站同意，
+      任何单位及个人均不得将上述域名及专有名称进行容易引起混淆或歧义的使用" (+1 more) - https://www.hongshanqu.gov.cn/bzsm/tnull_495178.html,
+      read 2026-11-20. Official texts: art. 5.
+    www.houqi.gov.cn (科尔沁左翼后旗人民政府): statement page http://www.houqi.gov.cn/wzsm1/ states no reuse terms (read 2026-11-20).
+    www.kailu.gov.cn (开鲁县人民政府): statement page http://www.kailu.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    www.kbs.gov.cn (康巴什区人民政府): no terms stated (checked 2026-11-20).
+    www.keerqin.gov.cn (科尔沁区人民政府): statement page http://www.keerqin.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    www.klq.gov.cn (喀喇沁旗人民政府): no terms stated (checked 2026-11-20).
+    www.kskt.gov.cn (克什克腾旗人民政府): no terms stated (checked 2026-11-20).
+    www.kulun.gov.cn (库伦旗人民政府): statement page http://www.kulun.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    www.kzzq.gov.cn (科尔沁左翼中旗人民政府): statement page http://www.kzzq.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    www.linhe.gov.cn (临河区人民政府): statement page http://www.linhe.gov.cn/fzlm/wzsm/ states no reuse terms (read 2026-11-20).
+    www.linxixian.gov.cn (林西县人民政府): no terms stated (checked 2026-11-20).
+    www.naimanqi.gov.cn (奈曼旗人民政府): statement page http://www.naimanqi.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    www.ningchengxian.gov.cn (宁城县人民政府): no terms stated (checked 2026-11-20).
+    www.nmgdk.gov.cn (磴口县人民政府): no terms stated (checked 2026-11-20).
+    www.ssq.gov.cn (松山区人民政府): no terms stated (checked 2026-11-20).
+    www.wlthq.gov.cn (乌拉特后旗人民政府): no terms stated (checked 2026-11-20).
+    www.wltqq.gov.cn (乌拉特前旗人民政府): no terms stated (checked 2026-11-20).
+    www.wltzq.gov.cn (乌拉特中旗人民政府): "q.gov.cn以及本网站的其他注册域名及专有名称均受相关法律保护，未经乌拉特中旗人民政府门户网站同意，
+      任何单位及个人均不得将上述域名及专有名称进行容易引起混淆或歧义的使用" (+1 more) - https://www.wltzq.gov.cn/fzlm/wzsm/202608/t20260820_514367.html,
+      read 2026-11-20. Official texts: art. 5.
+    www.wnt.gov.cn (翁牛特旗人民政府): "他注册域名、商标标识及专有名称均受相关法律保护，未经翁牛特旗人民政府主办方和翁牛特旗人民政府办公室同意，
+      任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用" (+3 more) - https://www.wnt.gov.cn/flsm/, read
+      2026-11-20. Official texts: art. 5.
+    www.wsq.gov.cn (乌审旗人民政府): no terms stated (checked 2026-11-20).
+    www.wuyuan.gov.cn (五原县人民政府): statement page http://www.wuyuan.gov.cn/fzlm/wzsm/ states no reuse terms (read 2026-11-20).
+    www.ybs.gov.cn (元宝山区人民政府): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+3 more) - https://www.ybs.gov.cn/kjdh/wzsm/, read 2026-11-20. Official texts: art. 5.
+    www.yjhl.gov.cn (伊金霍洛旗人民政府): no terms stated (checked 2026-11-20).
+    www.zge.gov.cn (准格尔旗人民政府): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载,也不得歪曲和篡改本网站所发布的内容"
+      (+1 more) - https://www.zge.gov.cn/wzxx/wzsm/, read 2026-11-20. Official texts: art. 5.
+    www.zhalute.gov.cn (扎鲁特旗人民政府): statement page http://www.zhalute.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    xczx.tongliao.gov.cn (通辽市乡村振兴局): no terms stated (checked 2026-11-20).
+    xfj.bynr.gov.cn (巴彦淖尔市信访局): "1.凡本网站的所有文字、图片、音频和视频稿件，版权均属巴彦淖尔市信访局所有，任何媒体、
+      网站或个人未经本网协议授权不得转载、链接、转帖或以其他方式复制发表" - https://xfj.bynr.gov.cn/fzlm/wzsm/, read 2026-11-20. Official
+      texts: art. 5.
+    xfj.chifeng.gov.cn (赤峰市信访局): "1.凡本网站的所有文字、图片、音频和视频稿件，版权均属内蒙古赤峰市信访局所有，任何媒体、
+      网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" - https://xfj.chifeng.gov.cn/wzsm/202106/t20210601_644453.html,
+      read 2026-11-20. Official texts: art. 5.
+    xfj.ordos.gov.cn (鄂尔多斯市信访局): no terms stated (checked 2026-11-20).
+    xfj.tongliao.gov.cn (通辽市信访局): statement page https://xfj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    yjglj.bynr.gov.cn (巴彦淖尔市应急管理局): no terms stated (checked 2026-11-20).
+    yjglj.chifeng.gov.cn (赤峰市应急管理局): no terms stated (checked 2026-11-20).
+    yjglj.ordos.gov.cn (鄂尔多斯市应急管理局): no terms stated (checked 2026-11-20).
+    yjglj.tongliao.gov.cn (通辽市应急管理局): statement page https://yjglj.tongliao.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    zhujianju.tongliao.gov.cn (通辽市住房和城乡建设局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://zhujianju.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    zjj.bynr.gov.cn (巴彦淖尔市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zjj.chifeng.gov.cn (赤峰市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zjj.ordos.gov.cn (鄂尔多斯市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzy.bynr.gov.cn (巴彦淖尔市自然资源局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" - https://zrzy.bynr.gov.cn/dbfw/wzsm/201401/t20140105_121401.html, read 2026-11-20. Official texts: art. 5.
+    zrzyj.chifeng.gov.cn (赤峰市自然资源局): "未经网站所有者书面同意，任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用"
+      (+3 more) - https://zrzyj.chifeng.gov.cn/db/wzsm/, read 2026-11-20. Official texts: art. 5.
+    zrzyj.ordos.gov.cn (鄂尔多斯市自然资源局): no terms stated (checked 2026-11-20).
+    zrzyj.tongliao.gov.cn (通辽市自然资源局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://zrzyj.tongliao.gov.cn/wzsm/, read 2026-11-20. Official texts: art. 5.
+    zwfwj.chifeng.gov.cn (赤峰市政务服务与数据管理局): no terms stated (checked 2026-11-20).
+    zwfwj.ordos.gov.cn (鄂尔多斯市行政审批政务服务与数据管理局): no terms stated (checked 2026-11-20).
+    zwzx.bynr.gov.cn (巴彦淖尔市政务服务与数据管理局): no terms stated (checked 2026-11-20).
+  北京市
+    cgj.beijing.gov.cn (北京市城市管理综合行政执法局): no terms stated (checked 2026-11-20).
+    csglw.beijing.gov.cn (北京市城市管理委员会): no terms stated (checked 2026-11-20).
+    fuwu.rsj.beijing.gov.cn (北京市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    gdb.beijing.gov.cn (北京市国防动员办公室): statement page https://gdb.beijing.gov.cn/rf_flsm/ states no reuse terms (read 2026-11-20).
+    gdj.beijing.gov.cn (北京市广播电视局): no terms stated (checked 2026-11-20).
+    gjj.beijing.gov.cn (北京市住房公积金管理中心): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+3 more) - https://gjj.beijing.gov.cn/web/index/flsm57/index.html, read 2026-11-20. Official texts: art. 5.
+    gzw.beijing.gov.cn (北京市人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    invest.beijing.gov.cn (北京市投资促进服务中心): no terms stated (checked 2026-11-20).
+    jgj.beijing.gov.cn (北京市机关事务管理局): no terms stated (checked 2026-11-20).
+    jkbj.wjw.beijing.gov.cn (北京市卫生健康委员会): no terms stated (checked 2026-11-20).
+    jkj.beijing.gov.cn (北京市疾病预防控制局): no terms stated (checked 2026-11-20).
+    jtw.beijing.gov.cn (北京市交通委员会): "以及本网站的其他注册域名、商标标识及专有名称均受相关法律保护，未经北京市交通委员会事先书面同意，
+      任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用" (+3 more) - https://jtw.beijing.gov.cn/xxgk/jgzn/flsm/,
+      read 2026-11-20. Official texts: art. 5.
+    jxj.beijing.gov.cn (北京市经济和信息化局): no terms stated (checked 2026-11-20).
+    jyj.beijing.gov.cn (北京市监狱管理局): "未经北京市监狱管理局（北京市戒毒管理局）书面许可，任何自然人、法人和非法人组织不得使用"
+      (+2 more) - https://jyj.beijing.gov.cn/bsfw/202004/t20200424_1881551.html, read 2026-11-20. Official texts: art. 5.
+    kfqgw.beijing.gov.cn (北京市经开区管委会): no terms stated (checked 2026-11-20).
+    kw.beijing.gov.cn (北京市科学技术委员会、中关村科技园区管理委员会): no terms stated (checked 2026-11-20).
+    lsj.beijing.gov.cn (北京市粮食和物资储备局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://lsj.beijing.gov.cn/tyxx/202003/t20200323_1730570.html, read 2026-11-20. Official texts:
+      art. 5.
+    mzzjw.beijing.gov.cn (北京市民族宗教事务委员会): no terms stated (checked 2026-11-20).
+    nyncj.beijing.gov.cn (北京市农业农村局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式转载，
+      也不得歪曲和篡改本网站所发布的内容" - https://nyncj.beijing.gov.cn/nyj/wzgl/wzsm/index.html, read 2026-11-20. Official texts: art. 5.
+    project.fgw.beijing.gov.cn (北京市发展和改革委员会): no terms stated (checked 2026-11-20).
+    sfj.beijing.gov.cn (北京市司法局): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容" (+3
+      more) - https://sfj.beijing.gov.cn/sfj/index/flsm/index.html, read 2026-11-20. Official texts: art. 5.
+    sjj.beijing.gov.cn (北京市审计局): no terms stated (checked 2026-11-20).
+    sthjj.beijing.gov.cn (北京市生态环境局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性转载，也不得歪曲和篡改本网站所发布的内容"
+      - https://sthjj.beijing.gov.cn/bjhrb/index/11157075/index.html, read 2026-11-20. Official texts: art. 5.
+    sw.beijing.gov.cn (北京市商务局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (+1 more) - http://sw.beijing.gov.cn/bgsxhz_2989/202003/t20200320_1723286.html, read 2026-11-20. Official texts: art. 5.
+    swj.beijing.gov.cn (北京市水务局): no terms stated (checked 2026-11-20).
+    tyj.beijing.gov.cn (北京市体育局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://tyj.beijing.gov.cn/bjsports/wzsm/index.html, read 2026-11-20. Official texts: art. 5.
+    tyjrswj.beijing.gov.cn (北京市退役军人事务局): no terms stated (checked 2026-11-20).
+    whlyj.beijing.gov.cn (北京市文化和旅游局): statement page https://whlyj.beijing.gov.cn/spxx/flsm/202003/t20200331_1755071.html states no reuse terms (read
+      2026-11-20).
+    wwj.beijing.gov.cn (北京市文物局): "本网站内容（除转载内容外）的所有权归北京市文物局所有，任何媒体、网站或个人不得对本网站内容原意进行曲解、
+      修改，如需使用或转载，需注明 “来源：北京市文物局”" - https://wwj.beijing.gov.cn/bjww/552769/index.html, read 2026-11-20. Official texts:
+      art. 5.
+    www.bjchy.gov.cn (北京市朝阳区人民政府): no terms stated (checked 2026-11-20).
+    www.bjdx.gov.cn (北京市大兴区人民政府): "gov.cn以及本网站的其他注册域名、商标标识及专有名称均受相关法律保护，未经北京市大兴区人民政府同意，
+      任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用" (+3 more) - https://www.bjdx.gov.cn/bjsdxqrmzf/fzlm/mzsm/index.html,
+      read 2026-11-20. Official texts: art. 5.
+    www.bjfsh.gov.cn (北京市房山区人民政府): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+3 more) - https://www.bjfsh.gov.cn/fvsm/202002/t20200227_39992473.shtml, read 2026-11-20. Official texts: art. 5.
+    www.bjhd.gov.cn (北京市海淀区人民政府): no terms stated (checked 2026-11-20).
+    www.bjmtg.gov.cn (北京市门头沟区人民政府): "cn、热线以及本网站的其他注册域名、商标标识及专有名称均受相关法律保护，未经北京市门头沟区人民政府同意，
+      任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用" (+3 more) - https://www.bjmtg.gov.cn/bjmtg/c100913/common_cover_detail.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    www.bjmy.gov.cn (北京市密云区人民政府): no terms stated (checked 2026-11-20).
+    www.bjpg.gov.cn (北京市平谷区人民政府): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+2 more) - https://www.bjpg.gov.cn/pgqrmzf/sy/flsm/index.html, read 2026-11-20. Official texts: art. 5.
+    www.bjsjs.gov.cn (北京市石景山区人民政府): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+3 more) - https://www.bjsjs.gov.cn/sjssy/flsm/, read 2026-11-20. Official texts: art. 5.
+    www.bjxch.gov.cn (北京市西城区人民政府): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+2 more) - https://www.bjxch.gov.cn/flsm.html, read 2026-11-20. Official texts: art. 5.
+    xfb.beijing.gov.cn (北京市信访办公室): no terms stated (checked 2026-11-20).
+    xxcx.yjj.beijing.gov.cn (北京市药品监督管理局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://yjj.beijing.gov.cn/yjj/zdxx/1746581/index.html, read 2026-11-20. Official texts: art. 5.
+    yjj.beijing.gov.cn (北京市药品监督管理局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://yjj.beijing.gov.cn/yjj/zdxx/1746581/index.html, read 2026-11-20. Official texts: art. 5.
+    zdb.beijing.gov.cn (北京市重大项目建设指挥部办公室): no terms stated (checked 2026-11-20).
+    zdzqgw.beijing.gov.cn (北京市重点站区管理委员会): no terms stated (checked 2026-11-20).
+    zjw.beijing.gov.cn (北京市住房和城乡建设委员会): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://zjw.beijing.gov.cn/bjjs/index/743979336/index.shtml, read 2026-11-20. Official texts: art.
+      5.
+    zscqj.beijing.gov.cn (北京市知识产权局): statement page https://zscqj.beijing.gov.cn/zscqj/fzlm/flsm/index.html states no reuse terms (read 2026-11-20).
+    zwfwj.beijing.gov.cn (北京市政务服务和数据管理局): no terms stated (checked 2026-11-20).
+    zyj.beijing.gov.cn (北京市中医药管理局): no terms stated (checked 2026-11-20).
+    zyk.bjhd.gov.cn (北京市海淀区人民政府): no terms stated (checked 2026-11-20).
+  吉林省
+    ajj.changchun.gov.cn (长春市应急管理局): no terms stated (checked 2026-11-20).
+    ccshbx.changchun.gov.cn (长春市社会保险事业管理局): no terms stated (checked 2026-11-20).
+    ccyb.changchun.gov.cn (长春市医疗保障局): no terms stated (checked 2026-11-20).
+    cz.siping.gov.cn (四平市财政局): no terms stated (checked 2026-11-20).
+    czj.changchun.gov.cn (长春市财政局): no terms stated (checked 2026-11-20).
+    czj.yanbian.gov.cn (延边朝鲜族自治州财政局): no terms stated (checked 2026-11-20).
+    dfz.jl.gov.cn (吉林省地方志编纂委员会): no terms stated (checked 2026-11-20).
+    drc.changchun.gov.cn (长春市发展和改革委员会): no terms stated (checked 2026-11-20).
+    edu.siping.gov.cn (四平市教育局): no terms stated (checked 2026-11-20).
+    fgw.siping.gov.cn (四平市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fzzx.jl.gov.cn (吉林省政府发展研究中心): no terms stated (checked 2026-11-20).
+    gaj.siping.gov.cn (四平市公安局): no terms stated (checked 2026-11-20).
+    gat.jl.gov.cn (吉林省公安厅): "承办单位：吉林省公安公安厅 未经授权严禁转载", read 2026-11-20. Official texts: art. 5.
+    gdj.jl.gov.cn (吉林省广播电视局): no terms stated (checked 2026-11-20).
+    gxj.siping.gov.cn (四平市工信局): no terms stated (checked 2026-11-20).
+    gxt.jl.gov.cn (吉林省工业和信息化厅): no terms stated (checked 2026-11-20).
+    gzj.changchun.gov.cn (长春市规划和自然资源局): no terms stated (checked 2026-11-20).
+    gzw.jl.gov.cn (吉林省人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    hb.jlbc.gov.cn (白城市生态环境局): no terms stated (checked 2026-11-20).
+    hbj.siping.gov.cn (四平市生态环境局): no terms stated (checked 2026-11-20).
+    hjj.changchun.gov.cn (长春市生态环境局): no terms stated (checked 2026-11-20).
+    hrss.jl.gov.cn (吉林省人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    hrss.siping.gov.cn (四平市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    jlca.miit.gov.cn (吉林省通信管理局): no terms stated (checked 2026-11-20).
+    jllc.jl.gov.cn (吉林省林业和草原局): no terms stated (checked 2026-11-20).
+    jlsi.jl.gov.cn (吉林省社会保险事业管理局): statement page https://jlsi.jl.gov.cn/kzyy/ystk/ states no reuse terms (read 2026-11-20).
+    jst.jl.gov.cn (吉林省住房和城乡建设厅): no terms stated (checked 2026-11-20).
+    jtysj.siping.gov.cn (四平市交通运输局): no terms stated (checked 2026-11-20).
+    jtyst.jl.gov.cn (吉林省交通运输厅): no terms stated (checked 2026-11-20).
+    jy.jlbc.gov.cn (白城市教育局): no terms stated (checked 2026-11-20).
+    jyj.changchun.gov.cn (长春市教育局): no terms stated (checked 2026-11-20).
+    jyj.jl.gov.cn (吉林省监狱管理局): no terms stated (checked 2026-11-20).
+    jyt.jl.gov.cn (吉林省教育厅): no terms stated (checked 2026-11-20).
+    kjj.siping.gov.cn (四平市科技局): no terms stated (checked 2026-11-20).
+    kjt.jl.gov.cn (吉林省科学技术厅): no terms stated (checked 2026-11-20).
+    land.siping.gov.cn (四平市自然资源局): no terms stated (checked 2026-11-20).
+    lsj.siping.gov.cn (四平市粮食和物资储备局): no terms stated (checked 2026-11-20).
+    lyj.siping.gov.cn (四平市林业局): no terms stated (checked 2026-11-20).
+    mwr.siping.gov.cn (四平市水利局): no terms stated (checked 2026-11-20).
+    mzj.siping.gov.cn (四平市民政局): no terms stated (checked 2026-11-20).
+    mzt.jl.gov.cn (吉林省民政厅): statement page https://mzt.jl.gov.cn/qt_74282/bqbh/ states no reuse terms (read 2026-11-20).
+    nw.siping.gov.cn (四平市农业农村局): no terms stated (checked 2026-11-20).
+    nyj.jl.gov.cn (吉林省能源局): no terms stated (checked 2026-11-20).
+    qzqd.zwgk.changchun.gov.cn (长春市政务服务和数字化建设管理局): no terms stated (checked 2026-11-20).
+    rf.siping.gov.cn (四平市国防动员办公室): no terms stated (checked 2026-11-20).
+    safety.siping.gov.cn (四平市应急管理局): no terms stated (checked 2026-11-20).
+    scjd.siping.gov.cn (四平市市场监管局): no terms stated (checked 2026-11-20).
+    sfj.siping.gov.cn (四平市司法局): no terms stated (checked 2026-11-20).
+    sft.jl.gov.cn (吉林省司法厅): no terms stated (checked 2026-11-20).
+    sgj.jl.gov.cn (吉林省机关事务管理局): no terms stated (checked 2026-11-20).
+    sjt.jl.gov.cn (吉林省审计厅): no terms stated (checked 2026-11-20).
+    slj.jlbc.gov.cn (白城市水利局): no terms stated (checked 2026-11-20).
+    sthjt.jl.gov.cn (吉林省生态环境厅): no terms stated (checked 2026-11-20).
+    swj.siping.gov.cn (四平市商务局): no terms stated (checked 2026-11-20).
+    swt.jl.gov.cn (吉林省商务厅): no terms stated (checked 2026-11-20).
+    tdq.siping.gov.cn (铁东区人民政府): no terms stated (checked 2026-11-20).
+    tjj.changchun.gov.cn (长春市统计局): no terms stated (checked 2026-11-20).
+    tjj.jl.gov.cn (吉林省统计局): no terms stated (checked 2026-11-20).
+    txq.siping.gov.cn (铁西区人民政府): no terms stated (checked 2026-11-20).
+    tyj.changchun.gov.cn (长春市体育局): no terms stated (checked 2026-11-20).
+    tyj.jl.gov.cn (吉林省体育局): no terms stated (checked 2026-11-20).
+    tyjrt.jl.gov.cn (吉林省退役军人事务厅): no terms stated (checked 2026-11-20).
+    wglj.changchun.gov.cn (长春市文化广播电视和旅游局): no terms stated (checked 2026-11-20).
+    whhlyt.jl.gov.cn (吉林省文化和旅游厅): statement page https://whhlyt.jl.gov.cn/kzgn/bqsm/201405/t20140509_2597587.html states no reuse terms (read 2026-11-20).
+    wjw.siping.gov.cn (四平市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wsjkw.jl.gov.cn (吉林省卫生健康委员会): no terms stated (checked 2026-11-20).
+    www.antu.gov.cn (安图县人民政府): no terms stated (checked 2026-11-20).
+    www.daan.gov.cn (大安市人民政府): no terms stated (checked 2026-11-20).
+    www.dunhua.gov.cn (敦化市人民政府): no terms stated (checked 2026-11-20).
+    www.helong.gov.cn (和龙市人民政府): no terms stated (checked 2026-11-20).
+    www.hunchun.gov.cn (珲春市人民政府): no terms stated (checked 2026-11-20).
+    www.jlzhenlai.gov.cn (镇赉县人民政府): no terms stated (checked 2026-11-20).
+    www.lishu.gov.cn (梨树县人民政府): no terms stated (checked 2026-11-20).
+    www.longjing.gov.cn (龙井市人民政府): no terms stated (checked 2026-11-20).
+    www.shuangliao.gov.cn (双辽市人民政府): no terms stated (checked 2026-11-20).
+    www.taobei.gov.cn (洮北区人民政府): no terms stated (checked 2026-11-20).
+    www.taonan.gov.cn (洮南市人民政府): "版权公告 本网站所刊登的洮南市人民政府各种新闻、信息和各种专栏材料均为洮南市人民政府版权所有，
+      未经协议授权，禁止下载使用", read 2026-11-20. Official texts: art. 5.
+    www.tongyu.gov.cn (通榆县人民政府): no terms stated (checked 2026-11-20).
+    www.tumen.gov.cn (图们市人民政府): no terms stated (checked 2026-11-20).
+    www.wangqing.gov.cn (汪清县人民政府): no terms stated (checked 2026-11-20).
+    www.yanji.gov.cn (延吉市人民政府): no terms stated (checked 2026-11-20).
+    xxgk.changbaishan.gov.cn (吉林省长白山保护开发区管理委员会): no terms stated (checked 2026-11-20).
+    xxgk.taonan.gov.cn (洮南市人民政府): no terms stated (checked 2026-11-20).
+    yjt.jl.gov.cn (吉林省应急管理厅): no terms stated (checked 2026-11-20).
+    zjj.siping.gov.cn (四平市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzy.jl.gov.cn (吉林省自然资源厅): no terms stated (checked 2026-11-20).
+    zrzyj.jlbc.gov.cn (白城市自然资源局): no terms stated (checked 2026-11-20).
+    zsj.jl.gov.cn (吉林省政务服务和数字化建设管理局): no terms stated (checked 2026-11-20).
+    zsj.siping.gov.cn (四平市政务服务和数字化建设管理局): no terms stated (checked 2026-11-20).
+  天津市
+    tjdzj.gov.cn (天津市地震局): no terms stated (checked 2026-11-20).
+  宁夏回族自治区
+    fzggw.nx.gov.cn (宁夏回族自治区发展和改革委员会): statement page https://fzggw.nx.gov.cn/ggbf/wzsm/ states no reuse terms (read 2026-11-20).
+    hrss.nx.gov.cn (宁夏回族自治区人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    lswz.nx.gov.cn (宁夏回族自治区粮食和物资储备局): statement page http://lswz.nx.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    nxyjglt.nx.gov.cn (宁夏回族自治区应急管理厅): statement page http://nxyjglt.nx.gov.cn/ggbf/wzsm/ states no reuse terms (read 2026-11-20).
+    scjg.nx.gov.cn (宁夏回族自治区市场监督管理局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - http://scjg.nx.gov.cn/wzdb/bqsm/, read 2026-11-20. Official texts: art. 5.
+    sport.nx.gov.cn (宁夏回族自治区体育局): statement page http://sport.nx.gov.cn/ggbf/wzsm/ states no reuse terms (read 2026-11-20).
+    whhlyt.nx.gov.cn (宁夏回族自治区文化和旅游厅): statement page https://whhlyt.nx.gov.cn/ggbf/bqsm/ states no reuse terms (read 2026-11-20).
+    www.hongsibu.gov.cn (红寺堡区人民政府): no terms stated (checked 2026-11-20).
+    www.ltq.gov.cn (利通区人民政府): no terms stated (checked 2026-11-20).
+    www.tongxin.gov.cn (同心县人民政府): no terms stated (checked 2026-11-20).
+  安徽省
+    cgj.huainan.gov.cn (淮南市城市管理局): no terms stated (checked 2026-11-20).
+    cz.huainan.gov.cn (淮南市财政局): no terms stated (checked 2026-11-20).
+    czj.xuancheng.gov.cn (宣城市财政局): no terms stated (checked 2026-11-20).
+    edu.xuancheng.gov.cn (宣城市教育体育局): no terms stated (checked 2026-11-20).
+    fgw.huainan.gov.cn (淮南市发展和改革委员会): no terms stated (checked 2026-11-20).
+    gaj.huainan.gov.cn (淮南市公安局): no terms stated (checked 2026-11-20).
+    gaj.xuancheng.gov.cn (宣城市公安局): no terms stated (checked 2026-11-20).
+    gjj.huainan.gov.cn (淮南市住房公积金管理中心): no terms stated (checked 2026-11-20).
+    gjj.xuancheng.gov.cn (宣城市住房公积金管理中心): no terms stated (checked 2026-11-20).
+    gxj.huainan.gov.cn (淮南市工业和信息化局): no terms stated (checked 2026-11-20).
+    gxj.xuancheng.gov.cn (宣城市工信局): no terms stated (checked 2026-11-20).
+    jgswglj.huainan.gov.cn (淮南市机关事务管理局): no terms stated (checked 2026-11-20).
+    jgswglj.xuancheng.gov.cn (宣城市机关事务管理局): no terms stated (checked 2026-11-20).
+    jiaotiju.ahsz.gov.cn (宿州市教育体育局): no terms stated (checked 2026-11-20).
+    jtj.huainan.gov.cn (淮南市交通运输局): no terms stated (checked 2026-11-20).
+    jtj.xuancheng.gov.cn (宣城市交通运输局): no terms stated (checked 2026-11-20).
+    kejiju.ahsz.gov.cn (宿州市科学技术局): no terms stated (checked 2026-11-20).
+    kjj.xuancheng.gov.cn (宣城市科学技术局): no terms stated (checked 2026-11-20).
+    lswz.huainan.gov.cn (淮南市粮食和物资储备局): no terms stated (checked 2026-11-20).
+    lyj.huainan.gov.cn (淮南市林业局): no terms stated (checked 2026-11-20).
+    lyj.xuancheng.gov.cn (宣城市林业局): no terms stated (checked 2026-11-20).
+    mzj.huainan.gov.cn (淮南市民政局): no terms stated (checked 2026-11-20).
+    mzj.xuancheng.gov.cn (宣城市民政局): no terms stated (checked 2026-11-20).
+    nyncj.huainan.gov.cn (淮南市农业农村局): no terms stated (checked 2026-11-20).
+    nyncj.xuancheng.gov.cn (宣城市农业农村局): no terms stated (checked 2026-11-20).
+    rsj.huainan.gov.cn (淮南市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rsj.xuancheng.gov.cn (宣城市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    scjgj.huainan.gov.cn (淮南市市场监督管理局): no terms stated (checked 2026-11-20).
+    scjgj.luan.gov.cn (六安市市场监督管理局): no terms stated (checked 2026-11-20).
+    sfj.huainan.gov.cn (淮南市司法局): no terms stated (checked 2026-11-20).
+    sfj.xuancheng.gov.cn (宣城市司法局): no terms stated (checked 2026-11-20).
+    sjj.huainan.gov.cn (淮南市审计局): no terms stated (checked 2026-11-20).
+    sjj.xuancheng.gov.cn (宣城市审计局): "主办单位：宣城市审计局 未经许可 严禁复制", read 2026-11-20. Official texts: art. 5.
+    sjtj.huainan.gov.cn (淮南市教育体育局): no terms stated (checked 2026-11-20).
+    sjzy.xuancheng.gov.cn (宣城市数据资源管理局): no terms stated (checked 2026-11-20).
+    sjzyj.huainan.gov.cn (淮南市数据资源管理局): no terms stated (checked 2026-11-20).
+    slj.huainan.gov.cn (淮南市水利局): no terms stated (checked 2026-11-20).
+    slj.xuancheng.gov.cn (宣城市水利局): no terms stated (checked 2026-11-20).
+    sthjj.huainan.gov.cn (淮南市生态环境局): no terms stated (checked 2026-11-20).
+    sthjj.xuancheng.gov.cn (宣城市生态环境局): no terms stated (checked 2026-11-20).
+    swj.xuancheng.gov.cn (宣城市商务局): no terms stated (checked 2026-11-20).
+    tjj.huainan.gov.cn (淮南市统计局): no terms stated (checked 2026-11-20).
+    tjj.xuancheng.gov.cn (宣城市统计局): no terms stated (checked 2026-11-20).
+    tyjr.xuancheng.gov.cn (宣城市退役军人事务局): no terms stated (checked 2026-11-20).
+    tyjrswj.huainan.gov.cn (淮南市退役军人事务局): no terms stated (checked 2026-11-20).
+    tzcjj.huainan.gov.cn (淮南市投资促进局): no terms stated (checked 2026-11-20).
+    tzcjj.xuancheng.gov.cn (宣城市投资促进局): no terms stated (checked 2026-11-20).
+    wjw.ahsz.gov.cn (宿州市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.huainan.gov.cn (淮南市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.xuancheng.gov.cn (宣城市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wlj.xuancheng.gov.cn (宣城市文化和旅游局): no terms stated (checked 2026-11-20).
+    www.ahgc.gov.cn (贵池区人民政府): "任何单位和个人不得以引用、复制、转载、摘编等其他任何方式非法使用本网站的上述内容"
+      (+2 more) - https://www.ahgc.gov.cn/Content/showList/146/page_1.html, read 2026-11-20. Official texts: art. 5.
+    www.ahqy.gov.cn (青阳县人民政府): "本站将不会在未经您事先知晓和许可的情况下，以任何的方式随意使用或分享您在线提供给我们的个人识别信息"
+      - https://www.ahqy.gov.cn/Content/show/530291.html, read 2026-11-20. Official texts: art. 5.
+    www.dangshan.gov.cn (砀山县人民政府): no terms stated (checked 2026-11-20).
+    www.dongzhi.gov.cn (东至县人民政府): "任何单位和个人不得以引用、复制、转载、摘编等其他任何方式非法使用本网站的上述内容"
+      (+2 more) - https://www.dongzhi.gov.cn/Content/showList/431/page_1.html, read 2026-11-20. Official texts: art. 5.
+    www.ja.gov.cn (金安区人民政府): no terms stated (checked 2026-11-20).
+    www.lingbi.gov.cn (灵璧县人民政府): no terms stated (checked 2026-11-20).
+    www.szyq.gov.cn (埇桥区人民政府): "未经监护人的同意，本网站不会使用未成年人的个人资料，亦不会向任何第三方披露或传送"
+      - https://www.szyq.gov.cn/yssm/index.html, read 2026-11-20. Official texts: art. 5.
+    xceda.xuancheng.gov.cn (宣城市经开区管委会): no terms stated (checked 2026-11-20).
+    xceq.xuancheng.gov.cn (宣城市地震局): no terms stated (checked 2026-11-20).
+    xfj.xuancheng.gov.cn (宣城市信访局): no terms stated (checked 2026-11-20).
+    yjj.huainan.gov.cn (淮南市应急管理局): no terms stated (checked 2026-11-20).
+    yjj.xuancheng.gov.cn (宣城市应急管理局): no terms stated (checked 2026-11-20).
+    zdgc.huainan.gov.cn (淮南市重点工程建设管理中心): no terms stated (checked 2026-11-20).
+    zjj.ahsz.gov.cn (宿州市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zjj.huainan.gov.cn (淮南市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzyghj.ahsz.gov.cn (宿州市自然资源和规划局): "任何单位和个人不得以引用、复制、转载、摘编等其他任何方式非法使用本网站的上述内容"
+      (+2 more) - https://zrzyghj.ahsz.gov.cn/wzgl/bqsm/index.html, read 2026-11-20. Official texts: art. 5.
+    zrzyghj.xuancheng.gov.cn (宣城市自然资源和规划局): no terms stated (checked 2026-11-20).
+    zrzyj.huainan.gov.cn (淮南市自然资源和规划局): no terms stated (checked 2026-11-20).
+  山东省
+    amr.jinan.gov.cn (济南市市场监督管理局): no terms stated (checked 2026-11-20).
+    jndpc.jinan.gov.cn (济南市发展和改革委员会): no terms stated (checked 2026-11-20).
+  山西省
+    ajj.shuozhou.gov.cn (朔州市应急管理局): no terms stated (checked 2026-11-20).
+    bdcdj.zrzy.dt.gov.cn (大同市不动产微信服务大厅): no terms stated (checked 2026-11-20).
+    czj.shuozhou.gov.cn (朔州市财政局): statement page http://czj.shuozhou.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    dt.gov.cn (大同市人民政府): "对于＂大同市人民政府门户网站＂专有信息，未经＂大同市人民政府门户网站＂书面同意，不得以任何形式侵犯＂大同市人民政府门户网站＂的著作权，
+      包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点" - https://dt.gov.cn/dtszf/mzsm/201608/253e770c24094c4daf289fd01f74ff56.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    edu.shuozhou.gov.cn (朔州市教育局): no terms stated (checked 2026-11-20).
+    fgw.dt.gov.cn (大同市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.shuozhou.gov.cn (朔州市发展和改革委员会): "门户网站所有，任何媒体、网站或个人未经本网协议授权不得转载、链接、转帖或以其他方式复制发表"
+      - http://fgw.shuozhou.gov.cn/wzgl/wzsm/202111/t20211126_365953.html, read 2026-11-20. Official texts: art. 5.
+    gtj.shuozhou.gov.cn (朔州市规划和自然资源局): no terms stated (checked 2026-11-20).
+    gxj.yuncheng.gov.cn (运城市工业和信息化局): no terms stated (checked 2026-11-20).
+    hbj.shuozhou.gov.cn (朔州市生态环境局): "网站所有，任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表"
+      - http://hbj.shuozhou.gov.cn/wzgl/202111/t20211125_365814.html, read 2026-11-20. Official texts: art. 5.
+    jtj.shuozhou.gov.cn (朔州市交通运输局): no terms stated (checked 2026-11-20).
+    mtj.shuozhou.gov.cn (朔州市能源局): "．凡本网注明“来源：朔州市能源局”的所有文字、图片和音视频稿件，版权均属朔州市能源局门户网站所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转帖或以其他方式复制发表" - http://mtj.shuozhou.gov.cn/wzdt/202111/t20211125_365740.html,
+      read 2026-11-20. Official texts: art. 5.
+    mzj.shuozhou.gov.cn (朔州市民政局): no terms stated (checked 2026-11-20).
+    sfj.shuozhou.gov.cn (朔州市司法局): "1．凡本网注明“来源：朔州市司法局”的所有文字、图片和音视频稿件，版权均属朔州市司法局网站所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" - http://sfj.shuozhou.gov.cn/wzgl_7170/202111/t20211125_365700.html,
+      read 2026-11-20. Official texts: art. 5.
+    sjj.shuozhou.gov.cn (朔州市审计局): "1．凡本网注明“来源：朔州市审计局”的所有文字、图片和音视频稿件，版权均属朔州市审计局门户网站所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转帖或以其他方式复制发表" - http://sjj.shuozhou.gov.cn/wzgl/wzgl/202602/t20260205_762570.html,
+      read 2026-11-20. Official texts: art. 5.
+    sthjj.dt.gov.cn (大同市生态环境局): no terms stated (checked 2026-11-20).
+    szkj.shuozhou.gov.cn (朔州市科学技术局): "本网注明“来源：朔州市科技局办公室”的所有文字、图片和音视频稿件，版权均属朔州市科技局门户网站所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" - http://szkj.shuozhou.gov.cn/wzdt/202111/t20211129_366348.html,
+      read 2026-11-20. Official texts: art. 5.
+    sztj.shuozhou.gov.cn (朔州市统计局): no terms stated (checked 2026-11-20).
+    whj.shuozhou.gov.cn (朔州市文化和旅游局): no terms stated (checked 2026-11-20).
+    www.dttz.gov.cn (天镇县人民政府): "对于＂天镇县人民政府门户网站＂专有信息，未经＂天镇县人民政府门户网站＂书面同意，
+      不得以任何形式侵犯＂天镇县人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      - http://www.dttz.gov.cn/tzxrmzfz/mzsm/202306/4851db0d2b0c4b4db35b6d1e5007feec.shtml, read 2026-11-20. Official texts: art. 5.
+    www.hunyuan.gov.cn (浑源县人民政府): "对于＂浑源县人民政府门户网站＂专有信息，未经＂浑源县人民政府门户网站＂书面同意，
+      不得以任何形式侵犯＂浑源县人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      - https://www.hunyuan.gov.cn/hyxrmzfz/mzsm/202306/886565ec48014fa3a7593702cd3904d0.shtml, read 2026-11-20. Official texts: art. 5.
+    www.lczf.gov.cn (陵川县人民政府): no terms stated (checked 2026-11-20).
+    www.lingqiu.gov.cn (灵丘县人民政府): "对于＂灵丘县人民政府门户网站＂专有信息，未经＂灵丘县人民政府门户网站＂书面同意，
+      不得以任何形式侵犯＂灵丘县人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      - https://www.lingqiu.gov.cn/lqxrmzfz/mzsm/202306/140c6ccbdbcb44b28fb79c3262b0afc7.shtml, read 2026-11-20. Official texts: art. 5.
+    www.pingcheng.gov.cn (平城区人民政府): "未经大同市平城区人民政府门户网站的书面授权，任何人不得转载、复制、改动、播送、
+      展示，否则以侵权论，依法追究法律责任" (+1 more) - https://www.pingcheng.gov.cn/pcqrmzfz/mzsm/202007/af464637cf75435f881ca6a351aca26b.shtml, read
+      2026-11-20. Official texts: art. 5.
+    www.qinshui.gov.cn (沁水县人民政府): "n、沁水县人民政府门户网站以及本网站的其他注册域名、商标标识及专有名称均受相关法律保护，
+      未经本网站同意，任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用" (+4 more) - http://www.qinshui.gov.cn/dbxx_237/wzsm/202010/t20201014_1224721.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    www.shanyin.gov.cn (山阴县人民政府): statement page http://www.shanyin.gov.cn/wzdt/202111/t20211126_365836.html states no reuse terms (read 2026-11-20).
+    www.sx-guangling.gov.cn (广灵县人民政府): "对于＂广灵县人民政府门户网站＂专有信息，未经＂广灵县人民政府门户网站＂书面同意，
+      不得以任何形式侵犯＂广灵县人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      - http://www.sx-guangling.gov.cn/glxrmzfz/mzsm/202306/8f2f8d250c6a419c966cbee8c4c82c48.shtml, read 2026-11-20. Official texts: art. 5.
+    www.sxgp.gov.cn (高平市人民政府): "政府、高平市政府信息中心、高平市大数据中心”的所有文字、图片和音视频稿件，版权归高平市人民政府所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转帖或以其他方式复制发表" - http://www.sxgp.gov.cn/wzxg_237/bqsm_241/,
+      read 2026-11-20. Official texts: art. 5.
+    www.szpinglu.gov.cn (平鲁区人民政府): statement page http://www.szpinglu.gov.cn/wzgl/wzsm/ states no reuse terms (read 2026-11-20).
+    www.szscq.gov.cn (朔城区人民政府): "注明“来源：朔城区人民政府办公室”的所有文字、图片和音视频稿件，版权均属朔城区人民政府门户网站所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转帖或以其他方式复制发表" - http://www.szscq.gov.cn/wzgl/202112/t20211202_367207.html,
+      read 2026-11-20. Official texts: art. 5.
+    www.xr.gov.cn (新荣区人民政府): no terms stated (checked 2026-11-20).
+    www.yczf.gov.cn (阳城县人民政府): statement page http://www.yczf.gov.cn/dbxx/gywm/202009/t20200926_1215877.shtml states no reuse terms (read 2026-11-20).
+    www.yingxian.gov.cn (应县人民政府): statement page http://www.yingxian.gov.cn/wzgl/wzsm/ states no reuse terms (read 2026-11-20).
+    www.youyuzf.gov.cn (右玉县人民政府): statement page http://www.youyuzf.gov.cn/wzgl/202412/t20241206_707544.html states no reuse terms (read 2026-11-20).
+    www.yungang.gov.cn (云冈区人民政府): "对于＂云冈区人民政府门户网站＂专有信息，未经＂云冈区人民政府门户网站＂书面同意，
+      不得以任何形式侵犯＂云冈区人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      - https://www.yungang.gov.cn/ygqrmzfz/fzgn/202308/c512b304e4ef4c3897fcdba8b26f91d2.shtml, read 2026-11-20. Official texts: art. 5.
+    www.yunzhou.gov.cn (云州区人民政府): "对于大同市云州区人民政府网专有信息，包括文字表述及其组合、图标、图饰、图表、色彩、
+      版面设计、数据等未经本网站书面同意，不得以任何形式侵犯本网站的著作权，包括擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      (+1 more) - https://www.yunzhou.gov.cn/yzqrmzfz/fzgn/202305/56f6e642f49745d19e231ca586a87668.shtml, read 2026-11-20. Official texts: art. 5.
+    www.zghr.gov.cn (怀仁市人民政府): "注明“来源：怀仁市人民政府办公室”的所有文字、图片和音视频稿件，版权均属怀仁市人民政府门户网站所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" - http://www.zghr.gov.cn/sitemap/202111/t20211126_365989.html,
+      read 2026-11-20. Official texts: art. 5.
+    www.zuoyun.gov.cn (左云县人民政府): "对于＂左云县人民政府门户网站＂专有信息，未经＂左云县人民政府门户网站＂书面同意，
+      不得以任何形式侵犯＂左云县人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点"
+      - https://www.zuoyun.gov.cn/zyxrmzfz/mzsm/202305/f660b70bf247490a82c5a86d29669e3c.shtml, read 2026-11-20. Official texts: art. 5.
+    xxgk.lczf.gov.cn (陵川县人民政府): no terms stated (checked 2026-11-20).
+    xxgk.qinshui.gov.cn (沁水县人民政府): no terms stated (checked 2026-11-20).
+    xxgk.sxgp.gov.cn (高平市人民政府): no terms stated (checked 2026-11-20).
+    xxgk.yczf.gov.cn (阳城县人民政府): no terms stated (checked 2026-11-20).
+    yjj.dt.gov.cn (大同市应急管理局): no terms stated (checked 2026-11-20).
+    zjj.shuozhou.gov.cn (朔州市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzy.dt.gov.cn (大同市规划和自然资源局): no terms stated (checked 2026-11-20).
+  广东省
+    cg.gz.gov.cn (广州市城市管理和综合执法局): no terms stated (checked 2026-11-20).
+    czj.gz.gov.cn (广州市财政局): statement page https://czj.gz.gov.cn/dblm/bqsm/index.html states no reuse terms (read 2026-11-20).
+    czj.maoming.gov.cn (茂名市财政局): no terms stated (checked 2026-11-20).
+    fgw.gz.gov.cn (广州市发展和改革委员会): no terms stated (checked 2026-11-20).
+    gaj.gz.gov.cn (广州市公安局): statement page https://gaj.gz.gov.cn/gywz/bqsm/index.html states no reuse terms (read 2026-11-20).
+    ghzyj.gz.gov.cn (广州市规划和自然资源局): "资料拥有权：未经市规划自然资源局书面批准，不得以任何方式将资料复印、复制、
+      修改、出版、上载、张贴、转传或派发" - https://ghzyj.gz.gov.cn/gywz/wzsm/content/post_2744793.html, read 2026-11-20. Official texts: art. 5.
+    gwj.gz.gov.cn (广州市港务局): "(四) 未经监护人的同意，本网站不会使用未成年人的个人资料，亦不会向任何第三方披露或传送"
+      - https://gwj.gz.gov.cn/gywz/wzsm/content/post_10607269.html, read 2026-11-20. Official texts: art. 5.
+    gxj.gz.gov.cn (广州市工业和信息化局): statement page https://gxj.gz.gov.cn/syys/db/yssm/content/post_10863070.html states no reuse terms (read 2026-11-20).
+    gzw.gz.gov.cn (广州市人民政府国有资产监督管理委员会): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://gzw.gz.gov.cn/gywz/bqsm/index.html, read 2026-11-20. Official texts: art. 5.
+    jrjgj.gz.gov.cn (广州市地方金融管理局): no terms stated (checked 2026-11-20).
+    jtj.gz.gov.cn (广州市交通运输局): no terms stated (checked 2026-11-20).
+    jyj.gz.gov.cn (广州市教育局): no terms stated (checked 2026-11-20).
+    kgw.gz.gov.cn (广州市空港经济区管理委员会): no terms stated (checked 2026-11-20).
+    kjj.gz.gov.cn (广州市科学技术局): no terms stated (checked 2026-11-20).
+    kjj.maoming.gov.cn (茂名市科学技术局): no terms stated (checked 2026-11-20).
+    lyylj.gz.gov.cn (广州市林业和园林局): no terms stated (checked 2026-11-20).
+    mmjyj.maoming.gov.cn (茂名市教育局): statement page http://mmjyj.maoming.gov.cn/wzxx/ystk/index.html states no reuse terms (read 2026-11-20).
+    mmrs.maoming.gov.cn (茂名市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    mzj.gz.gov.cn (广州市民政局): no terms stated (checked 2026-11-20).
+    mzzjj.gz.gov.cn (广州市民族宗教事务局): no terms stated (checked 2026-11-20).
+    nyncj.gz.gov.cn (广州市农业农村局): "广州市农业农村科学院版权所有，未经授权禁止复制或建立镜像", read 2026-11-20. Official texts:
+      art. 5.
+    rsj.gz.gov.cn (广州市人力资源和社会保障局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://rsj.gz.gov.cn/gywz/wzsm/content/post_2406745.html, read 2026-11-20. Official texts: art.
+      5.
+    scjgj.gz.gov.cn (广州市市场监督管理局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - http://scjgj.gz.gov.cn/gywz/bqsm/index.html, read 2026-11-20. Official texts: art. 5.
+    sfj.gz.gov.cn (广州市司法局): "本网站由广州市司法局主办 版权所有：广州市司法局 未经许可，严禁复制或镜像", read 2026-11-20.
+      Official texts: art. 5.
+    sfj.maoming.gov.cn (茂名市司法局): no terms stated (checked 2026-11-20).
+    sjj.gz.gov.cn (广州市审计局): no terms stated (checked 2026-11-20).
+    sthjj.gz.gov.cn (广州市生态环境局): no terms stated (checked 2026-11-20).
+    sw.gz.gov.cn (广州市商务局): no terms stated (checked 2026-11-20).
+    swj.gz.gov.cn (广州市水务局): "未经监护人的同意，本网站不会使用未成年人的个人资料，亦不会向任何第三方披露或传送" - http://swj.gz.gov.cn/sy/content/post_7003491.html,
+      read 2026-11-20. Official texts: art. 5.
+    tjj.gz.gov.cn (广州市统计局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (+1 more) - http://tjj.gz.gov.cn/syys/db/wzsm/content/post_2787847.html, read 2026-11-20. Official texts: art. 5.
+    tyj.gz.gov.cn (广州市体育局): no terms stated (checked 2026-11-20).
+    tyjrswj.gz.gov.cn (广州市退役军人事务局): no terms stated (checked 2026-11-20).
+    wglj.gz.gov.cn (广州市文化广电旅游局): no terms stated (checked 2026-11-20).
+    wjw.gz.gov.cn (广州市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wsjkj.maoming.gov.cn (茂名市卫生健康局): no terms stated (checked 2026-11-20).
+    www.by.gov.cn (白云区人民政府): no terms stated (checked 2026-11-20).
+    www.conghua.gov.cn (从化区人民政府): "(四) 未经监护人的同意，本网站不会使用未成年人的个人资料，亦不会向任何第三方披露或传送"
+      - http://www.conghua.gov.cn/gywz/yssm/index.html, read 2026-11-20. Official texts: art. 5.
+    www.dianbai.gov.cn (电白区人民政府): statement page http://www.dianbai.gov.cn/gywz/yssm/content/post_1213968.html states no reuse terms (read 2026-11-20).
+    www.gaozhou.gov.cn (高州市人民政府): no terms stated (checked 2026-11-20).
+    www.gzfao.gov.cn (广州市人民政府外事办公室): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - http://www.gzfao.gov.cn/about/website/index.html, read 2026-11-20. Official texts: art. 5.
+    www.gzlpc.gov.cn (广州市规划和自然资源局): "资料拥有权：未经市规划自然资源局书面批准，不得以任何方式将资料复印、复制、
+      修改、出版、上载、张贴、转传或派发" - https://ghzyj.gz.gov.cn/gywz/wzsm/content/post_2744793.html, read 2026-11-20. Official texts: art. 5.
+    www.gzns.gov.cn (南沙区人民政府): no terms stated (checked 2026-11-20).
+    www.haizhu.gov.cn (海珠区人民政府): no terms stated (checked 2026-11-20).
+    www.hp.gov.cn (黄埔区人民政府): no terms stated (checked 2026-11-20).
+    www.huadu.gov.cn (花都区人民政府): no terms stated (checked 2026-11-20).
+    www.huazhou.gov.cn (化州市人民政府): "以上内容版权均属于本网站，未经授权不得改编、摘编或以其他方式使用上述相关内容" -
+      https://www.huazhou.gov.cn/fzllm/wzxx/content/post_1609359.html, read 2026-11-20. Official texts: art. 5.
+    www.lw.gov.cn (荔湾区人民政府): no terms stated (checked 2026-11-20).
+    www.maonan.gov.cn (茂南区人民政府): no terms stated (checked 2026-11-20).
+    www.panyu.gov.cn (番禺区人民政府): "(四) 未经监护人的同意，本网站不会使用未成年人的个人资料，亦不会向任何第三方披露或传送"
+      - http://www.panyu.gov.cn/gywz/yssm/index.html, read 2026-11-20. Official texts: art. 5.
+    www.sdb.gov.cn (茂名市新城管理委员会): no terms stated (checked 2026-11-20).
+    www.thnet.gov.cn (天河区人民政府): no terms stated (checked 2026-11-20).
+    www.xinyi.gov.cn (信宜市人民政府): "任何单位和个人不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (+1 more) - http://www.xinyi.gov.cn/qt/wzsm/index.html, read 2026-11-20. Official texts: art. 5.
+    www.yuexiu.gov.cn (越秀区人民政府): no terms stated (checked 2026-11-20).
+    www.zc.gov.cn (增城区人民政府): no terms stated (checked 2026-11-20).
+    xfj.gz.gov.cn (广州市信访局): no terms stated (checked 2026-11-20).
+    xzb.gz.gov.cn (广州市协作办公室): no terms stated (checked 2026-11-20).
+    yjglj.gz.gov.cn (广州市应急管理局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+2 more) - http://yjglj.gz.gov.cn/gywz/wzsm/content/post_10210326.html, read 2026-11-20. Official texts: art.
+      5.
+    zfcj.gz.gov.cn (广州市住房和城乡建设局): "4、未经书面授权，禁止转载、镜像或以其他手段传播本网站信息" - http://zfcj.gz.gov.cn/fzlm/gywz/wzsm/content/post_7823272.html,
+      read 2026-11-20. Official texts: art. 5.
+    zsj.gz.gov.cn (广州市政务服务和数据管理局): no terms stated (checked 2026-11-20).
+  新疆维吾尔自治区
+    czt.xinjiang.gov.cn (新疆维吾尔自治区财政厅): no terms stated (checked 2026-11-20).
+    fao.xinjiang.gov.cn (新疆维吾尔自治区人民政府外事办公室): no terms stated (checked 2026-11-20).
+    gat.xinjiang.gov.cn (新疆维吾尔自治区公安厅): no terms stated (checked 2026-11-20).
+    gcq.tlf.gov.cn (高昌区人民政府): no terms stated (checked 2026-11-20).
+    gdj.xinjiang.gov.cn (新疆维吾尔自治区广播电视局): no terms stated (checked 2026-11-20).
+    gxt.xinjiang.gov.cn (新疆维吾尔自治区工业和信息化厅): no terms stated (checked 2026-11-20).
+    gzw.xinjiang.gov.cn (新疆维吾尔自治区人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    jrjgj.xinjiang.gov.cn (新疆维吾尔自治区地方金融管理局): no terms stated (checked 2026-11-20).
+    jtyst.xinjiang.gov.cn (新疆维吾尔自治区交通运输厅): no terms stated (checked 2026-11-20).
+    jyglj.xinjiang.gov.cn (新疆维吾尔自治区监狱管理局): no terms stated (checked 2026-11-20).
+    jyt.xinjiang.gov.cn (新疆维吾尔自治区教育厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" - https://jyt.xinjiang.gov.cn/edu/wzsm/202002/af15aa5781e9430e8de2af5b7cd0700c.shtml, read 2026-11-20. Official
+      texts: art. 5.
+    kjt.xinjiang.gov.cn (新疆维吾尔自治区科学技术厅): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://kjt.xinjiang.gov.cn/kjt/c100384/wzsm.shtml, read 2026-11-20. Official texts: art. 5.
+    lcj.xinjiang.gov.cn (新疆维吾尔自治区林业和草原局): no terms stated (checked 2026-11-20).
+    lswz.xinjiang.gov.cn (新疆维吾尔自治区粮食和物资储备局): no terms stated (checked 2026-11-20).
+    mpa.xinjiang.gov.cn (新疆维吾尔自治区药品监督管理局): no terms stated (checked 2026-11-20).
+    mwzjswj.xinjiang.gov.cn (新疆维吾尔自治区民族事务委员会): no terms stated (checked 2026-11-20).
+    mzt.xinjiang.gov.cn (新疆维吾尔自治区民政厅): no terms stated (checked 2026-11-20).
+    nynct.xinjiang.gov.cn (新疆维吾尔自治区农业农村厅): no terms stated (checked 2026-11-20).
+    rfb.xinjiang.gov.cn (新疆维吾尔自治区国防动员办公室): no terms stated (checked 2026-11-20).
+    rst.xinjiang.gov.cn (新疆维吾尔自治区人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    scjgj.xinjiang.gov.cn (新疆维吾尔自治区市场监督管理局): no terms stated (checked 2026-11-20).
+    sfj.xinjiang.gov.cn (新疆维吾尔自治区数字化发展局): no terms stated (checked 2026-11-20).
+    sft.xinjiang.gov.cn (新疆维吾尔自治区司法厅): no terms stated (checked 2026-11-20).
+    sgj.xinjiang.gov.cn (新疆维吾尔自治区机关事务管理局): no terms stated (checked 2026-11-20).
+    sjt.xinjiang.gov.cn (新疆维吾尔自治区审计厅): no terms stated (checked 2026-11-20).
+    slt.xinjiang.gov.cn (新疆维吾尔自治区水利厅): no terms stated (checked 2026-11-20).
+    sthjt.xinjiang.gov.cn (新疆维吾尔自治区生态环境厅): no terms stated (checked 2026-11-20).
+    swt.xinjiang.gov.cn (新疆维吾尔自治区商务厅): "任何媒体、互联网站和商业机构不得利用本网站提供的信息和服务内容进行商业性的转载，
+      也不得歪曲和篡改本网站所发布的内容" (+2 more) - https://swt.xinjiang.gov.cn/xjswt/c114374/202311/c3255014694b4a0ba64d06406284a230.shtml, read 2026-11-20.
+      Official texts: art. 5.
+    tjj.xinjiang.gov.cn (新疆维吾尔自治区统计局): no terms stated (checked 2026-11-20).
+    tyj.xinjiang.gov.cn (新疆维吾尔自治区体育局): no terms stated (checked 2026-11-20).
+    tyjr.xinjiang.gov.cn (新疆维吾尔自治区退役军人事务厅): no terms stated (checked 2026-11-20).
+    wjw.xinjiang.gov.cn (新疆维吾尔自治区卫生健康委员会): statement page https://wjw.xinjiang.gov.cn/hfpc/flsm/ypwz.shtml states no reuse terms (read 2026-11-20).
+    wlt.xinjiang.gov.cn (新疆维吾尔自治区文化和旅游厅): no terms stated (checked 2026-11-20).
+    www.alsk.gov.cn (阿拉山口市人民政府): no terms stated (checked 2026-11-20).
+    www.bachu.gov.cn (巴楚县人民政府): statement page https://www.bachu.gov.cn/bcx/c107513/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.dabancheng.gov.cn (达坂城区人民政府): no terms stated (checked 2026-11-20).
+    www.gqp.gov.cn (乌鲁木齐市甘泉堡经济技术开发区（工业区）管理委员会): no terms stated (checked 2026-11-20).
+    www.sayibak.gov.cn (沙依巴克区人民政府): no terms stated (checked 2026-11-20).
+    www.shache.gov.cn (莎车县人民政府): statement page https://www.shache.gov.cn/scx/c108080/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.wlmqx.gov.cn (乌鲁木齐县人民政府): no terms stated (checked 2026-11-20).
+    www.xjbh.gov.cn (博湖县人民政府): statement page https://www.xjbh.gov.cn/xjbhx/c110107/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjbl.gov.cn (博乐市人民政府): statement page https://www.xjbl.gov.cn/xjbl/c126878/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjhj.gov.cn (和静县人民政府): statement page https://www.xjhj.gov.cn/xjhjx/c111218/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjhs.gov.cn (和硕县人民政府): statement page https://www.xjhs.gov.cn/xjhsx/c111062/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjjh.gov.cn (精河县人民政府): no terms stated (checked 2026-11-20).
+    www.xjkel.gov.cn (库尔勒市人民政府): statement page https://www.xjkel.gov.cn/xjkrls/c111084/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjlt.gov.cn (轮台县人民政府): statement page https://www.xjlt.gov.cn/xjltx/c111068/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjmd.gov.cn (米东区人民政府): no terms stated (checked 2026-11-20).
+    www.xjqmx.gov.cn (且末县人民政府): statement page https://www.xjqmx.gov.cn/xjqmx/c111017/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjrq.gov.cn (若羌县人民政府): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站发布的内容" (+2 more) - https://www.xjrq.gov.cn/rqxrmzf/bqsm/Anarticle.shtml, read 2026-11-20. Official texts: art. 5.
+    www.xjwq.gov.cn (温泉县人民政府): statement page https://www.xjwq.gov.cn/xjwq/c132500/jumpxq.shtml states no reuse terms (read 2026-11-20).
+    www.xjyc.gov.cn (叶城县人民政府): statement page https://www.xjyc.gov.cn/ycx/c108441/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.xjyiwu.gov.cn (伊吾县人民政府): no terms stated (checked 2026-11-20).
+    www.yizhou.gov.cn (伊州区人民政府): statement page https://www.yizhou.gov.cn/xjhm/bqsm/202004/12efd5836b584e818f93df930d06bc52.shtml states no reuse terms
+      (read 2026-11-20).
+    www.yph.gov.cn (岳普湖县人民政府): statement page https://www.yph.gov.cn/yphx/c108092/jump_article.shtml states no reuse terms (read 2026-11-20).
+    www.yuli.gov.cn (尉犁县人民政府): statement page https://www.yuli.gov.cn/xjylx/c110997/jump_article.shtml states no reuse terms (read 2026-11-20).
+    xfj.xinjiang.gov.cn (新疆维吾尔自治区信访局): no terms stated (checked 2026-11-20).
+    xjdrc.xinjiang.gov.cn (新疆维吾尔自治区发展和改革委员会): no terms stated (checked 2026-11-20).
+    yjgl.xinjiang.gov.cn (新疆维吾尔自治区应急管理厅): no terms stated (checked 2026-11-20).
+    ylbzj.xinjiang.gov.cn (新疆维吾尔自治区医疗保障局): no terms stated (checked 2026-11-20).
+    zjt.xinjiang.gov.cn (新疆维吾尔自治区住房和城乡建设厅): no terms stated (checked 2026-11-20).
+    zrzyt.xinjiang.gov.cn (新疆维吾尔自治区自然资源厅): statement page https://zrzyt.xinjiang.gov.cn/xjgtzy/wzsm/202004/c7c40436632b4213909e2afadb200bf0.shtml
+      states no reuse terms (read 2026-11-20).
+  江苏省
+    amr.nanjing.gov.cn (南京市市场监督管理局): no terms stated (checked 2026-11-20).
+    cgj.nanjing.gov.cn (南京市城市管理局): no terms stated (checked 2026-11-20).
+    edu.nanjing.gov.cn (南京市教育局): no terms stated (checked 2026-11-20).
+    fcj.nanjing.gov.cn (南京市住房保障和房产局): no terms stated (checked 2026-11-20).
+    fgw.nanjing.gov.cn (南京市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fzggw.jiangsu.gov.cn (江苏省发展和改革委员会): no terms stated (checked 2026-11-20).
+    gaj.nanjing.gov.cn (南京市公安局): no terms stated (checked 2026-11-20).
+    ghj.nanjing.gov.cn (南京市规划和自然资源局): no terms stated (checked 2026-11-20).
+    glj.nanjing.gov.cn (南京市机关事务管理局): no terms stated (checked 2026-11-20).
+    gzw.nanjing.gov.cn (南京市人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    invest.nanjing.gov.cn (南京市投资促进局): no terms stated (checked 2026-11-20).
+    jshrss.jiangsu.gov.cn (江苏省人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    jsstyj.jiangsu.gov.cn (江苏省体育局): no terms stated (checked 2026-11-20).
+    jtj.nanjing.gov.cn (南京市交通运输局): no terms stated (checked 2026-11-20).
+    mzj.nanjing.gov.cn (南京市民政局): no terms stated (checked 2026-11-20).
+    mzzjj.nanjing.gov.cn (南京市民族宗教事务局): no terms stated (checked 2026-11-20).
+    nyncj.nanjing.gov.cn (南京市农业农村局): no terms stated (checked 2026-11-20).
+    safety.nanjing.gov.cn (南京市应急管理局): no terms stated (checked 2026-11-20).
+    scjgj.jiangsu.gov.cn (江苏省市场监督管理局): no terms stated (checked 2026-11-20).
+    sfj.nanjing.gov.cn (南京市司法局): statement page https://sfj.nanjing.gov.cn/yssm/ states no reuse terms (read 2026-11-20).
+    shuiwu.nanjing.gov.cn (南京市水务局): no terms stated (checked 2026-11-20).
+    shuju.lyg.gov.cn (连云港市数据局): no terms stated (checked 2026-11-20).
+    sjj.nanjing.gov.cn (南京市审计局): no terms stated (checked 2026-11-20).
+    ssl.huaian.gov.cn (淮安市人民政府): no terms stated (checked 2026-11-20).
+    swj.nanjing.gov.cn (南京市商务局): no terms stated (checked 2026-11-20).
+    tjj.nanjing.gov.cn (南京市统计局): no terms stated (checked 2026-11-20).
+    wb.nanjing.gov.cn (南京市政府外事办公室): no terms stated (checked 2026-11-20).
+    wjw.nanjing.gov.cn (南京市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wlj.nanjing.gov.cn (南京市文化和旅游局): no terms stated (checked 2026-11-20).
+    www.ganyu.gov.cn (赣榆区人民政府): no terms stated (checked 2026-11-20).
+    www.haqjp.gov.cn (清江浦区人民政府): no terms stated (checked 2026-11-20).
+    www.hongze.gov.cn (洪泽区人民政府): statement page https://www.hongze.gov.cn/col/1129_835665/index.html states no reuse terms (read 2026-11-20).
+    www.jinhu.gov.cn (金湖县人民政府): no terms stated (checked 2026-11-20).
+    www.lianshui.gov.cn (涟水县人民政府): no terms stated (checked 2026-11-20).
+    www.xuyi.gov.cn (盱眙县人民政府): no terms stated (checked 2026-11-20).
+    www.zghaq.gov.cn (淮安区人民政府): no terms stated (checked 2026-11-20).
+    www.zghy.gov.cn (淮阴区人民政府): no terms stated (checked 2026-11-20).
+    xxgk.guannan.gov.cn (灌南县人民政府): no terms stated (checked 2026-11-20).
+    yjglt.jiangsu.gov.cn (江苏省应急管理厅): no terms stated (checked 2026-11-20).
+  河北省
+    sport.hebei.gov.cn (河北省体育局): no terms stated (checked 2026-11-20).
+    whly.hebei.gov.cn (河北省文化和旅游厅): no terms stated (checked 2026-11-20).
+  河南省
+    cgj.smx.gov.cn (三门峡市城市管理局): no terms stated (checked 2026-11-20).
+    czj.smx.gov.cn (三门峡市财政局): no terms stated (checked 2026-11-20).
+    fgw.smx.gov.cn (三门峡市发展和改革委员会): no terms stated (checked 2026-11-20).
+    gaj.smx.gov.cn (三门峡市公安局): no terms stated (checked 2026-11-20).
+    gjj.smx.gov.cn (三门峡市住房公积金管理中心): no terms stated (checked 2026-11-20).
+    gxj.smx.gov.cn (三门峡市工业和信息化局): no terms stated (checked 2026-11-20).
+    jtysj.smx.gov.cn (三门峡市交通运输局): no terms stated (checked 2026-11-20).
+    jyj.smx.gov.cn (三门峡市教育局): no terms stated (checked 2026-11-20).
+    kjj.smx.gov.cn (三门峡市科学技术局): no terms stated (checked 2026-11-20).
+    lyj.smx.gov.cn (三门峡市林业局): no terms stated (checked 2026-11-20).
+    mzj.smx.gov.cn (三门峡市民政局): no terms stated (checked 2026-11-20).
+    mzzj.smx.gov.cn (三门峡市民族宗教事务局): no terms stated (checked 2026-11-20).
+    nyncj.smx.gov.cn (三门峡市农业农村局): no terms stated (checked 2026-11-20).
+    rfb.smx.gov.cn (三门峡市国防动员办公室三门峡市人民防空办公室): no terms stated (checked 2026-11-20).
+    rsj.smx.gov.cn (三门峡市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    sfj.smx.gov.cn (三门峡市司法局): no terms stated (checked 2026-11-20).
+    sjj.smx.gov.cn (三门峡市审计局): no terms stated (checked 2026-11-20).
+    slj.smx.gov.cn (三门峡市水利局): no terms stated (checked 2026-11-20).
+    smx.gov.cn (三门峡市人民政府): no terms stated (checked 2026-11-20).
+    sthj.smx.gov.cn (三门峡市生态环境局): no terms stated (checked 2026-11-20).
+    swj.smx.gov.cn (三门峡市商务局): no terms stated (checked 2026-11-20).
+    tyj.smx.gov.cn (三门峡市体育局): no terms stated (checked 2026-11-20).
+    tyjrswj.smx.gov.cn (三门峡市退役军人事务局): no terms stated (checked 2026-11-20).
+    wglj.smx.gov.cn (三门峡市文化广电和旅游局): no terms stated (checked 2026-11-20).
+    wjw.smx.gov.cn (三门峡市卫生健康委员会): no terms stated (checked 2026-11-20).
+    www.hubin.gov.cn (湖滨区人民政府): no terms stated (checked 2026-11-20).
+    www.lingbao.gov.cn (灵宝市人民政府): no terms stated (checked 2026-11-20).
+    www.mianchi.gov.cn (渑池县人民政府): no terms stated (checked 2026-11-20).
+    www.shanzhou.gov.cn (陕州区人民政府): no terms stated (checked 2026-11-20).
+    xfj.smx.gov.cn (三门峡市信访局): no terms stated (checked 2026-11-20).
+    yjglj.smx.gov.cn (三门峡市应急管理局): no terms stated (checked 2026-11-20).
+    ylbzj.smx.gov.cn (三门峡市医疗保障局): no terms stated (checked 2026-11-20).
+    zjj.smx.gov.cn (三门峡市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzy.smx.gov.cn (三门峡市自然资源和规划局): no terms stated (checked 2026-11-20).
+    zsj.smx.gov.cn (三门峡市行政审批和政务信息管理局): no terms stated (checked 2026-11-20).
+  海南省
+    amr.hainan.gov.cn (海南省市场监督管理局): no terms stated (checked 2026-11-20).
+  湖北省
+    cgw.suizhou.gov.cn (随州市城管执法委): no terms stated (checked 2026-11-20).
+    cgw.wuhan.gov.cn (武汉市城市管理执法委员会): no terms stated (checked 2026-11-20).
+    czj.huangshi.gov.cn (黄石市财政局): no terms stated (checked 2026-11-20).
+    czj.wuhan.gov.cn (武汉市财政局): no terms stated (checked 2026-11-20).
+    dfz.wuhan.gov.cn (武汉市地方志工作办公室): no terms stated (checked 2026-11-20).
+    fgw.wuhan.gov.cn (武汉市发展和改革委员会): no terms stated (checked 2026-11-20).
+    gaj.wuhan.gov.cn (武汉市公安局): no terms stated (checked 2026-11-20).
+    gjj.wuhan.gov.cn (武汉市住房公积金管理中心): no terms stated (checked 2026-11-20).
+    gzw.wuhan.gov.cn (武汉市国资委): no terms stated (checked 2026-11-20).
+    hbj.wuhan.gov.cn (武汉市生态环境局): statement page http://hbj.wuhan.gov.cn/fzlm/xxgkzdzlk/202005/t20200519_1323527.html states no reuse terms (read 2026-11-20).
+    jgswgl.wuhan.gov.cn (武汉市机关事务管理局): statement page https://jgswgl.wuhan.gov.cn/fzlm/wzsm/ states no reuse terms (read 2026-11-20).
+    jtj.wuhan.gov.cn (武汉市交通运输局): no terms stated (checked 2026-11-20).
+    jxj.wuhan.gov.cn (武汉市经济和信息化局): no terms stated (checked 2026-11-20).
+    jyj.suizhou.gov.cn (随州市教育局): statement page http://jyj.suizhou.gov.cn/fzlm_22/yssm/ states no reuse terms (read 2026-11-20).
+    jyj.wuhan.gov.cn (武汉市教育局): no terms stated (checked 2026-11-20).
+    mzj.wuhan.gov.cn (武汉市民政局): no terms stated (checked 2026-11-20).
+    mzw.wuhan.gov.cn (武汉市民族宗教事务委员会): no terms stated (checked 2026-11-20).
+    nyncj.suizhou.gov.cn (随州市农业农村局): no terms stated (checked 2026-11-20).
+    rsj.wuhan.gov.cn (武汉市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rst.hubei.gov.cn (湖北省人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    scjgj.wuhan.gov.cn (武汉市市场监督管理局): no terms stated (checked 2026-11-20).
+    sfj.wuhan.gov.cn (武汉市司法局): statement page https://sfj.wuhan.gov.cn/wzsm/ states no reuse terms (read 2026-11-20).
+    sfj.xianning.gov.cn (咸宁市司法局): no terms stated (checked 2026-11-20).
+    sjj.wuhan.gov.cn (武汉市审计局): no terms stated (checked 2026-11-20).
+    slj.xianning.gov.cn (咸宁市水利和湖泊局): no terms stated (checked 2026-11-20).
+    sw.wuhan.gov.cn (武汉市商务局): no terms stated (checked 2026-11-20).
+    swj.wuhan.gov.cn (武汉市水务局): no terms stated (checked 2026-11-20).
+    tc.wuhan.gov.cn (武汉市投资促进局武汉市政务服务局): "cn以及本网站的其他注册域名、商标标识及专有名称均受相关法律保护，
+      未经武汉市投资促进局运行管理中心同意，任何单位及个人均不得将上述域名、商标及专有名称进行容易引起混淆或歧义的使用"
+      (+3 more) - https://tc.wuhan.gov.cn/gywm/202409/t20240911_2453482.shtml, read 2026-11-20. Official texts: art. 5.
+    tjj.wuhan.gov.cn (武汉市统计局): no terms stated (checked 2026-11-20).
+    tyj.wuhan.gov.cn (武汉市体育局): no terms stated (checked 2026-11-20).
+    va.wuhan.gov.cn (武汉市退役军人事务局): statement page https://va.wuhan.gov.cn/ states no reuse terms (read 2026-11-20).
+    whsj.wuhan.gov.cn (武汉市数据局): statement page https://whsj.wuhan.gov.cn/fzlm_22456/wzsm/ states no reuse terms (read 2026-11-20).
+    wjw.wuhan.gov.cn (武汉市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.xianning.gov.cn (咸宁市政务数据局): no terms stated (checked 2026-11-20).
+    wlj.wuhan.gov.cn (武汉市文化和旅游局): no terms stated (checked 2026-11-20).
+    wlt.hubei.gov.cn (湖北省文化和旅游厅): no terms stated (checked 2026-11-20).
+    www.caidian.gov.cn (蔡甸区人民政府): "版权所有 严禁转载", read 2026-11-20. Official texts: art. 5.
+    www.chibi.gov.cn (赤壁市人民政府): no terms stated (checked 2026-11-20).
+    www.chongyang.gov.cn (崇阳县人民政府): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+2 more) - http://www.chongyang.gov.cn/xwzx/zwyw/202312/t20231229_3421072.shtml, read 2026-11-20. Official
+      texts: art. 5.
+    www.dxh.gov.cn (东西湖区人民政府): no terms stated (checked 2026-11-20).
+    www.hanyang.gov.cn (汉阳区人民政府): statement page https://www.hanyang.gov.cn/Map/202309/t20230925_2270669.shtml states no reuse terms (read 2026-11-20).
+    www.hongshan.gov.cn (洪山区人民政府): no terms stated (checked 2026-11-20).
+    www.huangpi.gov.cn (黄陂区人民政府): no terms stated (checked 2026-11-20).
+    www.jiangan.gov.cn (江岸区人民政府): statement page https://www.jiangan.gov.cn/jaxxw/map/202111/t20211109_1830533.shtml states no reuse terms (read 2026-11-20).
+    www.jianghan.gov.cn (江汉区人民政府): no terms stated (checked 2026-11-20).
+    www.jiangxia.gov.cn (江夏区人民政府): no terms stated (checked 2026-11-20).
+    www.jiayu.gov.cn (嘉鱼县人民政府): no terms stated (checked 2026-11-20).
+    www.qiaokou.gov.cn (硚口区人民政府): "版权所有 严禁转载", read 2026-11-20. Official texts: art. 5.
+    www.qingshan.gov.cn (青山区人民政府): statement page https://www.qingshan.gov.cn/wzbz/yssm/ states no reuse terms (read 2026-11-20).
+    www.tongshan.gov.cn (通山县人民政府): no terms stated (checked 2026-11-20).
+    www.whcjxq.gov.cn (武汉市长江新区管委会): "未经监护人之同意，本网站将不会使用未成年人之个人资料，亦不会向任何第三方披露或传送可识别该未成年人的个人资料"
+      (+1 more) - https://www.whcjxq.gov.cn/qt/nr/202304/t20230410_2183515.shtml, read 2026-11-20. Official texts: art. 5.
+    www.whkfq.gov.cn (武汉市经济技术开发区管委会): statement page https://www.whkfq.gov.cn/wzwj/202004/t20200417_1022311.html states no reuse terms (read
+      2026-11-20).
+    www.whxinzhou.gov.cn (新洲区人民政府): statement page https://www.whxinzhou.gov.cn/wzxx/202004/t20200417_1020574.shtml states no reuse terms (read 2026-11-20).
+    www.wuchang.gov.cn (武昌区人民政府): statement page https://www.wuchang.gov.cn/fzlm/yssm/202004/t20200417_1021787.html states no reuse terms (read 2026-11-20).
+    www.xianan.gov.cn (咸安区人民政府): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - http://www.xianan.gov.cn/qtlm/wzdt/202303/t20230306_2987628.shtml, read 2026-11-20. Official texts:
+      art. 5.
+    www.zgtc.gov.cn (通城县人民政府): no terms stated (checked 2026-11-20).
+    xfj.wuhan.gov.cn (武汉市信访局): no terms stated (checked 2026-11-20).
+    xfj.xianning.gov.cn (咸宁市信访局): no terms stated (checked 2026-11-20).
+    yjj.huangshi.gov.cn (黄石市应急管理局): no terms stated (checked 2026-11-20).
+    yjj.wuhan.gov.cn (武汉市应急管理局): no terms stated (checked 2026-11-20).
+    ylj.wuhan.gov.cn (武汉市园林和林业局): no terms stated (checked 2026-11-20).
+    zgj.wuhan.gov.cn (武汉市住房和城市更新局): statement page https://zgj.wuhan.gov.cn/wzxxgnmk_44/bqsm/202002/t20200201_918115.shtml states no reuse terms
+      (read 2026-11-20).
+    zrzyhgh.wuhan.gov.cn (武汉市自然资源和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzyhghj.suizhou.gov.cn (随州市自然资源和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzyhghj.xianning.gov.cn (咸宁市自然资源和城乡建设局): no terms stated (checked 2026-11-20).
+    zrzyt.hubei.gov.cn (湖北省自然资源厅): no terms stated (checked 2026-11-20).
+    zwsjj.xianning.gov.cn (咸宁市政务数据局): no terms stated (checked 2026-11-20).
+  湖南省
+    cdlyh.changde.gov.cn (常德市柳叶湖旅游度假区管理委员会): no terms stated (checked 2026-11-20).
+    cdylbzj.changde.gov.cn (常德市医疗保障局): no terms stated (checked 2026-11-20).
+    fgw.hunan.gov.cn (湖南省发展和改革委员会): no terms stated (checked 2026-11-20).
+    whhlyt.hunan.gov.cn (湖南省文化和旅游厅): no terms stated (checked 2026-11-20).
+    www.dingcheng.gov.cn (鼎城区人民政府): no terms stated (checked 2026-11-20).
+    yjt.hunan.gov.cn (湖南省应急管理厅): no terms stated (checked 2026-11-20).
+  甘肃省
+    jyg.gov.cn (嘉峪关市人民政府): no terms stated (checked 2026-11-20).
+    www.lxs.gov.cn (临夏市人民政府): no terms stated (checked 2026-11-20).
+  福建省
+    bdcdj.fuzhou.gov.cn (福州市不动产登记和交易中心): no terms stated (checked 2026-11-20).
+    cdc.fuzhou.gov.cn (福州市疾病预防控制中心): no terms stated (checked 2026-11-20).
+    czt.fujian.gov.cn (福建省财政厅): statement page https://czt.fujian.gov.cn/bzzx/yssm/ states no reuse terms (read 2026-11-20).
+    fgw.fj.gov.cn (福建省发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.fuzhou.gov.cn (福州市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.quanzhou.gov.cn (泉州市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.sm.gov.cn (三明市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fj.mof.gov.cn (福建省监管局): no terms stated (checked 2026-11-20).
+    fjca.miit.gov.cn (福建省通信管理局): no terms stated (checked 2026-11-20).
+    fzgxq.fuzhou.gov.cn (福州市高新技术产业开发区管委会): no terms stated (checked 2026-11-20).
+    fzjt.fuzhou.gov.cn (福州市交通运输局): no terms stated (checked 2026-11-20).
+    fzly.fuzhou.gov.cn (福州市林业局): no terms stated (checked 2026-11-20).
+    fzwb.fuzhou.gov.cn (福州市人民政府外事办公室): no terms stated (checked 2026-11-20).
+    fzxq.fuzhou.gov.cn (福州市新区管理委员会): no terms stated (checked 2026-11-20).
+    gaj.quanzhou.gov.cn (泉州市公安局): no terms stated (checked 2026-11-20).
+    gaj.sm.gov.cn (三明市公安局): no terms stated (checked 2026-11-20).
+    gat.fujian.gov.cn (福建省公安厅): no terms stated (checked 2026-11-20).
+    gdb.fujian.gov.cn (福建省国防动员办公室): no terms stated (checked 2026-11-20).
+    gdj.fujian.gov.cn (福建省广播电视局): no terms stated (checked 2026-11-20).
+    gl.fuzhou.gov.cn (福州市鼓岭旅游度假区管理委员会): no terms stated (checked 2026-11-20).
+    glj.fuzhou.gov.cn (福州市公路事业发展中心): no terms stated (checked 2026-11-20).
+    gxt.fujian.gov.cn (福建省工业和信息化厅): no terms stated (checked 2026-11-20).
+    gzw.fujian.gov.cn (福建省人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    gzw.fuzhou.gov.cn (福州市人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    hyj.fuzhou.gov.cn (福州市海洋与渔业局): no terms stated (checked 2026-11-20).
+    hyyyj.fujian.gov.cn (福建省海洋与渔业局): no terms stated (checked 2026-11-20).
+    jgswglj.fujian.gov.cn (福建省机关事务管理局): no terms stated (checked 2026-11-20).
+    jtyst.fujian.gov.cn (福建省交通运输厅): no terms stated (checked 2026-11-20).
+    jyj.fuzhou.gov.cn (福州市教育局): no terms stated (checked 2026-11-20).
+    jyj.quanzhou.gov.cn (泉州市教育局): no terms stated (checked 2026-11-20).
+    jyj.sft.fujian.gov.cn (福建省监狱管理局): no terms stated (checked 2026-11-20).
+    lsj.fujian.gov.cn (福建省粮食和物资储备局): no terms stated (checked 2026-11-20).
+    lyj.fujian.gov.cn (福建省林业局): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (+1 more) - http://lyj.fujian.gov.cn/bzzx/wzsm/, read 2026-11-20. Official texts: art. 5.
+    mqx.fuzhou.gov.cn (福州市人民政府): no terms stated (checked 2026-11-20).
+    mzj.fuzhou.gov.cn (福州市民政局): no terms stated (checked 2026-11-20).
+    mzzjt.fujian.gov.cn (福建省民族与宗教事务厅): no terms stated (checked 2026-11-20).
+    nyj.fuzhou.gov.cn (福州市农业农村局): no terms stated (checked 2026-11-20).
+    nynct.fujian.gov.cn (福建省农业农村厅): no terms stated (checked 2026-11-20).
+    qb.fujian.gov.cn (福建省人民政府侨务办公室): no terms stated (checked 2026-11-20).
+    rsj.quanzhou.gov.cn (泉州市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rsj.sm.gov.cn (三明市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    scjgj.fujian.gov.cn (福建省市场监管局): no terms stated (checked 2026-11-20).
+    sfj.fuzhou.gov.cn (福州市司法局): no terms stated (checked 2026-11-20).
+    sft.fujian.gov.cn (福建省司法厅): statement page http://sft.fujian.gov.cn/bzzx/wzsm/ states no reuse terms (read 2026-11-20).
+    sjglj.fuzhou.gov.cn (福州市数据管理局): no terms stated (checked 2026-11-20).
+    sjj.fuzhou.gov.cn (福州市审计局): no terms stated (checked 2026-11-20).
+    sjt.fujian.gov.cn (福建省审计厅): statement page https://sjt.fujian.gov.cn/qt/wangzhansm/ states no reuse terms (read 2026-11-20).
+    slj.fuzhou.gov.cn (福州市水利局): no terms stated (checked 2026-11-20).
+    slj.quanzhou.gov.cn (泉州市水利局): statement page https://slj.quanzhou.gov.cn/bzzx/yssm/ states no reuse terms (read 2026-11-20).
+    smartcity.fuzhou.gov.cn (福州市“智慧福州”管理服务中心): no terms stated (checked 2026-11-20).
+    smjy.sm.gov.cn (三明市教育局): no terms stated (checked 2026-11-20).
+    smsajj.sm.gov.cn (三明市应急管理局): no terms stated (checked 2026-11-20).
+    smstyj.sm.gov.cn (三明市体育局): no terms stated (checked 2026-11-20).
+    sthjt.fujian.gov.cn (福建省生态环境厅): no terms stated (checked 2026-11-20).
+    swj.fuzhou.gov.cn (福州市商务局): no terms stated (checked 2026-11-20).
+    swt.fujian.gov.cn (福建省商务厅): no terms stated (checked 2026-11-20).
+    tdzx.fuzhou.gov.cn (福州市土地发展中心): no terms stated (checked 2026-11-20).
+    tjj.fujian.gov.cn (福建省统计局): no terms stated (checked 2026-11-20).
+    tjj.fuzhou.gov.cn (福州市统计局): no terms stated (checked 2026-11-20).
+    tyj.fuzhou.gov.cn (福州市体育局): no terms stated (checked 2026-11-20).
+    tyj.quanzhou.gov.cn (泉州市体育局): no terms stated (checked 2026-11-20).
+    tyjrswt.fujian.gov.cn (福建省退役军人事务厅): no terms stated (checked 2026-11-20).
+    wb.fujian.gov.cn (福建省人民政府外事办公室): "（1）根据国务院《中华人民共和国政府信息公开条例》和上级部门有关规定，推行政务公开，
+      任何网站、企业和个人不得擅自将本网站所刊登的信息和内容转载或挪作他用，严禁从事商业或非法用途，如有违反将依法追究法律责任"
+      - http://wb.fujian.gov.cn/bzzx/wzsm/, read 2026-11-20. Official texts: art. 5.
+    wjw.fujian.gov.cn (福建省卫生健康委员会): "① 凡本网注明“稿件来源：福建省卫生健康委员会”的所有文字、图片和音视频稿件，
+      版权均属本网站所有，任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" - http://wjw.fujian.gov.cn/bzzx/mzsm/,
+      read 2026-11-20. Official texts: art. 5.
+    wlj.fuzhou.gov.cn (福州市文化和旅游局): no terms stated (checked 2026-11-20).
+    wlt.fujian.gov.cn (福建省文化和旅游厅): no terms stated (checked 2026-11-20).
+    wwj.wlt.fujian.gov.cn (福建省文物局): no terms stated (checked 2026-11-20).
+    www.fjtb.gov.cn (福建省委台湾工作办公室): no terms stated (checked 2026-11-20).
+    www.fzcangshan.gov.cn (仓山区人民政府): no terms stated (checked 2026-11-20).
+    www.fzcl.gov.cn (长乐区人民政府): no terms stated (checked 2026-11-20).
+    www.fzja.gov.cn (晋安区人民政府): no terms stated (checked 2026-11-20).
+    www.fzmq.gov.cn (闽清县人民政府): no terms stated (checked 2026-11-20).
+    www.fzrd.gov.cn (福州市人民政府): no terms stated (checked 2026-11-20).
+    www.gl.gov.cn (鼓楼区人民政府): statement page https://www.gl.gov.cn/xjwz/bzzx/flsm/ states no reuse terms (read 2026-11-20).
+    www.luoyuan.gov.cn (罗源县人民政府): no terms stated (checked 2026-11-20).
+    www.mawei.gov.cn (马尾区人民政府): no terms stated (checked 2026-11-20).
+    www.minhou.gov.cn (闽侯县人民政府): no terms stated (checked 2026-11-20).
+    www.qzfz.gov.cn (丰泽区人民政府): "丰泽网所使用的网站标识、图案、中英文名称为泉州市丰泽区人民政府网专有标识，未经网站所有者许可，
+      任何人不得使用" (+3 more) - https://www.qzfz.gov.cn/bzzx/flsm/, read 2026-11-20. Official texts: art. 5.
+    www.yongtai.gov.cn (永泰县人民政府): no terms stated (checked 2026-11-20).
+    xfj.fj.gov.cn (福建省信访局): no terms stated (checked 2026-11-20).
+    xfj.fujian.gov.cn (福建省信访局): no terms stated (checked 2026-11-20).
+    xxzx.fujian.gov.cn (福建省经济信息中心): "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (+3 more) - https://xxzx.fujian.gov.cn/fzgn/wzsm/201406/t20140611_703280.htm, read 2026-11-20. Official texts: art. 5.
+    xzfwzx.fuzhou.gov.cn (福州市行政服务中心管理委员会): no terms stated (checked 2026-11-20).
+    yjj.quanzhou.gov.cn (泉州市应急管理局): "3.严禁企图干涉、破坏网站的正常运行，比如：非法修改页面，破坏交互系统，使用“木马”、
+      “邮件炸弹”或其它黑客软件，传播邮件病毒，等等" (+1 more) - https://yjj.quanzhou.gov.cn/bzzx/bqsm/, read 2026-11-20. Official texts: art.
+      5.
+    ylj.fuzhou.gov.cn (福州市园林中心): no terms stated (checked 2026-11-20).
+    zfgjj.fuzhou.gov.cn (福州市住房公积金中心): no terms stated (checked 2026-11-20).
+    zfj.fuzhou.gov.cn (福州市城市管理委员会): no terms stated (checked 2026-11-20).
+    zjj.fuzhou.gov.cn (福州市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zjt.fujian.gov.cn (福建省住房和城乡建设厅): no terms stated (checked 2026-11-20).
+    zrzyt.fujian.gov.cn (福建省自然资源厅): no terms stated (checked 2026-11-20).
+    zygh.fuzhou.gov.cn (福州市自然资源和规划局): no terms stated (checked 2026-11-20).
+  西藏自治区
+    drc.xizang.gov.cn (西藏自治区发展和改革委员会): no terms stated (checked 2026-11-20).
+    hrss.xizang.gov.cn (西藏自治区人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    sport.xizang.gov.cn (西藏自治区体育局): no terms stated (checked 2026-11-20).
+    wlt.xizang.gov.cn (西藏自治区文化和旅游厅): statement page https://wlt.xizang.gov.cn/ggbf/wzsm/ states no reuse terms (read 2026-11-20).
+  辽宁省
+    aic.dandong.gov.cn (丹东市市场监管局): no terms stated (checked 2026-11-20).
+    cgj.chaoyang.gov.cn (朝阳市城市管理综合行政执法局): no terms stated (checked 2026-11-20).
+    cgzfj.panjin.gov.cn (盘锦市城市管理综合行政执法局): no terms stated (checked 2026-11-20).
+    czj.panjin.gov.cn (盘锦市财政局): no terms stated (checked 2026-11-20).
+    czj.yingkou.gov.cn (营口市财政局): no terms stated (checked 2026-11-20).
+    czt.ln.gov.cn (辽宁省财政厅): "本网站内容所涉及到的版权归本网站所有，任何媒体或互联网站不得擅自转载本网站提供的信息和服务内容，
+      也不得歪曲和篡改本网站所发布的内容" - https://czt.ln.gov.cn/czt/wzsm/index.shtml, read 2026-11-20. Official texts: art. 5.
+    dawa.gov.cn (大洼区人民政府): no terms stated (checked 2026-11-20).
+    dd110.dandong.gov.cn (丹东市公安局): "主办单位：丹东市公安局　本网站版权所有，未经许可请勿转载", read 2026-11-20. Official texts:
+      art. 5.
+    ddedu.dandong.gov.cn (丹东市教育局): no terms stated (checked 2026-11-20).
+    ddepb.dandong.gov.cn (丹东市生态环境局): no terms stated (checked 2026-11-20).
+    ddpas.dandong.gov.cn (丹东市数据和政务服务局): no terms stated (checked 2026-11-20).
+    ddssfj.dandong.gov.cn (丹东市司法局): no terms stated (checked 2026-11-20).
+    fgw.dandong.gov.cn (丹东市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.ln.gov.cn (辽宁省发展和改革委员会): "未经许可，任何单位和个人不得在任何媒体上擅自转载和引用本网站内容", read 2026-11-20.
+      Official texts: art. 5.
+    fgw.panjin.gov.cn (盘锦市发展和改革委员会): no terms stated (checked 2026-11-20).
+    fgw.shenyang.gov.cn (沈阳市发展和改革委员会): no terms stated (checked 2026-11-20).
+    gaj.panjin.gov.cn (盘锦市公安局): no terms stated (checked 2026-11-20).
+    gat.ln.gov.cn (辽宁省公安厅): no terms stated (checked 2026-11-20).
+    gdj.ln.gov.cn (辽宁省广播电视局): no terms stated (checked 2026-11-20).
+    gxj.panjin.gov.cn (盘锦市工业和信息化局): no terms stated (checked 2026-11-20).
+    gxt.ln.gov.cn (辽宁省工业和信息化厅): no terms stated (checked 2026-11-20).
+    gzw.ln.gov.cn (辽宁省人民政府国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    gzw.panjin.gov.cn (盘锦市国有资产监督管理委员会): no terms stated (checked 2026-11-20).
+    jgsw.ln.gov.cn (辽宁省机关事务管理局): no terms stated (checked 2026-11-20).
+    jhzx.dandong.gov.cn (丹东市经济合作发展服务中心): no terms stated (checked 2026-11-20).
+    jtt.ln.gov.cn (辽宁省交通运输厅): no terms stated (checked 2026-11-20).
+    jtysj.chaoyang.gov.cn (朝阳市交通运输局): no terms stated (checked 2026-11-20).
+    jtysj.panjin.gov.cn (盘锦市交通运输局): no terms stated (checked 2026-11-20).
+    jyj.chaoyang.gov.cn (朝阳市教育局): no terms stated (checked 2026-11-20).
+    jyj.panjin.gov.cn (盘锦市教育局): no terms stated (checked 2026-11-20).
+    jyt.ln.gov.cn (辽宁省教育厅): no terms stated (checked 2026-11-20).
+    kjj.panjin.gov.cn (盘锦市科学技术局): no terms stated (checked 2026-11-20).
+    kjt.ln.gov.cn (辽宁省科学技术厅): "未经辽宁省科学技术厅授权，任何人不得建立本网站的镜像" - https://kjt.ln.gov.cn/kjt/wzxg/wzsm/index.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    ksaq.ln.gov.cn (辽宁省地方矿山安全监督管理局): no terms stated (checked 2026-11-20).
+    lcj.ln.gov.cn (辽宁省粮食和物资储备局): no terms stated (checked 2026-11-20).
+    lyt.ln.gov.cn (辽宁省林业和草原局): no terms stated (checked 2026-11-20).
+    minzhengju.dandong.gov.cn (丹东市民政局): no terms stated (checked 2026-11-20).
+    mzj.chaoyang.gov.cn (朝阳市民政局): no terms stated (checked 2026-11-20).
+    mzj.panjin.gov.cn (盘锦市民政局): no terms stated (checked 2026-11-20).
+    mzw.ln.gov.cn (辽宁省民族和宗教事务委员会): "主办单位：辽宁省民族和宗教事务委员会　未经授权禁止复制或镜像", read 2026-11-20.
+      Official texts: art. 5.
+    nync.ln.gov.cn (辽宁省农业农村厅): no terms stated (checked 2026-11-20).
+    nyncj.chaoyang.gov.cn (朝阳市农业农村局): no terms stated (checked 2026-11-20).
+    nyncj.panjin.gov.cn (盘锦市农业农村局): no terms stated (checked 2026-11-20).
+    panjin.gov.cn (盘锦市人民政府): no terms stated (checked 2026-11-20).
+    panshan.gov.cn (盘山县人民政府): no terms stated (checked 2026-11-20).
+    rfb.ln.gov.cn (辽宁省国防动员办公室): no terms stated (checked 2026-11-20).
+    rsj.chaoyang.gov.cn (朝阳市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rsj.dandong.gov.cn (丹东市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rsj.panjin.gov.cn (盘锦市人力资源和社会保障局): no terms stated (checked 2026-11-20).
+    rst.ln.gov.cn (辽宁省人力资源和社会保障厅): "本网站各类信息未经授权禁止转载 建议使用1024×768分辨率 IE8.0以上版本浏览器
+      ICP备案序号：", read 2026-11-20. Official texts: art. 5.
+    scj.shenyang.gov.cn (沈阳市市场监督管理局): no terms stated (checked 2026-11-20).
+    scjg.ln.gov.cn (辽宁省市场监督管理局): no terms stated (checked 2026-11-20).
+    scjgj.chaoyang.gov.cn (朝阳市市场监督管理局): no terms stated (checked 2026-11-20).
+    scjgj.panjin.gov.cn (盘锦市市场监督管理局): no terms stated (checked 2026-11-20).
+    sfj.panjin.gov.cn (盘锦市司法局): no terms stated (checked 2026-11-20).
+    sft.ln.gov.cn (辽宁省司法厅): no terms stated (checked 2026-11-20).
+    sjj.dandong.gov.cn (丹东市审计局): no terms stated (checked 2026-11-20).
+    sjj.panjin.gov.cn (盘锦市审计局): no terms stated (checked 2026-11-20).
+    sjt.ln.gov.cn (辽宁省审计厅): "本网站各类信息未经授权禁止转载 辽宁省审计厅版权所有 辽宁省审计厅办公室主办", read 2026-11-20.
+      Official texts: art. 5.
+    slj.panjin.gov.cn (盘锦市水利局): no terms stated (checked 2026-11-20).
+    slt.ln.gov.cn (辽宁省水利厅): no terms stated (checked 2026-11-20).
+    sthj.ln.gov.cn (辽宁省生态环境厅): statement page https://sthj.ln.gov.cn/sthj/wzsm/index.shtml states no reuse terms (read 2026-11-20).
+    sthjj.chaoyang.gov.cn (朝阳市生态环境局): no terms stated (checked 2026-11-20).
+    sthjj.panjin.gov.cn (盘锦市生态环境局): no terms stated (checked 2026-11-20).
+    stq.gov.cn (双台子区人民政府): no terms stated (checked 2026-11-20).
+    swj.chaoyang.gov.cn (朝阳市水务局): no terms stated (checked 2026-11-20).
+    tjj.panjin.gov.cn (盘锦市统计局): no terms stated (checked 2026-11-20).
+    tyj.ln.gov.cn (辽宁省体育局): no terms stated (checked 2026-11-20).
+    tyjrsw.ln.gov.cn (辽宁省退役军人事务厅): no terms stated (checked 2026-11-20).
+    whly.ln.gov.cn (辽宁省文化和旅游厅): no terms stated (checked 2026-11-20).
+    wjw.chaoyang.gov.cn (朝阳市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wjw.panjin.gov.cn (盘锦市卫生健康委员会): no terms stated (checked 2026-11-20).
+    wlgdj.chaoyang.gov.cn (朝阳市文化旅游和广播电视局): no terms stated (checked 2026-11-20).
+    wlgdj.panjin.gov.cn (盘锦市文化旅游和广播电视局): no terms stated (checked 2026-11-20).
+    wsjk.ln.gov.cn (辽宁省卫生健康委员会): "本网站各类信息未经授权禁止转载 辽宁省卫生健康委版权所有 备案编号：辽ICP备2021006606号",
+      read 2026-11-20. Official texts: art. 5.
+    wsjsw.dandong.gov.cn (丹东市卫生健康委员会): no terms stated (checked 2026-11-20).
+    www.donggang.gov.cn (东港市人民政府): no terms stated (checked 2026-11-20).
+    www.lnfc.gov.cn (凤城市人民政府): no terms stated (checked 2026-11-20).
+    www.yuanbao.gov.cn (元宝区人民政府): no terms stated (checked 2026-11-20).
+    www.zaq.gov.cn (振安区人民政府): no terms stated (checked 2026-11-20).
+    www.zhenxing.gov.cn (振兴区人民政府): no terms stated (checked 2026-11-20).
+    xfj.chaoyang.gov.cn (朝阳市信访局): no terms stated (checked 2026-11-20).
+    xlt.gov.cn (兴隆台区人民政府): no terms stated (checked 2026-11-20).
+    yjgl.ln.gov.cn (辽宁省应急管理厅): no terms stated (checked 2026-11-20).
+    yjglj.panjin.gov.cn (盘锦市应急管理局): no terms stated (checked 2026-11-20).
+    ypjg.ln.gov.cn (辽宁省药品监督管理局): no terms stated (checked 2026-11-20).
+    ysj.ln.gov.cn (辽宁省数据和政务服务局): "本网站内容所涉及的版权归本网站所有，任何媒体或互联网站不得擅自转载本网站提供的信息和服务内容，
+      也不得歪曲和篡改本网站所发布的内容" - https://ysj.ln.gov.cn/ysj/wzsm/index.shtml, read 2026-11-20. Official texts: art. 5.
+    zjj.chaoyang.gov.cn (朝阳市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zjj.panjin.gov.cn (盘锦市住房和城乡建设局): no terms stated (checked 2026-11-20).
+    zjt.ln.gov.cn (辽宁省住房和城乡建设厅): no terms stated (checked 2026-11-20).
+    zrzyj.chaoyang.gov.cn (朝阳市自然资源局): no terms stated (checked 2026-11-20).
+    zrzyj.panjin.gov.cn (盘锦市自然资源局): no terms stated (checked 2026-11-20).
+    zscq.ln.gov.cn (辽宁省知识产权局): "其他媒体、网站或个人转载使用时不得进行商业性的原版原式的转载，也不得歪曲和篡改本网站所发布的内容"
+      (+1 more) - https://zscq.ln.gov.cn/zscq/bqsm/index.shtml, read 2026-11-20. Official texts: art. 5.
+  陕西省
+    fgw.baoji.gov.cn (宝鸡市发展和改革委员会): no terms stated (checked 2026-11-20).
+    xadrc.xa.gov.cn (西安市发展和改革委员会): no terms stated (checked 2026-11-20).
+  青海省
+    www.delingha.gov.cn (德令哈市人民政府): no terms stated (checked 2026-11-20).
+    www.geermu.gov.cn (格尔木市人民政府): "&emsp;&emsp;任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，
+      必须与相应提供单位直接联系获得合法授权" (+1 more) - https://www.geermu.gov.cn/newsList?columnId=40288af66ad81d2b016ad9169dfb0007, read 2026-11-20.
+      Official texts: art. 5.
+    www.gonghe.gov.cn (共和县人民政府): no terms stated (checked 2026-11-20).
+    www.guide.gov.cn (贵德县人民政府): statement page https://www.guide.gov.cn/wzxg/wzsm states no reuse terms (read 2026-11-20).
+    www.guinan.gov.cn (贵南县人民政府): no terms stated (checked 2026-11-20).
+    www.hntongren.gov.cn (同仁市人民政府): no terms stated (checked 2026-11-20).
+    www.huangzhong.gov.cn (湟中区人民政府): no terms stated (checked 2026-11-20).
+    www.jianzha.gov.cn (尖扎县人民政府): no terms stated (checked 2026-11-20).
+    www.qhbb.gov.cn (海西蒙古族藏族自治州省编制办): "青海省委机构编制委员会办公室版权所有，未经书面授权禁止使用 | 免责声明
+      |", read 2026-11-20. Official texts: art. 5.
+    www.tongde.gov.cn (同德县人民政府): no terms stated (checked 2026-11-20).
+    www.xinghai.gov.cn (兴海县人民政府): no terms stated (checked 2026-11-20).
+    www.xncx.gov.cn (城西区人民政府): no terms stated (checked 2026-11-20).
+    www.xncz.gov.cn (城中区人民政府): no terms stated (checked 2026-11-20).
+    www.zeku.gov.cn (泽库县人民政府): no terms stated (checked 2026-11-20).
+  黑龙江省
+    drc.hlj.gov.cn (黑龙江省发展改革委): no terms stated (checked 2026-11-20).
+    fao.hlj.gov.cn (黑龙江省人民政府外事办公室): no terms stated (checked 2026-11-20).
+    hrss.hlj.gov.cn (黑龙江省人力资源和社会保障厅): no terms stated (checked 2026-11-20).
+    jixi.gov.cn (鸡西市人民政府): "本网站发布的内容,除在信息内容中特别说明的之外,版权归本网站所有,鸡西市政府系统以外的其他媒体、
+      网站或商业机构,不得用于商业性转载或盈利活动,也不得歪曲、篡改或原文转载" - https://jixi.gov.cn/jixi/c100442/202102/c06_4189.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    jixilishu.gov.cn (梨树区人民政府): no terms stated (checked 2026-11-20).
+    jiximashan.gov.cn (麻山区人民政府): no terms stated (checked 2026-11-20).
+    jkj.hlj.gov.cn (黑龙江省疾病预防控制局): no terms stated (checked 2026-11-20).
+    sft.hlj.gov.cn (黑龙江省司法厅): statement page https://sft.hlj.gov.cn/sft/c103910/public_tt.shtml states no reuse terms (read 2026-11-20).
+    tyj.hlj.gov.cn (黑龙江省体育局): "&ensp;&ensp;任何媒体或互联网不得擅自转载本网站提供的信息和服务内容，如需转载，必须获得本网站的授权"
+      (+1 more) - https://tyj.hlj.gov.cn/tyj/c103253/tt.shtml, read 2026-11-20. Official texts: art. 5.
+    wlt.hlj.gov.cn (黑龙江省文化和旅游厅): "、水印的所有文字、图片和音频视频稿件，版权均属文化和旅游厅政府门户网站所有，
+      任何单位和个人未经文化和旅游厅书面授权不得转载、链接、转贴或以其他方式复制发表" (+1 more) - https://wlt.hlj.gov.cn/wlt/c105557/tt.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    www.czh.gov.cn (城子河区人民政府): no terms stated (checked 2026-11-20).
+    www.didaoqu.gov.cn (滴道区人民政府): no terms stated (checked 2026-11-20).
+    www.hailun.gov.cn (海伦市人民政府): no terms stated (checked 2026-11-20).
+    www.hgds.gov.cn (东山区人民政府): no terms stated (checked 2026-11-20).
+    www.hggn.gov.cn (工农区人民政府): no terms stated (checked 2026-11-20).
+    www.hgns.gov.cn (南山区人民政府): no terms stated (checked 2026-11-20).
+    www.hgxa.gov.cn (兴安区人民政府): no terms stated (checked 2026-11-20).
+    www.hgxs.gov.cn (兴山区人民政府): no terms stated (checked 2026-11-20).
+    www.hgxyq.gov.cn (向阳区人民政府): no terms stated (checked 2026-11-20).
+    www.hlanda.gov.cn (安达市人民政府): no terms stated (checked 2026-11-20).
+    www.hljbeilin.gov.cn (北林区人民政府): no terms stated (checked 2026-11-20).
+    www.hljhulin.gov.cn (虎林市人民政府): "本网站发布的内容,除在信息内容中特别说明的之外,版权归本网站所有,虎林市政府系统以外的其他媒体、
+      网站或商业机构,不得用于商业性转载或盈利活动,也不得歪曲、篡改或原文转载" - https://www.hljhulin.gov.cn/hls/s230415/202304/c06_104756.shtml,
+      read 2026-11-20. Official texts: art. 5.
+    www.hljlanxi.gov.cn (兰西县人民政府): no terms stated (checked 2026-11-20).
+    www.hljms.gov.cn (密山市人民政府): no terms stated (checked 2026-11-20).
+    www.hljqingan.gov.cn (庆安县人民政府): no terms stated (checked 2026-11-20).
+    www.hljzhaodong.gov.cn (肇东市人民政府): no terms stated (checked 2026-11-20).
+    www.hlwangkui.gov.cn (望奎县人民政府): no terms stated (checked 2026-11-20).
+    www.jgq.gov.cn (鸡冠区人民政府): no terms stated (checked 2026-11-20).
+    www.jidong.gov.cn (鸡东县人民政府): no terms stated (checked 2026-11-20).
+    www.jmsdf.gov.cn (东风区人民政府): statement page https://www.jmsdf.gov.cn/dfq/c101259/tt.shtml states no reuse terms (read 2026-11-20).
+    www.jmsjqzf.gov.cn (郊区人民政府): statement page https://www.jmsjqzf.gov.cn/jq/c101761/tt.shtml states no reuse terms (read 2026-11-20).
+    www.luobei.gov.cn (萝北县人民政府): no terms stated (checked 2026-11-20).
+    www.mingshui.gov.cn (明水县人民政府): no terms stated (checked 2026-11-20).
+    www.qgnet.gov.cn (青冈县人民政府): statement page https://www.qgnet.gov.cn/qg/wzsm/cdxgj.shtml states no reuse terms (read 2026-11-20).
+    www.suibin.gov.cn (绥滨县人民政府): no terms stated (checked 2026-11-20).
+    www.suiling.gov.cn (绥棱县人民政府): no terms stated (checked 2026-11-20).
+    www.sysbsq.gov.cn (宝山区人民政府): no terms stated (checked 2026-11-20).
+    www.sysld.gov.cn (岭东区人民政府): "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (+1 more) - https://www.sysld.gov.cn/ld/54/201706/c07_150448.shtml, read 2026-11-20. Official texts: art. 5.
+    www.xyq.gov.cn (向阳区人民政府): statement page https://www.xyq.gov.cn/xyq/c101753/tt.shtml states no reuse terms (read 2026-11-20).
+    zrzyt.hlj.gov.cn (黑龙江省自然资源厅): no terms stated (checked 2026-11-20).
+
 3. No warranty
 
     The texts are copies of the official publications made with care; they are not the official publication. For
