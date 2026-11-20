@@ -105,6 +105,16 @@ in section 2, which come from their publishers and keep whatever terms those pub
       "本网站所有信息的版权属中国证监会所有。未经中国证监会许可，不得更改、销售或租赁本网站信息。" ("copyright in all
       information on this site belongs to the CSRC; it may not be altered, sold or leased without permission"); the
       Csrc logo needs permission. Taken here: rules and documents of the CSRC only, unaltered (art. 5).
+    国务院政策文件库 https://www.gov.cn/zhengce/zhengcewenjianku/ (国务院办公厅; its list service sousuo.www.gov.cn)
+      Read 2026-11-20: sousuo.www.gov.cn answers robots.txt with 404 and states no rate or terms; the documents are
+      pages of www.gov.cn, under the 网站声明 quoted above. Taken from 2026-11-20: documents of the State Council and
+      its departments as published there, unaltered (art. 5); reposts marked 本文有删减 (abridged) are not taken.
+    国家税务总局税收政策法规库 fgk.chinatax.gov.cn, other channels: from 2026-11-20 also its 税务规范性文件, 财税文件,
+      其他文件, 工作通知 and 国务院文件 channels, in force and repealed (list service www.chinatax.gov.cn); no terms
+      stated (checked 2026-11-19), robots.txt 404 on both hosts.
+    证券期货法规数据库系统 https://neris.csrc.gov.cn/falvfagui/ (中国证监会): footer "版权所有：中国证券监督管理委员会",
+      linking the 法律声明 quoted above; robots.txt 404 (checked 2026-11-19, read 2026-11-20). Taken from 2026-11-20:
+      documents of state organs only (no exchange, association or clearing-house rules, no JR/T standards).
 
 2.3 Ministries and other State Council bodies (部门规章, ministry gazettes, normative documents)
 
@@ -333,6 +343,9 @@ in section 2, which come from their publishers and keep whatever terms those pub
     ycrdw.gov.cn (伊春市人大常委会): no terms stated (checked 2026-11-19).
   上海市
     www.shanghai.gov.cn (上海市人民政府): no terms stated (checked 2026-11-19).
+    fgk.shrd.gov.cn (上海市法规规章规范性文件数据库, 上海市人大常委会): footer "版权所有©上海市人大常委会"; robots.txt 404, no
+      statement page (checked 2026-11-20). Taken from 2026-11-20: local regulations and the normative documents of the
+      city and district bodies, courts, procuratorate and supervision commission filed there (art. 5).
   江苏省
     rd.changzhou.gov.cn (常州市人大常委会): no terms stated (checked 2026-11-19).
     rd.huaian.gov.cn (淮安市人大常委会): no terms stated (checked 2026-11-19).
