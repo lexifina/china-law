@@ -383,3 +383,43 @@ The rules for every host:
   its front matter, has not been checked by hand, and the scan stays the authority.
 - In gazettes and local documents, a private person's name or address is replaced in place by [姓名略] or
   [地址略]. A document essentially about a private person is kept as metadata only.
+
+### Labelled corrections and dates (20 November 2026)
+
+A dating review of 19 November 2026 found commits dated on a web page's date, an adoption or approval day, a gazette
+issue day or an estimate. None of them is rewritten. Each is fixed by a labelled correction commit on top of `main`:
+
+    Kind: correction
+    In-force: <the first day of the corrected version>
+    Corrects: <act folder or document file> <from>..<to>     (an open "<from>.." runs to the act's next version)
+    Supersedes: <the commit in force on <from>, or none>
+    Reason: <one line>
+    Act-path: <the act folder or file>
+    Files: <one line per file; a listed file missing from the commit's tree is withdrawn for the range>
+
+`tools/on_date.py` gives an act's text on a day from the commit whose In-force is the last on or before that day,
+then applies, file by file, every correction whose range holds the day. A correction that sets no file to new text
+adds a line to the act's `README.md` (so the folder's history shows it) and an entry to
+[`data/date-corrections.json`](data/date-corrections.json), which lists every misdated, withdrawn or back-filled
+commit with its correction (act, range, kind, evidence). Rows marked `pending` there are known faults whose right day
+has not yet been read from an official text; they stay as published until it is.
+
+- **Re-dating.** A version dated too late gets a correction for the days from its real 施行日期 to the day before
+  the published date (`Supersedes: none` when nothing was in force). A version dated too early gets a correction that
+  withdraws its text for the days before its 施行日期, then a tip restore from that day.
+- **Earlier versions found later** (back-fills) get a closed range `<from>..<day before the next version>`,
+  `Supersedes:` the commit in force on `<from>` or `none`, credited to the instrument that made that version and
+  dated noon on its day. When a back-fill changes files at the tip, a last correction restores the current text
+  (`Reason: the text in force now, restored at the tip after the corrections to earlier versions`, `Supersedes:` the
+  current-text commit, open range).
+- **The tip restore is credited to the instrument of the current text**, not to Lexifina: its words are that
+  instrument's, unchanged, so `git blame` on today's wording names the law, order or decision that made it. This
+  follows the Czech record's source-authored corrections; Portugal and Germany credit restores to the publisher of
+  the record. Other corrections (re-dating, withdrawals) are by Lexifina.
+- **Withdrawals** of a class of records are one commit, with the paths listed in
+  `data/withdrawn-<what>-<date>.txt`.
+- **Dates of correction commits:** author date noon Asia/Shanghai of the corrected version's day (before 1970:
+  1 January 1970, the real day first in the subject); committer Lexifina at the parent's committer time plus one
+  second.
+- **Records held as not yet in force** are listed in each collector's held list and released after noon
+  Asia/Shanghai of their day (`runners/cn_release_held.py` in the build scripts), then committed by their collector.
