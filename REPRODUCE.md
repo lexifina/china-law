@@ -423,3 +423,11 @@ has not yet been read from an official text; they stay as published until it is.
   second.
 - **Records held as not yet in force** are listed in each collector's held list and released after noon
   Asia/Shanghai of their day (`runners/cn_release_held.py` in the build scripts), then committed by their collector.
+
+- **Pending.** `data/date-corrections.json` also lists, under `pending`, the misdated commits whose right day has not
+  yet been read from an official text (local acts whose amending decision or 公告 is not yet read, State Council
+  package decisions not yet in the 国务院公报 record). They stay as published until it is.
+- **Test.** `python tools/test_repo.py` checks the dating rules on every part of the record: an In-force day (or, in
+  a document tree, the documented basis of its day) on every law commit, author date noon Asia/Shanghai of In-force,
+  nothing dated after now, labelled corrections by Lexifina or the source, and no adoption-day, page-date or estimated
+  day that `data/date-corrections.json` does not account for.

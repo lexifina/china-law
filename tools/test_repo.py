@@ -7,9 +7,16 @@ It asserts that:
 1. `git blame` on a changed provision names an amending act as author of its lines;
 2. tools/on_date.py gives the text before and after a known amendment, and each equals the file at that day's tag;
 3. `git log --follow` on a file lists its amending acts in the order they took effect;
-4. every tag resolves to a commit, and every commit but the documentation commit has an `In-force:` trailer;
-5. no commit is authored by Lexifina except the documentation commit (the last one);
-6. every git or tool command in the README's table runs and prints something.
+4. every tag resolves to a commit; every law commit has an ISO `In-force:` trailer, or, in a document tree (公报,
+   案例, 决定, 修改和废止, 规范性文件, 条约), the documented basis of its day (`Issue-day:`, `Issued:` or `Promulgated:`), or
+   is accounted for in data/date-corrections.json (corrected by a labelled correction, or listed as pending);
+5. a commit authored by Lexifina is a documentation commit, the layout commit, or a labelled correction
+   (`Kind: correction` with a `Reason:`); corrections may also be authored by the source (the instrument whose text
+   they carry); every commit is committed by Lexifina;
+6. every git or tool command in the README's table runs and prints something;
+7. dating: no commit is dated after now; every law commit's author date is noon Asia/Shanghai of its In-force day
+   (before 1970: the 1970-01-01 clamp with the real day first in the subject); and no evidence names an adoption or
+   approval day, a web-page date or an estimate, unless data/date-corrections.json accounts for the commit.
 With --record the result is written to verification.json next to this script (for REPRODUCE.md).
 """
 import argparse
@@ -25,7 +32,7 @@ LAW = re.compile(r'^(中华人民共和国宪法（1982年）|宪法修正案（
 PUBLISHER = '中国人大网 (全国人大常委会办公厅)'
 
 
-DOC_TOP = ('REPRODUCE.md', 'LICENSE', 'PLAN.md', 'SOURCES.md', '.gitattributes', '.gitignore')
+DOC_TOP = ('REPRODUCE.md', 'LICENSE', 'PLAN.md', 'SOURCES.md', '.gitattributes', '.gitignore', '.mailmap')
 DOC_DIRS = ('data/', 'tools/', 'visualisations/', 'vulnerabilities/', 'registry/', 'monitoring/')
 
 
@@ -131,6 +138,33 @@ def doc_commit_problems(repo, rows):
     return bad
 
 
+DOC_TREES = ('公报/', '案例/', '决定/', '修改和废止/', '规范性文件/', '条约/')
+DOC_SEGS = {'公报', '政府公报', '案例', '决定', '修改和废止', '规范性文件', '条约'}
+
+
+def in_doc_tree(path):
+    """A document tree (one file per document), at the top or under a unit (地方/<省>/政府公报/...)."""
+    return path.startswith(DOC_TREES) or bool(DOC_SEGS & set(path.split('/')[:-1]))
+BASIS = ('Issue-day', 'Issued', 'Promulgated')
+
+
+def date_ledger(repo):
+    """{commit: kind} of the commits data/date-corrections.json accounts for: misdated, withdrawn or superseded
+    commits with their correction, and the rows listed as pending."""
+    try:
+        d = json.loads(subprocess.run(['git', 'show', 'main:data/date-corrections.json'], cwd=repo, capture_output=True,
+                                      text=True, encoding='utf-8').stdout or '{}')
+    except ValueError:
+        return {}
+    out = {}
+    for e in d.get('corrections', []) + d.get('pending', []):
+        for k in ('misdated', 'withdrawn', 'withdrawal_commit', 'readded', 'supersedes', 'sha'):
+            v = e.get(k)
+            if v and v != 'none':
+                out.setdefault(v, e.get('kind') or 'pending')
+    return out
+
+
 def default_repo() -> Path:
     if (HERE.parent / '.git').exists():
         return HERE.parent
@@ -219,19 +253,51 @@ class Smoke:
         assert tags, 'no tags'
         for t in tags:
             self.git('rev-parse', '--verify', '-q', f'{t}^{{commit}}')
-        rows = self.git('log', '--format=%H%x09%an%x09%(trailers:key=In-force,valueonly,separator=)', 'main').splitlines()
-        law = [r for r in rows if r.split('\t')[1] != 'Lexifina']
-        missing = [r for r in law if not r.split('\t')[2].strip()]
-        assert not missing, f'{len(missing)} commits without In-force, e.g. {missing[:2]}'
-        bad = [r for r in law if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', r.split('\t')[2].strip())]
+        fmt = ('%x1e%H%x1f%an%x1f%(trailers:key=In-force,valueonly,separator=)%x1f'
+               '%(trailers:key=Kind,valueonly,separator=)%x1f' +
+               '%x1f'.join(f'%(trailers:key={k},valueonly,separator=)' for k in BASIS) + '%x1f')
+        out = subprocess.run(['git', '-c', 'core.quotePath=false', 'log', '--no-renames', '--name-only', f'--format={fmt}',
+                              'main'], cwd=self.repo, capture_output=True, text=True, encoding='utf-8').stdout
+        ledger = date_ledger(self.repo)
+        n_inf, n_basis, n_ledger, missing, bad = 0, 0, 0, [], []
+        for rec in out.split('\x1e')[1:]:
+            f = rec.split('\x1f')
+            h, an, inf, kind = f[0], f[1], f[2].strip(), f[3].strip()
+            basis = [x.strip()[:10] for x in f[4:4 + len(BASIS)]]
+            files = [x for x in f[-1].splitlines() if x]
+            if kind in ('documentation', 'layout') or (an == 'Lexifina' and kind != 'correction'):
+                continue
+            if files and all(is_doc_file(x) for x in files) and kind != 'correction':
+                continue
+            if inf:
+                n_inf += 1
+                if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', inf):
+                    bad.append(h[:10])
+            elif files and all(in_doc_tree(x) or is_doc_file(x) for x in files) and \
+                    any(re.fullmatch(r'\d{4}-\d{2}-\d{2}', b) for b in basis):
+                n_basis += 1
+            elif h in ledger:
+                n_ledger += 1
+            else:
+                missing.append(h[:10] + ' ' + (files[0] if files else '(no file)')[:60])
         assert not bad, f'malformed In-force {bad[:2]}'
-        return f'{len(tags)} tags resolve; {len(law)} law commits carry In-force'
+        assert not missing, f'{len(missing)} law commits without In-force or a documented basis, e.g. {missing[:3]}'
+        return (f'{len(tags)} tags resolve; {n_inf} law commits carry In-force, {n_basis} document-tree commits a '
+                f'documented basis (Issue-day/Issued/Promulgated), {n_ledger} are in data/date-corrections.json')
 
     # 5
     def lexifina(self):
-        rows = self.git('log', '--format=%H%x09%an%x09%ae%x09%cn%x09%(trailers:key=In-force,valueonly,separator=)',
+        # %aN: author names through .mailmap (a name cut short in a published commit is mapped to its full form there)
+        rows = self.git('log', '--format=%H%x09%aN%x09%ae%x09%cn%x09%(trailers:key=In-force,valueonly,separator=)',
                         'main').splitlines()
-        by_lex = [r for r in rows if r.split('\t')[1] == 'Lexifina']
+        corr = self.git('log', '--grep=^Kind: *correction', '--format=%H%x09%(trailers:key=Kind,valueonly,'
+                        'separator=)%x09%(trailers:key=Reason,valueonly,separator=)', 'main').splitlines()
+        corr_ok = {c.split('\t')[0] for c in corr if c.split('\t')[1].strip() == 'correction' and c.split('\t')[2].strip()}
+        # a correction without a Reason is accepted when a later labelled correction restates it (Supersedes: it)
+        corr_ok |= {c.split('\t')[0] for c in corr if c.split('\t')[0] in superseded(self.repo)}
+        corr_bad = [c.split('\t')[0][:10] for c in corr if c.split('\t')[0] not in corr_ok]
+        assert not corr_bad, f'{len(corr_bad)} corrections without Kind: correction and a Reason, e.g. {corr_bad[:3]}'
+        by_lex = [r for r in rows if r.split('\t')[1] == 'Lexifina' and r.split('\t')[0] not in corr_ok]
         # Documentation commits (and the layout commit, renames only); since 2026-11-20 other parts (gazettes, rules,
         # local law) are appended after them, so the head need not be one.
         assert by_lex, 'no commit by Lexifina'
@@ -242,7 +308,9 @@ class Smoke:
         nat = set(self.git('log', '--format=%H', 'main', '--', '宪法', '法律', *OLD_FOLDERS).split())
         authors = {r.split('\t')[1] for r in rows if r.split('\t')[1] != 'Lexifina' and r.split('\t')[0] in nat}
         assert all(LAW.match(a) or a == PUBLISHER for a in authors), f'unexpected authors {authors - {PUBLISHER}}'
-        return f'only the {len(by_lex)} documentation commits are by Lexifina; {len(authors)} distinct authors'
+        n_corr = sum(1 for r in rows if r.split('\t')[0] in corr_ok)
+        return (f'{len(by_lex)} documentation/layout commits and {n_corr} labelled corrections (by Lexifina or the '
+                f'source); every commit committed by Lexifina; {len(authors)} distinct authors of national law')
 
     # 6
     def readme(self):
@@ -264,6 +332,54 @@ class Smoke:
         return f'{len(cmds)} README commands ran and printed output'
 
 
+    # 7
+    def dating(self):
+        import datetime as dt
+        import time
+        sh = dt.timezone(dt.timedelta(hours=8))
+        evk = ('In-force-evidence', 'Date-Evidence', 'Issue-day-evidence', 'Evidence')
+        fmt = ('%x1e%H%x1f%at%x1f%ct%x1f%s%x1f%(trailers:key=In-force,valueonly,separator=)%x1f'
+               '%(trailers:key=Kind,valueonly,separator=)%x1f' +
+               '%x1f'.join(f'%(trailers:key={k},valueonly,separator=%x1d)' for k in evk))
+        out = self.git('log', f'--format={fmt}', 'main')
+        ledger = date_ledger(self.repo)
+        sup = superseded(self.repo)
+        adopt = re.compile(r'adoption day|approval day|adoption/approval|its adoption|通过日期|批准日期', re.I)
+        page = re.compile(r'page 发布时间|page date|网页日期|the page.s date', re.I)
+        est = re.compile(r'estimat|latest signature|guess|推定|估计', re.I)
+        now = time.time()
+        future, notnoon, faulty, covered, n = [], [], [], 0, 0
+        for rec in out.split('\x1e')[1:]:
+            f = rec.split('\x1f')
+            h, at, ct, subj, inf, kind = f[:6]
+            ev = ' | '.join(x.replace('\x1d', ' ') for x in f[6:])
+            if int(at) > now or int(ct) > now:
+                future.append(h[:10])
+            inf, kind = inf.strip(), kind.strip()
+            if not inf or kind in ('documentation', 'layout'):
+                continue
+            n += 1
+            if kind != 'correction':
+                if inf < '1970-01-01':
+                    if int(at) != 0 or not subj.startswith(inf):
+                        notnoon.append(h[:10])
+                else:
+                    noon = int(dt.datetime(int(inf[:4]), int(inf[5:7]), int(inf[8:10]), 12, tzinfo=sh).timestamp())
+                    if int(at) != noon:
+                        notnoon.append(h[:10])
+            if adopt.search(ev) or page.search(ev) or est.search(ev):
+                if h in ledger or h in sup:
+                    covered += 1
+                else:
+                    faulty.append(h[:10] + ' ' + subj[:40])
+        assert not future, f'{len(future)} commits dated after now, e.g. {future[:3]}'
+        assert not notnoon, f'{len(notnoon)} commits not at noon +0800 of In-force, e.g. {notnoon[:3]}'
+        assert not faulty, (f'{len(faulty)} commits dated on an adoption/approval day, a page date or an estimate '
+                            f'and not in data/date-corrections.json, e.g. {faulty[:3]}')
+        return (f'{n} dated commits: none after now, all at noon +0800 of In-force; {covered} with a faulty basis '
+                f'are corrected or listed pending in data/date-corrections.json')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--repo', default=None)
@@ -275,8 +391,9 @@ def main():
     s.check('text before and after an amendment', s.on_date)
     s.check('log --follow in date order', s.follow)
     s.check('tags resolve, In-force on every law commit', s.tags_and_trailers)
-    s.check('only the documentation commit is by Lexifina', s.lexifina)
+    s.check('Lexifina commits: documentation or labelled corrections', s.lexifina)
     s.check('README commands run', s.readme)
+    s.check('dating: noon of In-force, nothing after now, no adoption/page/estimated day unaccounted', s.dating)
     ok = all(r[1] for r in s.results)
     print(f'{sum(r[1] for r in s.results)}/{len(s.results)} passed')
     if args.record:
