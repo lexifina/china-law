@@ -63,8 +63,9 @@ in section 2, which come from their publishers and keep whatever terms those pub
     国家法律法规数据库 flk.npc.gov.cn
       Copyright line: "版权所有：全国人大常委会办公厅" (site footer, read 2026-11-19). Its robots.txt begins
       "#禁止使用任何自动化工具、脚本、爬虫程序采集或复制网站数据" ("collecting or copying site data with any automated
-      tool, script or crawler is prohibited"), then disallows every client. NOT USED: held until the office answers
-      Lexifina's request. The texts themselves are art. 5 documents.
+      tool, script or crawler is prohibited"), then disallows every client. NOT FETCHED: held until the office answers
+      Lexifina's request. The texts themselves are art. 5 documents; since 2026-11-20 flk's own Word files
+      are taken from third-party mirrors (2.5).
 
     中国政府网 www.gov.cn (国务院办公厅): 国务院公报 (State Council Gazette, /gongbao/), 国家规章库, policy documents
       网站声明 https://www.gov.cn/home/2014-02/23/content_5046258.htm (read 2026-11-19):
@@ -91,7 +92,7 @@ in section 2, which come from their publishers and keep whatever terms those pub
       Footer: "中华人民共和国最高人民法院 版权所有" (read 2026-11-19); no statement page or reuse terms. Judicial
       interpretations, guiding cases and judicial documents: art. 5. NOT USED: 中国裁判文书网 wenshu.court.gov.cn
       (registration with a mobile phone; robots.txt disallows all; Alan has asked for access), 人民法院案例库
-      rmfyalk.court.gov.cn (login), 最高人民法院公报 gongbao.court.gov.cn (refused), 最高人民检察院 www.spp.gov.cn
+      rmfyalk.court.gov.cn (login), 最高人民法院公报 gongbao.court.gov.cn (refused; its cases come from a CC0 corpus, 2.5), 最高人民检察院 www.spp.gov.cn
       and 12309 (refused).
 
     中央纪委国家监委网站 www.ccdi.gov.cn (监察法规)
@@ -729,11 +730,44 @@ in section 2, which come from their publishers and keep whatever terms those pub
     www.xjyq.gov.cn (焉耆回族自治县人民政府): statement page https://www.xjyq.gov.cn/xjyqx/c109883/jump_article.shtml gives
       privacy, trademark or disclaimer notes only, no terms for reusing documents (read 2026-11-19).
 
+2.5 Mirrors, gazette cases, court judgments and Party regulations (added 2026-11-20)
+
+    国家法律法规数据库 flk.npc.gov.cn, through third-party mirrors (lane cn-flk)
+      flk itself is not fetched (2.2). Its own Word files and record fields are taken from copies others made, with
+      no request to any host in China:
+      - github.com/lawtext/law-flk-vol1 and github.com/lawtext/law-flk-vol2: the Word files flk serves (named
+        <title>_<公布日期>_<flk id>), with flk's record fields (records.json: 公布日期, 施行日期, 时效性, 制定机关). No
+        licence is stated on these repositories; they add nothing of their own to the texts.
+      - huggingface.co/datasets/twang2218/chinese-law-and-regulations (Apache License 2.0; flk's metadata as of
+        2023): publish_date, effective_date and status, used only where the mirror's record has none.
+      The texts are laws, regulations, judicial interpretations and decisions of state organs: art. 5 (2.0). Each
+      commit names the mirror file it came from and the flk record id; the official publication prevails.
+
+    《最高人民法院公报》 cases (lane cn-spcgb)
+      Taken from the corpus chengzi_h/chinese-law-corpus (gitee.com), read from its GitHub copy
+      github.com/lttxzmj/chinese-law-dataset. Its curators dedicate their structuring to the public domain under CC0
+      1.0 and leave out the editors' 裁判摘要. The judgments are judicial documents: art. 5. Each commit names the
+      公报 issue and the case's page on gongbao.court.gov.cn, which is not fetched (2.2). The 审判长简介 printed
+      after some judgments is editorial and is left out.
+
+    上海市高级人民法院网 www.hshfy.sh.cn (裁判文书 of the Shanghai courts; lane cn-hshfy)
+      robots.txt: none (404); no statement page linked from the home page; footer "版权所有 上海市高级人民法院" (read
+      2026-11-20). No reuse terms are stated. Judgments are judicial documents: art. 5. Only the calls the site's own
+      pages make are used, one at a time, at least 10 seconds apart; the rules of 2.1 apply.
+
+    Party regulations (党内法规/)
+      The Communist Party of China is not formally a state organ, so it is not certain that the art. 5 exemption
+      covers its regulations. They are included here as official public texts, which the Party publishes itself for
+      general application, and this note says so.
+
 2.6 Personal data
 
     Official documents can name private persons. They are kept as published, except that in gazettes and local
     documents a private person's name or address is replaced inline ([姓名略], [地址略]). A document essentially
-    about a private person is kept as metadata only. Court judgments are not in this repository.
+    about a private person is kept as metadata only. Court judgments (案例/, 裁判文书/) keep the text as the
+    court published it; a full name of a private person that the court still printed is replaced inline
+    ([姓名略]), and so are identity numbers, phone numbers and home addresses. Companies, officials, judges and
+    lawyers stay.
 
 2.7 County, district and department sites (added from 2026-11-20)
 
