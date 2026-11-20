@@ -763,6 +763,409 @@ in section 2, which come from their publishers and keep whatever terms those pub
       covers its regulations. They are included here as official public texts, which the Party publishes itself for
       general application, and this note says so.
 
+    Cases, procuratorate documents, 行政复议决定书, congress gazettes and ministry documents (lanes cn-sites, added 2026-11-20)
+      Alan 2026-11-20 ~19:00Z: legal records only (laws, regulations, binding instruments, gazettes, court and
+      review decisions, parliamentary records). Every text below is an official document of a state organ (art. 5,
+      2.0) and is taken unaltered, except that private persons' names, identity numbers, phone numbers and home
+      addresses are replaced inline (2.6). Several sites carry a copy or mirror reservation (quoted per host). They
+      are reservations, not bans on automated collection; under 2.1 the official texts still go, and nothing else
+      of the site (design, icons, editorial text) is taken. Requests: one at a time per host, at least 10 seconds
+      apart, stopped at the first 403/412/429/challenge. Terms read by robots.txt + home page + statement page
+      (cn_host_scan) on the day given.
+
+    www.court.gov.cn (首页 - 中华人民共和国最高人民法院; cn-cases-court: 典型案例): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    ipc.court.gov.cn (最高人民法院知识产权法庭; cn-cases-court: 典型案例): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    cicc.court.gov.cn (国际商事法庭 | CICC; cn-cases-court: 典型案例): robots.txt 404 (read 2026-11-20); statement
+      https://cicc.court.gov.cn/html/1/218/191/181/index.html; no reuse terms stated (read 2026-11-20).
+    www.jsfy.gov.cn (江苏法院网; cn-cases-court: 典型案例): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    www.hncourt.gov.cn (河南省高级人民法院; cn-cases-court: 典型案例): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    www.cqfygzfw.gov.cn (重庆法院公众服务网; cn-cases-court: 典型案例): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    www.bjinternetcourt.gov.cn (北京互联网法院; cn-cases-court: 典型案例): robots.txt 404 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+    www.bjjc.gov.cn (北京市人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "未经本网书面授权、请勿转载、摘编或独立镜像，否则视为侵权" (read 2026-11-20).
+    www.tj.jcy.gov.cn (天津市人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.sx.jcy.gov.cn (山西省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网所有未经本网书面授权，请勿转载、摘编或建立镜像，否则视为侵权" (read 2026-11-20).
+    www.nm.jcy.gov.cn (内蒙古自治区人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.ln.jcy.gov.cn (辽宁省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.jl.jcy.gov.cn (吉林省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.sh.jcy.gov.cn (上海市人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+    www.jsjc.gov.cn (江苏检察网; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    www.zjjcy.gov.cn (浙江检察网; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    www.ah.jcy.gov.cn (安徽省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.fj.jcy.gov.cn (福建省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.jx.jcy.gov.cn (江西省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.ha.jcy.gov.cn (河南省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.gd.jcy.gov.cn (广东省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.gx.jcy.gov.cn (广西壮族自治区人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.hi.jcy.gov.cn (海南省检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 200 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    www.cq.jcy.gov.cn (重庆市人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.sc.jcy.gov.cn (四川省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.gz.jcy.gov.cn (贵州省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.yn.jcy.gov.cn (云南省人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 200 (read 2026-11-20); it states "或建立镜像，
+      禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.xz.jcy.gov.cn (西藏自治区人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    www.nx.jcy.gov.cn (宁夏回族自治区人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "宁夏检察网版权所有，未经授权禁止复制或建立镜像" (read 2026-11-20).
+    www.xj.jcy.gov.cn (新疆维吾尔自治区人民检察院; cn-cases-proc: 典型案例, 法律文书): robots.txt 404 (read 2026-11-20); it states
+      "本网网页设计、图标、内容未经协议授权禁止转载、摘编或建立镜像，禁止作为任何商业用途的使用" (read 2026-11-20).
+    sfj.ahsz.gov.cn (宿州市司法局（宿州市普法网）; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sfj.baoji.gov.cn (宝鸡市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.beijing.gov.cn (北京市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); statement
+      https://sfj.beijing.gov.cn/sfj/index/flsm/index.html; it states "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (read 2026-11-20).
+    sfj.bynr.gov.cn (巴彦淖尔市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.changchun.gov.cn (长春市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.changde.gov.cn (常德市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.changzhou.gov.cn (常州市司法行政网; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sfj.chifeng.gov.cn (赤峰市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.chizhou.gov.cn (池州市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.ezhou.gov.cn (鄂州市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); it states "主办单位：鄂州市司法局
+      未经许可禁止复制或建立镜像" (read 2026-11-20).
+    sfj.fuxin.gov.cn (阜新市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.fuzhou.gov.cn (福州市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.ganzhou.gov.cn (赣州市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.gz.gov.cn (广州市司法局网站; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); it states "本网站由广州市司法局主办
+      版权所有：广州市司法局 未经许可，严禁复制或镜像" (read 2026-11-20).
+    sfj.haikou.gov.cn (海口市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.huaian.gov.cn (淮安市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.huaibei.gov.cn (淮北市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.huainan.gov.cn (淮南市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.huangshi.gov.cn (黄石市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.lasa.gov.cn (拉萨市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); statement
+      https://sfj.lasa.gov.cn/sfj/wzsm/ypwz.shtml; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (read 2026-11-20).
+    sfj.linyi.gov.cn (临沂市司法局,沂蒙普法网; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sfj.linzhi.gov.cn (林芝市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); statement
+      https://sfj.linzhi.gov.cn/sfj/c102703/bottom_common.shtml; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (read 2026-11-20).
+    sfj.maoming.gov.cn (茂名市司法局网站; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.nanjing.gov.cn (南京市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); statement
+      https://sfj.nanjing.gov.cn/yssm/; no reuse terms stated (read 2026-11-20).
+    sfj.ordos.gov.cn (鄂尔多斯市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.panjin.gov.cn (盘锦市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.panzhihua.gov.cn (攀枝花市司法局.; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sfj.pds.gov.cn (平顶山市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.quanzhou.gov.cn (泉州市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.shenyang.gov.cn (沈阳市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); it states "沈阳市司法局 版权所有 未经协议授权
+      禁止下载使用" (read 2026-11-20).
+    sfj.shuozhou.gov.cn (朔州市司法局网站; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); statement
+      http://sfj.shuozhou.gov.cn/wzgl_7170/202111/t20211125_365700.html; it states
+      "1．凡本网注明“来源：朔州市司法局”的所有文字、图片和音视频稿件，版权均属朔州市司法局网站所有，任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" (read 2026-11-20).
+    sfj.siping.gov.cn (四平市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.sjz.gov.cn (石家庄市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.suizhou.gov.cn (随州市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.suzhou.gov.cn (苏州市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.taian.gov.cn (泰安市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.taizhou.gov.cn (泰州市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.tongliao.gov.cn (通辽市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); statement
+      https://sfj.tongliao.gov.cn/wzsm/; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (read 2026-11-20).
+    sfj.weihai.gov.cn (威海市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.wuhan.gov.cn (武汉市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); statement
+      https://sfj.wuhan.gov.cn/wzsm/; no reuse terms stated (read 2026-11-20).
+    sfj.xa.gov.cn (西安市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.xianning.gov.cn (咸宁市司法局门户网站; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sfj.xinjiang.gov.cn (新疆维吾尔自治区数字化发展局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sfj.xlgl.gov.cn (锡林郭勒盟司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.xuancheng.gov.cn (宣城市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.yancheng.gov.cn (盐城市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.yantai.gov.cn (烟台市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.yinchuan.gov.cn (银川市司法局; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sfj.yzcity.gov.cn (市司法局 _永州市人民政府; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sft.hebei.gov.cn (河北省司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.hubei.gov.cn (湖北省司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.hunan.gov.cn (湖南省司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.jiangsu.gov.cn (江苏省司法厅; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.jl.gov.cn (吉林省司法厅-吉林省司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.ln.gov.cn (辽宁省司法厅; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.nx.gov.cn (宁夏回族自治区司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.qinghai.gov.cn (青海省司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    sft.xinjiang.gov.cn (新疆维吾尔自治区司法厅; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    sft.yn.gov.cn (云南司法行政网; cn-xzfy: 行政复议决定书): robots.txt 404 (read 2026-11-20); statement
+      https://sft.yn.gov.cn/ggbf/bqsm/; no reuse terms stated (read 2026-11-20).
+    www.sfj.suzhou.gov.cn (苏州市司法局; cn-xzfy: 行政复议决定书): robots.txt 200 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    www.bjrd.gov.cn (北京市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.hbrd.gov.cn (河北省人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.jlrd.gov.cn (吉林省人民代表大会常务委员会-吉林省人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19);
+       no reuse terms stated (read 2026-11-19).
+    www.jsrd.gov.cn (江苏省人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.hppc.gov.cn (中国湖北人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.hnrd.gov.cn (湖南人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.gxrd.gov.cn (广西人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.cqrd.gov.cn (重庆人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); statement
+      https://www.cqrd.gov.cn/web/column/col1839969.html; no reuse terms stated (read 2026-11-19).
+    www.scspc.gov.cn (四川人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.ynrd.gov.cn (云南人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.gsrdw.gov.cn (甘肃人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); it states
+      "甘肃省人大常委会版权所有 未经许可严禁复制或镜像 主办:甘肃省人大常委会办公厅" (read 2026-11-19).
+    www.nxrd.gov.cn (宁夏人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.ordosrd.gov.cn (鄂尔多斯人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    sxrd.sx.gov.cn (绍兴人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.hnxxrd.gov.cn (湘西土家族苗族自治州人民代表大会常务委员会办公室 | 湘西人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read
+      2026-11-19); no reuse terms stated (read 2026-11-19).
+    spcsc.haikou.gov.cn (海口市人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.hhrd.cn (怀化人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated (read
+      2026-11-19).
+    rd.wuxi.gov.cn (无锡人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.nbrd.gov.cn (宁波人大网首页; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.sanya.gov.cn (三亚市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); it states
+      "主办单位：三亚市人民代表大会常务委员会 @版权所有 未经许可 不得复制" (read 2026-11-19).
+    www.gxbsrd.gov.cn (广西百色人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.jygrd.cn (嘉峪关市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.syrd.gov.cn (沈阳人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.abrd.gov.cn (阿坝藏族羌族自治州人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19);
+      statement https://www.abrd.gov.cn/zrdcwh/c104581/common_dp.shtml; no reuse terms stated (read 2026-11-19).
+    dgrd.dg.gov.cn (东莞人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    tzrd.taizhou.gov.cn (泰州人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.qjrd.gov.cn (首页 | 曲靖 曲靖市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no
+      reuse terms stated (read 2026-11-19).
+    www.bjsrd.gov.cn (宝鸡市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.pingliang.gov.cn (平凉市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.gzsrd.gov.cn (赣州市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.xjyl.gov.cn (伊犁州人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.hnsyrd.gov.cn (邵阳市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.huaian.gov.cn (淮安市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.zzrd.gov.cn (郑州人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.ncrd.gov.cn (四川南充人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); statement
+      https://www.ncrd.gov.cn/index.php?m=content&c=index&a=lists&catid=4; no reuse terms stated (read 2026-11-19).
+    rd.benxi.gov.cn (本溪市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.hzrd.gov.cn (杭州人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.rd.suzhou.gov.cn (苏州市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.njrd.gov.cn (南京市人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.yzrdw.gov.cn (永州人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    rd.changzhou.gov.cn (常州人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.danzhou.gov.cn (儋州人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.gdzjrd.gov.cn (湛江人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.bynerd.gov.cn (巴彦淖尔人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    renda.huzhou.gov.cn (湖州市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.jxrenda.gov.cn (嘉兴人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.hanzhong.gov.cn (汉中市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.pjrd.gov.cn (盘锦人大信息网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.rd.gz.cn (广州市人大常委会网站; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    rd.shantou.gov.cn (汕头人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.xmrd.gov.cn (厦门人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.zqrd.gov.cn (济南市章丘区人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.slrd.gov.cn (商洛人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); it states "本网所有，
+      任何媒体未经授权不得转载" (read 2026-11-19).
+    www.gyrd.gov.cn (广元人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    rd.ankang.gov.cn (安康市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.hdrd.gov.cn (邯郸市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.lxzrdw.gov.cn (&#x9996;&#x9875;-临夏回族自治州人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read
+      2026-11-19); no reuse terms stated (read 2026-11-19).
+    jdzrd.jdz.gov.cn (景德镇市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    renda.tongliao.gov.cn (通辽市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.qyrd.gov.cn (清远市人大网; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    rd.fuzhou.gov.cn (福州市人大; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    rd.yinchuan.gov.cn (银川市人大常委会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.yasrdw.gov.cn (雅安市人民代表大会常务委员会; cn-rdgb: 人大常委会公报, 决议决定, 备案审查): robots.txt 200 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.moe.gov.cn (中华人民共和国教育部政府门户网站; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      http://www.moe.gov.cn/jyb_sy/s3634/201005/t20100504_87292.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.miit.gov.cn (中华人民共和国工业和信息化部; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    xxgk.mot.gov.cn (机构设置; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated (read
+      2026-11-19).
+    www.mot.gov.cn (中华人民共和国交通运输部; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      https://www.mot.gov.cn/wangzhangongneng/202512/t20251216_4181727.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    zfxxgk.nea.gov.cn (国家能源局---政府信息公开目录; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+    www.samr.gov.cn (国家市场监督管理总局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.cnipa.gov.cn (国家知识产权局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    zwgk.mct.gov.cn (cn-ministry: 规范性文件, 公告; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.nrta.gov.cn (国家广播电视总局; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.nhsa.gov.cn (国家医疗保障局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.caac.gov.cn (中国民用航空局; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.mem.gov.cn (中华人民共和国应急管理部; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      https://www.mem.gov.cn/wzdt/; no reuse terms stated (read 2026-11-19).
+    www.nfra.gov.cn (国家金融监督管理总局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.mee.gov.cn (中华人民共和国生态环境部; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); statement
+      https://www.mee.gov.cn/home/wzsm/; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (read 2026-11-19).
+    www.most.gov.cn (cn-ministry: 规范性文件, 公告; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.neac.gov.cn (国家民族事务委员会; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.forestry.gov.cn (国家林业和草原局政府网; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.spb.gov.cn (中华人民共和国国家邮政局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      https://www.spb.gov.cn/gjyzj/c100039/202111/941fd9a338e646f387899bde3a02f51f.shtml; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.lswz.gov.cn (国家粮食和物资储备局; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.sastind.gov.cn (国家国防科技工业局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.cac.gov.cn (中央网络安全和信息化委员会办公室; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.cma.gov.cn (中国气象网-中国气象局政府门户网站; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-20); statement
+      https://www.cma.gov.cn/2011ggxx/202111/t20211104_4194610.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-20).
+    www.msa.gov.cn (中华人民共和国海事局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-20); no reuse terms stated
+      (read 2026-11-20).
+    www.nia.gov.cn (国家移民管理局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated (read
+      2026-11-19).
+    www.ggj.gov.cn (国家机关事务管理局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.sport.gov.cn (国家体育总局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.safe.gov.cn (国家外汇管理局门户网站; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      https://www.safe.gov.cn/safe/flsm/index.html; it states "任何媒体、互联网站和商业机构不得利用本网发布的内容进行商业性转载，也不得歪曲和篡改本网发布的内容"
+      (read 2026-11-19).
+    www.mofcom.gov.cn (中华人民共和国商务部; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.chinamine-safety.gov.cn (国家矿山安全监察局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.nda.gov.cn (国家数据局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    www.saac.gov.cn (中华人民共和国国家档案局; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.nppa.gov.cn (国家新闻出版署; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.ncac.gov.cn (国家版权局网; cn-ministry: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); statement
+      https://www.ncac.gov.cn/xxfb/tzgg/202611/t20261119_1017266.html; no reuse terms stated (read 2026-11-19).
+    www.cnca.gov.cn (国家认证认可监督管理委员会; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+
+    Wikimedia Commons (lane cn-histgz): public-domain scans of Qing and Republic-era gazettes, by the 国家图书馆
+      (民国期刊 database 404; files "NLC404-…", credit "National Library of China") and by the Legislative Yuan
+      library's 總統府公報影像系統 and the National Central Library (files "ROC19…"). Each file page is tagged Public
+      domain (PD-ROC gazette or PD-old; read 2026-11-20 through the Commons API, which asks for a descriptive
+      User-Agent and serial requests). Catalogue only so far: upload.wikimedia.org is host-stopped (HTTP 429), and
+      no scan is downloaded until Alan lifts the stop.
+
 2.6 Personal data
 
     Official documents can name private persons. They are kept as published, except that in gazettes and local
