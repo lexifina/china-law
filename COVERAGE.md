@@ -1,6 +1,6 @@
 # Coverage of the core law
 
-How much of each core category of Chinese law is on `main`, against the official total for it, on 2026-11-22 (172,412 commits). Regenerated with each documentation commit from [`data/coverage.csv`](data/coverage.csv); the plan for every part is in [`PLAN.md`](PLAN.md).
+How much of each core category of Chinese law is on `main`, against the official total for it, on 2026-11-22 (172,735 commits). Regenerated with each documentation commit from [`data/coverage.csv`](data/coverage.csv); the plan for every part is in [`PLAN.md`](PLAN.md).
 
 | Category | Official total | Here | % | Gap | Why the gap |
 | --- | ---: | ---: | ---: | ---: | --- |

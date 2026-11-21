@@ -1,6 +1,6 @@
 # The plan: every part of Chinese law this repository is meant to hold
 
-Each part, where it goes, where it comes from and how far it is on `main` (2026-11-22, 172,412 commits). Regenerated with each documentation commit; the official totals behind the percentages are in [`COVERAGE.md`](COVERAGE.md).
+Each part, where it goes, where it comes from and how far it is on `main` (2026-11-22, 172,735 commits). Regenerated with each documentation commit; the official totals behind the percentages are in [`COVERAGE.md`](COVERAGE.md).
 
 | Part | Will be in | Progress | Source | Status |
 | --- | --- | --- | --- | --- |
