@@ -1176,6 +1176,321 @@ in section 2, which come from their publishers and keep whatever terms those pub
     wjk.jsrd.gov.cn (江苏数字人大; cn-provdb3: 规范性文件 from 江苏省法规规章规范性文件数据库 https://wjk.jsrd.gov.cn:8004/, home page and
       its API read 2026-11-21): robots.txt 200 (read 2026-11-20); no reuse terms stated (read 2026-11-20).
 
+    www.sjz.gov.cn (石家庄市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.sjz.gov.cn/columns/9b748742-a496-428f-8c8f-2828327826d5/index.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.baoding.gov.cn (保定市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.baoding.gov.cn/content-170-225.html; it states "凡作者或权力人声明不得转载的文章或图片，任何单位及个人不得转载" (read
+      2026-11-19).
+    www.dt.gov.cn (大同市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.dt.gov.cn/dtszf/mzsm/201608/253e770c24094c4daf289fd01f74ff56.shtml; it states
+      "对于＂大同市人民政府门户网站＂专有信息，未经＂大同市人民政府门户网站＂书面同意，不得以任何形式侵犯＂大同市人民政府门户网站＂的著作权，包括：擅自复制、链接、非法使用或转载，不得以任何方式建立镜像站点" (read
+      2026-11-19).
+    xxgk.jcgov.gov.cn (晋城市人民政府信息公开; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.jcgov.gov.cn (晋城市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      http://www.jcgov.gov.cn/wzgl/wzsm/201806/t20180609_276569.shtml; it states "1、凡本网注明"稿件来源：晋城在线"的所有文字、图片和音视频等稿件，
+      版权均属晋城市数据局所有，任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" (read 2026-11-19).
+    www.yuncheng.gov.cn (运城市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.yuncheng.gov.cn/doc/2019/10/29/2284.shtml; it states "版权所有 @ 2017-2025 未经许可 禁止转载 建议使用分辨率1024＊768"
+      (read 2026-11-19).
+    www.lvliang.gov.cn (吕梁市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      http://www.lvliang.gov.cn/wzsm/; it states "吕梁市人民政府门户网站”的所有文字、图片和音视频信息，版权均属吕梁市政府政策研究和信息服务中心所有，
+      任何媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发表" (read 2026-11-19).
+    www.wuhai.gov.cn (乌海市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.tongliao.gov.cn (通辽市人民政府网站; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.tongliao.gov.cn/wzsm/; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (read 2026-11-19).
+    www.ordos.gov.cn (鄂尔多斯市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.ordos.gov.cn/wzxx/wzsm/; no reuse terms stated (read 2026-11-19).
+    www.bynr.gov.cn (巴彦淖尔市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.bynr.gov.cn/fzlm/wzsm/; no reuse terms stated (read 2026-11-19).
+    www.xlgl.gov.cn (锡林郭勒盟行政公署; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+    www.ln.gov.cn (辽宁省人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.shenyang.gov.cn (沈阳市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.shenyang.gov.cn/zx/wzsm/; it states "中国沈阳门户网站以外的任何媒体、互联网站和商业机构不得用于商业性转载，或其他盈利性活动，
+      也不得歪曲和篡改本网站所发布的信息内容" (read 2026-11-19).
+    www.fushun.gov.cn (抚顺市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.benxi.gov.cn (本溪市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.benxi.gov.cn/wzxg/flsm; it states "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容" (read 2026-11-19).
+    www.dandong.gov.cn (丹东市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.yingkou.gov.cn (营口市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.fuxin.gov.cn (阜新市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.chaoyang.gov.cn (朝阳市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.changchun.gov.cn (长春市人民政府_中国长春; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    xxgk.jlcity.gov.cn (吉林市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.siping.gov.cn (四平市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.tonghua.gov.cn (通化市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.jlbc.gov.cn (白城市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      http://www.jlbc.gov.cn/wzsm/; no reuse terms stated (read 2026-11-19).
+    www.yanbian.gov.cn (延边朝鲜族自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.hlj.gov.cn (黑龙江省人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.jixi.gov.cn (鸡西市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.jixi.gov.cn/jixi/c100442/202102/c06_4189.shtml; it states
+      "本网站发布的内容,除在信息内容中特别说明的之外,版权归本网站所有,鸡西市政府系统以外的其他媒体、网站或商业机构,不得用于商业性转载或盈利活动,也不得歪曲、篡改或原文转载" (read 2026-11-19).
+    www.hegang.gov.cn (鹤岗市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.sysjs.gov.cn (双鸭山市尖山区人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.yc.gov.cn (伊春市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.yc.gov.cn/ycsrmzf/c104801/202503/397357.shtml; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.jms.gov.cn (佳木斯市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.jms.gov.cn/jms/c100206/tt.shtml; no reuse terms stated (read 2026-11-19).
+    www.suihua.gov.cn (绥化市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.dxal.gov.cn (大兴安岭地区行政公署; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-20); statement
+      https://www.dxal.gov.cn/dxal/c100238/connect.shtml; no reuse terms stated (read 2026-11-20).
+    www.nanjing.gov.cn (中国南京; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.wuxi.gov.cn (无锡市人民政府-首页; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.wuxi.gov.cn/doc/2015/07/08/2563147.shtml; it states "凡无锡市人民政府门户网站注明稿件来源的所有文字、图片和音视频稿件，版权均属原作者所有，
+      任何媒体、网站或个人未经授权不得转载、链接、转贴或以其他方式复制发表" (read 2026-11-19).
+    www.changzhou.gov.cn (常州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.suzhou.gov.cn (苏州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.huaian.gov.cn (淮安之窗--淮安市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.yancheng.gov.cn (盐城市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.taizhou.gov.cn (泰州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.wuhu.gov.cn (芜湖市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.huainan.gov.cn (淮南市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.huaibei.gov.cn (淮北市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.ahsz.gov.cn (宿州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.ahsz.gov.cn/wzgl/flsm/index.html; it states "任何单位和个人不得以引用、复制、转载、摘编等其他任何方式非法使用本网站的上述内容" (read
+      2026-11-19).
+    www.luan.gov.cn (六安市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.chizhou.gov.cn (池州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.chizhou.gov.cn/Content/showList/36/page_1.html; it states "&emsp;&emsp;
+      任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，必须与相应提供单位直接联系获得合法授权" (read 2026-11-19).
+    www.xuancheng.gov.cn (宣城市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.xuancheng.gov.cn/PublicInformation/instruction/; it states "&emsp;&emsp;
+      任何媒体或互联网站不得擅自转载本网站由其他单位提供的信息和服务内容，如需转载，必须与相应提供单位直接联系获得合法授权" (read 2026-11-19).
+    zfgb.fujian.gov.cn (中国福建-政府公报; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.fujian.gov.cn (福建省人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.fuzhou.gov.cn (福州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.sm.gov.cn (三明市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.quanzhou.gov.cn (泉州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.ganzhou.gov.cn (赣州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.ganzhou.gov.cn/gzszf/bqsm/ott.shtml; no reuse terms stated (read 2026-11-19).
+    www.shandong.gov.cn (山东省人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.jinan.gov.cn (济南政府网_济南市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.yantai.gov.cn (烟台市政府门户网站-首页; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); it states
+      "文字解读丨关于修改并继续执行《烟台市人民政府关于划定禁止使用高排放非道路移动机械区域的通告》的通知" (read 2026-11-19).
+    www.jining.gov.cn (济宁市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.taian.gov.cn (泰安市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.weihai.gov.cn (威海市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); it states
+      "威海市人民政府关于调整禁止使用高排放非道路移动机械区域的通告" (read 2026-11-19).
+    www.linyi.gov.cn (欢迎您来到临沂市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.heze.gov.cn (菏泽市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      http://www.heze.gov.cn/flsm/; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read
+      2026-11-19).
+    public.zhengzhou.gov.cn (郑州市人民政府-政务公开; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); it
+      states "郑州市人民政府关于划定禁止使用高排放非道路移动机械区域的通告" (read 2026-11-19).
+    www.zhengzhou.gov.cn (郑州市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.pds.gov.cn (平顶山市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.pds.gov.cn/contents/5330/16666.html; it states
+      "平顶山市人民政府网站对其自行开发的或和他人共同开发的所有内容、技术措施、技术手段和服务拥有全部知识产权，任何人不得侵害或破坏，也不得擅自使用" (read 2026-11-19).
+    www.xinxiang.gov.cn (新乡市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.puyang.gov.cn (濮阳市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.xuchang.gov.cn (许昌市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.smx.gov.cn (三门峡市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    xinyang.gov.cn (信阳市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); it states
+      "信阳市人民政府关于划定禁止使用高排放非道路移动机械区域的通告" (read 2026-11-19).
+    www.zhoukou.gov.cn (周口市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.wuhan.gov.cn (武汉市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.wuhan.gov.cn/sy/qt/202211/t20221114_2093617.shtml; no reuse terms stated (read 2026-11-19).
+    www.huangshi.gov.cn (黄石政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    ezhou.gov.cn (鄂州市城市管理执法委员会; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.xianning.gov.cn (咸宁市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      http://www.xianning.gov.cn/zddt/201807/t20180728_975530.shtml; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.suizhou.gov.cn (随州市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 502 (read 2026-11-19); statement
+      http://www.suizhou.gov.cn/fzlm/gywz/202003/t20200320_743342.shtml; no reuse terms stated (read 2026-11-19).
+    www.furong.gov.cn (长沙市芙蓉区人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 418 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.changde.gov.cn (常德市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.yiyang.gov.cn (益阳市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.yzcity.gov.cn (永州政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.jh.gov.cn (江华瑶族自治县人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.huaihua.gov.cn (怀化市人民政府门户网站-首页; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.mayang.gov.cn (麻阳苗族自治县人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); it states
+      "麻阳苗族自治县人民政府关于划定禁止使用高排放非道路移动柴油机械区域的通告" (read 2026-11-19).
+    www.xinhuang.gov.cn (新晃侗族自治县人民政府门户网站-首页; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no
+      reuse terms stated (read 2026-11-19).
+    www.chnzj.gov.cn (芷江侗族自治县人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.chnzj.gov.cn/chnzj/c102633/list_tt.shtml; no reuse terms stated (read 2026-11-19).
+    www.tongdao.gov.cn (通道侗族自治县人民政府门户网站-首页; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); it
+      states "关于征求《通道侗族自治县人民政府关于划定禁止使用高排..." (read 2026-11-19).
+    www.gz.gov.cn (广州市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.gz.gov.cn/gywz/yssm/index.html; it states "(四) 未经监护人的同意，本网站不会使用未成年人的个人资料，亦不会向任何第三方披露或传送" (read
+      2026-11-19).
+    www.sg.gov.cn (韶关市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.sg.gov.cn/fzgn/bqsm/index.html; no reuse terms stated (read 2026-11-19).
+    www.shantou.gov.cn (汕头市人民政府门户网站 Shantou Municipal Government; cn-zfgb: 政府公报 (legal items)): robots.txt 404
+      (read 2026-11-19); no reuse terms stated (read 2026-11-19).
+    www.zhanjiang.gov.cn (湛江市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.zhanjiang.gov.cn/zjzfw/wzsm/content/post_1203860.html; it states
+      "您不得以任何方式修改、复制、公开展示、公布或分发这些材料或者以其他方式把它们用于任何公开或商业目的" (read 2026-11-19).
+    www.maoming.gov.cn (茂名市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      http://www.maoming.gov.cn/yw/mzsm/content/post_78631.html; no reuse terms stated (read 2026-11-19).
+    www.shanwei.gov.cn (汕尾市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.heyuan.gov.cn (河源市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-20); statement
+      http://www.heyuan.gov.cn/wzgn/wzsm/content/post_190125.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-20).
+    www.yunfu.gov.cn (云浮市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.yunfu.gov.cn/gywz/yssm/index.html; no reuse terms stated (read 2026-11-19).
+    www.haikou.gov.cn (海口市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.haikou.gov.cn/wywm/201901/t334286.shtml; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.sanya.gov.cn (三亚市人民政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 502 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.danzhou.gov.cn (儋州市人民政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.panzhihua.gov.cn (攀枝花市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      http://www.panzhihua.gov.cn/fzlm/wzsm/flsm/517552.shtml; it states "(四) 未经监护人的同意，本网站不会使用未成年人的个人资料，
+      亦不会向任何第三方披露或传送" (read 2026-11-19).
+    www.guang-an.gov.cn (广安市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.guang-an.gov.cn/gasrmzfw/flsm/pc/content/content_1717178077143838720.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.abazhou.gov.cn (阿坝藏族羌族自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.tongren.gov.cn (铜仁网_铜仁市综合门户网 - 官方媒体权威发布; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19);
+      statement https://www.tongren.gov.cn/about/copyright.shtml; no reuse terms stated (read 2026-11-19).
+    www.yjw.gov.cn (印江网 -; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.qj.gov.cn (曲靖市人民政府门户网; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.yuxi.gov.cn (玉溪市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.baoshan.gov.cn (保山市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.hh.gov.cn (红河哈尼族彝族自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.hh.gov.cn/wzsm.htm; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容；
+      本网站所涉及到的版权归本网站所有；法律另有规定的除外" (read 2026-11-19).
+    www.lasa.gov.cn (拉萨市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.lasa.gov.cn/lasa/wzsm/tydp.shtml; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.linzhi.gov.cn (林芝市人民政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.linzhi.gov.cn/linzhi/wzfz/wzsm.shtml; no reuse terms stated (read 2026-11-19).
+    www.al.gov.cn (阿里地区行政公署; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-20); statement
+      https://www.al.gov.cn/dblm/wzsm.htm; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容"
+      (read 2026-11-20).
+    www.xa.gov.cn (西安市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.xa.gov.cn/index/gywm/5d501187f99d655a2e2e45bf.html; it states
+      "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.baoji.gov.cn (宝鸡市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.baoji.gov.cn/col315/col320/; no reuse terms stated (read 2026-11-19).
+    www.hanzhong.gov.cn (汉中市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.hanzhong.gov.cn/hzszf/wzsm/202301/42dc56676b094e3d88aeebb4104713eb.shtml; it states
+      "任何媒体、互联网站、商业机构或个人不得利用本网站发布的内容进行商业性的原版原式地转载，也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    www.ankang.gov.cn (安康市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); statement
+      https://www.ankang.gov.cn/Node-3133.html; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站发布的内容" (read 2026-11-19).
+    www.jyg.gov.cn (嘉峪关市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 200 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.zhangye.gov.cn (张掖市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.zhangye.gov.cn/ggbf/bqsm/; no reuse terms stated (read 2026-11-19).
+    www.dingxi.gov.cn (定西市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.longnan.gov.cn (陇南市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.linxia.gov.cn (临夏回族自治州人民政府门户网; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.haidong.gov.cn (海东市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.xunhua.gov.cn (循化县人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.hainanzhou.gov.cn (海南藏族自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.hainanzhou.gov.cn/wzxg/wzsm; it states "任何媒体、互联网站和商业机构不得利用本网站发布的内容进行商业性的原版原式地转载，
+      也不得歪曲和篡改本网站所发布的内容" (read 2026-11-19).
+    haixi.gov.cn (海西州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.yinchuan.gov.cn (银川市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.yinchuan.gov.cn/gyqy/yj/flsm/; no reuse terms stated (read 2026-11-19).
+    www.shizuishan.gov.cn (石嘴山市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.shizuishan.gov.cn/ggqy/wzsm/; no reuse terms stated (read 2026-11-19).
+    www.wuzhong.gov.cn (吴忠市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.wuzhong.gov.cn/ggqy/yssm/; no reuse terms stated (read 2026-11-19).
+    www.nxgy.gov.cn (固原市人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.nxzw.gov.cn (中卫市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.xinjiang.gov.cn (新疆维吾尔自治区人民政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.xinjiang.gov.cn/xinjiang/wzsm/tydp.shtml; no reuse terms stated (read 2026-11-19).
+    www.wlmq.gov.cn (乌鲁木齐市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.klmy.gov.cn (克拉玛依市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.klmy.gov.cn/klmys/wzsm/connect.shtml; no reuse terms stated (read 2026-11-19).
+    www.tlf.gov.cn (吐鲁番市人民政府网; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.hami.gov.cn (哈密市人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms stated
+      (read 2026-11-19).
+    www.xjboz.gov.cn (博尔塔拉蒙古自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.xjbz.gov.cn (巴音郭楞蒙古自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.xjbz.gov.cn/xjbz/bqsm/Anarticle.shtml; no reuse terms stated (read 2026-11-19).
+    www.xjkz.gov.cn (克孜勒苏柯尔克孜自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); statement
+      https://www.xjkz.gov.cn/xjkz/c102466/xzzfjdts.shtml; it states "任何组织和个人不得非法复制、抄袭，或为任何未经允许的商业目的使用本网站及其内容"
+      (read 2026-11-19).
+    www.kashi.gov.cn (喀什地区行政公署; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-20); statement
+      https://www.kashi.gov.cn/ksdqxzgs/c108443/jump_article.shtml; no reuse terms stated (read 2026-11-20).
+    www.tskeg.gov.cn (塔什库尔干塔吉克自治县人民政府门户网站; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.xjht.gov.cn (和田地区行政公署; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+    www.xjyl.gov.cn (伊犁哈萨克自治州人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse terms
+      stated (read 2026-11-19).
+    www.xjtc.gov.cn (塔城地区行政公署; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-20); no reuse terms
+      stated (read 2026-11-20).
+    www.xjhbk.gov.cn (和布克赛尔蒙古自治县人民政府; cn-zfgb: 政府公报 (legal items)): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+
     Wikimedia Commons (lane cn-histgz): public-domain scans of Qing and Republic-era gazettes, by the 国家图书馆
       (民国期刊 database 404; files "NLC404-…", credit "National Library of China") and by the Legislative Yuan
       library's 總統府公報影像系統 and the National Central Library (files "ROC19…"). Each file page is tagged Public
