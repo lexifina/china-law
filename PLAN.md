@@ -1,6 +1,6 @@
 # The plan: every part of Chinese law this repository is meant to hold
 
-Each part, where it goes, where it comes from and how far it is on `main` (2026-11-21, 169,311 commits). Regenerated with each documentation commit; the official totals behind the percentages are in [`COVERAGE.md`](COVERAGE.md).
+Each part, where it goes, where it comes from and how far it is on `main` (2026-11-21, 170,476 commits). Regenerated with each documentation commit; the official totals behind the percentages are in [`COVERAGE.md`](COVERAGE.md).
 
 | Part | Will be in | Progress | Source | Status |
 | --- | --- | --- | --- | --- |
@@ -22,12 +22,12 @@ Each part, where it goes, where it comes from and how far it is on `main` (2026-
 | **Local law** | | | | |
 | Local regulations, autonomy, separate and SEZ regulations, every version | `地方/<省>[/<市>]/` | 21,776 of 24,217 versions · 89.9% | flk's Word files (mirrors), congress sites and gazettes | collecting |
 | Local amending and repeal decisions, normative decisions | `地方/.../修改和废止/` | 2,005 of 2,027 instruments · 98.9% | as above | collecting |
-| Local government rules | `地方/.../地方政府规章/` | 7,782 of 7,848 rules · 99.2% | 国家规章库, local government sites | collecting |
+| Local government rules | `地方/.../地方政府规章/` | 7,819 of 7,848 rules · 99.6% | 国家规章库, local government sites | collecting |
 | Local normative documents and gazettes | `地方/.../规范性文件/, 政府公报/, 人大常委会公报/` | target unknown | government, department and congress sites (legal records only) | collecting; no official total |
 | **Party, documents, treaties, gazettes** | | | | |
 | Central Party regulations | `党内法规/` | 92 of 374 regulations · 24.6% | 共产党员网 党内法规库 | collecting |
 | State Council and ministry normative documents | `规范性文件/` | target unknown | 国务院政策文件库, ministry sites | collecting; no official total |
-| Treaties | `条约/` | 6,079 of 7,437 treaties · 81.7% | 外交部 条约数据库 | collecting |
+| Treaties | `条约/` | 6,544 of 7,437 treaties · 88.0% | 外交部 条约数据库 | collecting |
 | State Council and NPCSC gazettes, item by item | `公报/` | target unknown | www.gov.cn/gongbao, 中国人大网 | collecting; scanned years by OCR |
 
 Hong Kong, Macau and Taiwan are separate repositories. Nothing is dated on an estimate: a record that states no 施行 or 公布 day is held until one is found.
