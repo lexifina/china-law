@@ -1498,6 +1498,54 @@ in section 2, which come from their publishers and keep whatever terms those pub
       User-Agent and serial requests). Catalogue only so far: upload.wikimedia.org is host-stopped (HTTP 429), and
       no scan is downloaded until Alan lifts the stop.
 
+    Bulk mirrors of official texts (lane cn-mirror, added 2026-11-21)
+      Downloaded once in bulk from GitHub and Hugging Face, with no request to any host in China. Only the official
+      text of each law, regulation, rule, judicial interpretation or decision is taken (art. 5, 2.0); never a
+      mirror's own front matter, summaries, classifications, tags, version labels, inferred issuers or added notes.
+      Each commit names the mirror file and its commit or revision (Source, Mirror), the original publisher, and
+      whether the text was checked against an official copy (Verified-against: "official file via mirror" when it
+      is byte-identical to flk's own Word file, otherwise "pending" and listed in the lane's verify queue). The
+      official publication prevails.
+      - huggingface.co/datasets/senry5433/china-effective-laws-regulations (revision 11be732f1a52, snapshot
+        2026-08-26). Dataset card, read 2026-11-21: "法律、法规及官方正式译文不适用《著作权法》第五条。本快照以 CC0 1.0
+        放弃汇编权利" (CC0 1.0). Credited as the card asks: the dataset, 国家法律法规数据库 https://flk.npc.gov.cn/
+        and the snapshot day 2026-08-26. Taken: the text; where the dataset's sha256 equals one of flk's Word files
+        in the lawtext mirrors (cn-flk, above), the text is read from that Word file instead.
+      - github.com/LawRefBook/Laws (commit 8cb05f0dfd02). No licence file and no reuse terms in its README (read
+        2026-11-21); the README names 国家法律法规数据库, 国家规章库 and 维基文库 as its sources. Taken: the text after
+        each file's INFO END marker. Not taken: the INFO block (its own restatement of dates), its folders and
+        categories, db.sqlite3, and 案例 (question-titled excerpts of case releases).
+      - github.com/szhuima/Laws (commit a904ca65ecd2; a 2024 fork of LawRefBook/Laws). No licence file and no reuse
+        terms (read 2026-11-21). Taken as LawRefBook/Laws.
+      - github.com/ImCa0/just-laws (commit 36f115b5c9f5). MIT License (read 2026-11-21); its README says the law
+        texts come from 国家法律法规数据库. Taken: the law text of each page; not its site code, navigation or version
+        labels. Its copyright and permission notice, reproduced as that licence requires:
+
+          MIT License
+
+          Copyright (c) 2022 ImCaO
+
+          Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the "Software"), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software, and to permit persons to whom the Software is
+          furnished to do so, subject to the following conditions:
+
+          The above copyright notice and this permission notice shall be included in all
+          copies or substantial portions of the Software.
+
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+          SOFTWARE.
+
+      The MIT notice covers only what is copyright in just-laws; official texts are outside copyright (art. 5), and
+      Lexifina's own work here stays under CC0 1.0 (section 1).
+
 2.6 Personal data
 
     Official documents can name private persons. They are kept as published, except that in gazettes and local
