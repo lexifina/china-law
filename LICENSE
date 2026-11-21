@@ -1159,6 +1159,23 @@ in section 2, which come from their publishers and keep whatever terms those pub
     www.cnca.gov.cn (国家认证认可监督管理委员会; cn-ministry: 规范性文件, 公告): robots.txt 404 (read 2026-11-20); no reuse terms
       stated (read 2026-11-20).
 
+    www.mof.gov.cn (cn-ministry5: 规范性文件, 公告; cn-ministry5: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); no reuse
+      terms stated (read 2026-11-19).
+    www.moa.gov.cn (中华人民共和国农业农村部; cn-ministry5: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); statement
+      https://www.moa.gov.cn/sy_23468/homeinfo/wzsm/; it states "网站保留所有权，未经允许不得复制镜像" (read 2026-11-19).
+    www.moj.gov.cn (中华人民共和国司法部; cn-ministry5: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      https://www.moj.gov.cn/pub/sfbgw/flsm/201812/t20181231_164581.html; it states "48号）第三条规定，已在报刊上刊登或者网络上传播的作品，
+      除著作权人声明或者上载该作品的网络服务提供者受著作权人的委托声明不得转载、摘编的以外，网站予以转载、摘编并按有关规定支付报酬、注明出处的，不构成侵权" (read 2026-11-19).
+    www.pbc.gov.cn (中国人民银行; cn-ministry5: 规范性文件, 公告): robots.txt 200 (read 2026-11-19); no reuse terms stated (read
+      2026-11-19).
+    www.stats.gov.cn (国家统计局; cn-ministry5: 规范性文件, 公告): robots.txt 404 (read 2026-11-19); statement
+      https://www.stats.gov.cn/wzgl/202302/t20230217_1912857.html; it states "3.严禁企图干涉、破坏网站的正常运行，比如：非法修改页面，破坏交互系统，
+      使用“木马”、“邮件炸弹”或其它黑客软件，传播邮件病毒，等等" (read 2026-11-19).
+    www.cnsa.gov.cn (国家航天局; cn-ministry5: 规范性文件, 公告): robots.txt 404 (read 2026-11-20); no reuse terms stated (read
+      2026-11-20).
+    wjk.jsrd.gov.cn (江苏数字人大; cn-provdb3: 规范性文件 from 江苏省法规规章规范性文件数据库 https://wjk.jsrd.gov.cn:8004/, home page and
+      its API read 2026-11-21): robots.txt 200 (read 2026-11-20); no reuse terms stated (read 2026-11-20).
+
     Wikimedia Commons (lane cn-histgz): public-domain scans of Qing and Republic-era gazettes, by the 国家图书馆
       (民国期刊 database 404; files "NLC404-…", credit "National Library of China") and by the Legislative Yuan
       library's 總統府公報影像系統 and the National Central Library (files "ROC19…"). Each file page is tagged Public
