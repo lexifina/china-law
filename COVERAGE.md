@@ -1,6 +1,6 @@
 # Coverage of the core law
 
-How much of each core category of Chinese law is on `main`, against the official total for it, on 2026-11-21 (170,476 commits). Regenerated with each documentation commit from [`data/coverage.csv`](data/coverage.csv); the plan for every part is in [`PLAN.md`](PLAN.md).
+How much of each core category of Chinese law is on `main`, against the official total for it, on 2026-11-22 (172,412 commits). Regenerated with each documentation commit from [`data/coverage.csv`](data/coverage.csv); the plan for every part is in [`PLAN.md`](PLAN.md).
 
 | Category | Official total | Here | % | Gap | Why the gap |
 | --- | ---: | ---: | ---: | ---: | --- |
@@ -18,7 +18,7 @@ How much of each core category of Chinese law is on `main`, against the official
 | 地方修改、废止决定和法规性决定 (Local amending/repeal decisions and normative decisions) | 2,027 instruments | 2,005 | 98.9% | 22 | 8 no Word file in the flk mirror; 7 Word file unreadable; 3 older versions not yet back-filled (labelled corrections); 1 control characters in the text (held); 1 no stated 施行/公布 date in the record or the text (held); 1 not an act (守则, procedure rules: left out); 1 stated dates disagree (held) |
 | 中央党内法规（中央和部委党内法规，现行） (Central Party regulations in force) | 374 regulations | 92 | 24.6% | 282 | the 12371.cn 党内法规库 lists 131 items; most state no 发布/施行 day (held); the rest are not published on an open official list |
 | 军事法规、军事规章 (Military regulations) | not published | 0 | - | - | not published (only titles in the news; no official text online) |
-| 条约 (Treaties) | 7,437 treaties | 6,544 | 88.0% | 893 | 530 dated on a signature or ratification day with no stated 生效 day (listed as pending in data/date-corrections.json); the rest still being read from the database (one page per 10 s), or with no stated 生效 day (held) |
+| 条约 (Treaties) | 7,437 treaties | 6,629 | 89.1% | 808 | 530 dated on a signature or ratification day with no stated 生效 day (listed as pending in data/date-corrections.json); the rest still being read from the database (one page per 10 s), or with no stated 生效 day (held) |
 
 Where each total comes from:
 
