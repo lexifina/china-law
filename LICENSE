@@ -15,7 +15,9 @@ Full legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 This dedication covers everything Lexifina made: the history as commits, the commit messages, the folder layout and
 file names, the indexes and tables (data/), the tools (tools/), the READMEs, REPRODUCE.md and this file. It covers
 all of it, from the first commit of this repository. It does not cover the texts listed
-in section 2, which come from their publishers and keep whatever terms those publishers give them.
+in section 2, which come from their publishers and keep whatever terms those publishers give them. Nothing
+Lexifina made is under the MIT License or any licence other than CC0 1.0: the MIT notice in 2.5 is just-laws' own,
+reproduced as that licence requires.
 
 2. Texts from their publishers
 
@@ -110,6 +112,13 @@ in section 2, which come from their publishers and keep whatever terms those pub
       Read 2026-11-20: sousuo.www.gov.cn answers robots.txt with 404 and states no rate or terms; the documents are
       pages of www.gov.cn, under the 网站声明 quoted above. Taken from 2026-11-20: documents of the State Council and
       its departments as published there, unaltered (art. 5); reposts marked 本文有删减 (abridged) are not taken.
+    国家规章库 https://www.gov.cn/zhengce/xxgk/gjgzk/ (国务院办公厅 and 司法部; lane cn-gzk; list service
+      sousuoht.www.gov.cn, which serves the page's own calls)
+      Read 2026-11-19: the database is a page of www.gov.cn, under the 网站声明 quoted above; it states no rate. Its
+      list calls carry the app key the page's own script computes; Alan approved making exactly the calls the page
+      makes (decision 3, 2026-11-19), at least 10 seconds apart, one at a time, with no login. Taken: the
+      departmental and local government rules in force as the database gives them, unaltered (art. 5); a rule's
+      own page supplies its layout only where its text equals the database text.
     国家税务总局税收政策法规库 fgk.chinatax.gov.cn, other channels: from 2026-11-20 also its 税务规范性文件, 财税文件,
       其他文件, 工作通知 and 国务院文件 channels, in force and repealed (list service www.chinatax.gov.cn); no terms
       stated (checked 2026-11-19), robots.txt 404 on both hosts.
@@ -740,16 +749,17 @@ in section 2, which come from their publishers and keep whatever terms those pub
       no request to any host in China:
       - github.com/lawtext/law-flk-vol1 and github.com/lawtext/law-flk-vol2: the Word files flk serves (named
         <title>_<公布日期>_<flk id>), with flk's record fields (records.json: 公布日期, 施行日期, 时效性, 制定机关). No
-        licence is stated on these repositories; they add nothing of their own to the texts.
-      - huggingface.co/datasets/twang2218/chinese-law-and-regulations (Apache License 2.0; flk's metadata as of
-        2023): publish_date, effective_date and status, used only where the mirror's record has none.
+        licence is stated on these repositories (read 2026-11-20); they add nothing of their own to the texts.
+      - huggingface.co/datasets/twang2218/chinese-law-and-regulations (Apache License 2.0, read 2026-11-20;
+        flk's metadata as of 2023): publish_date, effective_date and status, used only where the mirror's record has none.
       The texts are laws, regulations, judicial interpretations and decisions of state organs: art. 5 (2.0). Each
       commit names the mirror file it came from and the flk record id; the official publication prevails.
 
     《最高人民法院公报》 cases (lane cn-spcgb)
-      Taken from the corpus chengzi_h/chinese-law-corpus (gitee.com), read from its GitHub copy
-      github.com/lttxzmj/chinese-law-dataset. Its curators dedicate their structuring to the public domain under CC0
-      1.0 and leave out the editors' 裁判摘要. The judgments are judicial documents: art. 5. Each commit names the
+      Taken from the corpus chengzi_h/chinese-law-corpus (https://gitee.com/chengzi_h/chinese-law-corpus), read from
+      its GitHub copy github.com/lttxzmj/chinese-law-dataset. Its curators dedicate their structuring to the public
+      domain under CC0 1.0 and leave out the editors' 裁判摘要 (its README, read 2026-11-20). The judgments are
+      judicial documents: art. 5. Each commit names the
       公报 issue and the case's page on gongbao.court.gov.cn, which is not fetched (2.2). The 审判长简介 printed
       after some judgments is editorial and is left out.
 
