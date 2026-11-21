@@ -11,11 +11,11 @@ The law of China as a git history: one file per article, one commit per version 
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is China's national law, which global-law reads at `china/national/acts/`.
 
-**What is in it now:** the Constitution, as adopted in 1982 and changed by its five amendments, and 172 laws of the National People's Congress and its Standing Committee, all in force, with 190 versions: 15 of the Criminal Law, 3 of the Criminal Procedure Law, 2 each of the Company Law and the Labour Contract Law, and one each of the other 168. [`data/acts.json`](data/acts.json) lists every act with its folder, its versions and where its record starts; each act's folder has a `README.md` listing its versions.
+**What is in it now:** about 146,000 commits (21 November 2026): the Constitution with its five amendments ([`宪法/`](宪法/)); the laws of the National People's Congress and its Standing Committee, in force and repealed, with their versions, the amending and repealing instruments, legislative interpretations and decisions ([`法律/`](法律/), [`修改和废止/`](修改和废止/), [`法律解释/`](法律解释/), [`决定/`](决定/)); administrative and supervision regulations ([`行政法规/`](行政法规/), [`监察法规/`](监察法规/)); departmental rules ([`部门规章/`](部门规章/)); judicial interpretations of the Supreme People's Court and Procuratorate ([`司法解释/`](司法解释/)); the local regulations, government rules, normative documents and gazettes of the provinces, cities and counties ([`地方/`](地方/)); central Party regulations ([`党内法规/`](党内法规/)); State Council and ministry normative documents ([`规范性文件/`](规范性文件/)); the State Council and NPC Standing Committee gazettes ([`公报/`](公报/)); treaties ([`条约/`](条约/)); and official cases ([`案例/`](案例/)). Against the official lists: the Constitution 100%, laws 73% of all versions, administrative regulations 97%, judicial interpretations 92%, departmental rules in force 76%, local regulations 88%, local government rules in force 24%. [`COVERAGE.md`](COVERAGE.md) gives each category's official total, what is here and why the rest is not yet; [`PLAN.md`](PLAN.md) lists every part and how far each one is.
 
 Each law is a folder in [`法律/`](法律/) named by its Chinese title, one file per article (`法律/劳动合同法/第066条.md` is 第六十六条 of the 中华人民共和国劳动合同法, the Labour Contract Law), with `目录.md` for the headings of its parts and chapters and `附件N.md` for its annexes; the Constitution is [`宪法/`](宪法/), its preamble `宪法/序言.md`. Until 20 November 2026 these folders had pinyin names at the top of the repository (`laodonghetongfa/art-066.md`); [`data/paths.json`](data/paths.json) maps every old path to its new one, and `git log --follow` follows each file across the move. Article numbers are those of the version in force: where a change renumbers articles, git shows the text moving between files.
 
-The text is in Chinese, as 中国人大网 publishes it, with full-width digits written as ASCII digits. An English translation is not part of this record.
+The text is in Chinese, as its official sources publish it. An English translation is not part of this record.
 
 ## Questions as git commands
 
@@ -51,7 +51,8 @@ Each commit is dated at noon, Asia/Shanghai, on the day the version took effect,
 
 - for a law as adopted or revised, its own commencement article (本法自……起施行);
 - for a version made by an amending decision or a 刑法修正案, the commencement it states (本决定自……起施行, 本修正案自……起施行), often the day it was promulgated (自公布之日起施行); each of the Constitution's five amendments was adopted, promulgated and in force on the same day;
-- a correction to the standard text printed in the 全国人大常委会公报 (two, both to the 1997 Criminal Law) carries the day of the version it corrects, and `tools/on_date.py` applies it to that version.
+- a correction to the standard text printed in the 全国人大常委会公报 (two, both to the 1997 Criminal Law) carries the day of the version it corrects, and `tools/on_date.py` applies it to that version;
+- every other record: the 施行日期 it states (its own commencement clause, or its source's 施行日期), else its 公布日期 or 发布日期; a record that states neither is held, never dated on an estimate. A version found after a later one was published is added as a labelled correction (`Kind: correction`), which `tools/on_date.py` applies to its days.
 
 Each change is credited to the act that made it, as 中国人大网 names it (`中华人民共和国刑法修正案（十一）（2020年）`), at an address that cannot exist (`xingfa-xzan-2020@npc.gov.cn.invalid`). Where the record starts at a law's current consolidated text (45 laws), the whole text is credited to the latest amending act; the oldest texts of the Criminal Procedure Law (1997) and the Company Law (2018), the two corrections and one typographic difference in the Constitution's official 2018 text are credited to the publisher, `中国人大网 (全国人大常委会办公厅)`.
 
@@ -65,10 +66,8 @@ Each change is credited to the act that made it, as 中国人大网 names it (`�
 
 ## What it does not show
 
-- **Most national laws.** 173 are here; others in force, such as the 个人所得税法, the 网络安全法, the 食品安全法 and the 消费者权益保护法, are not yet.
-- **Earlier wording of 97 laws.** Their record starts at a revision (修订, 50 laws), at the current consolidated text (45) or at the oldest full text 中国人大网 serves (2).
-- **Repealed laws**, such as the 合同法 and the 物权法, which the 民法典 repealed on 1 January 2021.
-- **Administrative and local regulations, judicial interpretations and case law**: the record holds the laws of the National People's Congress and its Standing Committee only. The National Laws Database (flk.npc.gov.cn) was not used: its robots.txt forbids automated collection.
+- **The rest of each category.** [`COVERAGE.md`](COVERAGE.md) gives the gap in each core category and why: older versions still to be back-filled, records that state no 施行 or 公布 day (held, not estimated), and rules still waiting their turn at a rate-limited source.
+- **Court judgments** of 中国裁判文书网 and the 人民法院案例库, and **military regulations**, which are not published as official texts. The National Laws Database (flk.npc.gov.cn) is not fetched, as its robots.txt forbids automated collection: its own Word files and record lists come from third-party mirrors, and each commit names both.
 
 ## Sources
 
@@ -76,12 +75,17 @@ Each change is credited to the act that made it, as 中国人大网 names it (`�
 | --- | --- | --- | --- |
 | [中国人大网](http://www.npc.gov.cn) (全国人大常委会办公厅, General Office of the NPC Standing Committee) | Official site of the NPC: the Constitution and its amendments, laws, amending decisions | partly: laws as adopted or revised and the decisions that amended them; otherwise the current text only | Each version names its page in a `Source:` trailer, and a consolidated text the decision behind it in `Decision:` |
 | 全国人大常委会公报 (on 中国人大网) | Gazette of the NPC Standing Committee, as PDF | the text as published | The standard text of a law (立法法); used for the 民法典 and for the 1997 Criminal Law and its amendments to 2021 |
+| 国家法律法规数据库 (flk.npc.gov.cn), its Word files via the mirrors lawtext/law-flk-vol1 and law-flk-vol2 | Laws, administrative and supervision regulations, judicial interpretations, local regulations and decisions | every version flk lists | flk itself is not fetched; each commit names the mirror file (`Source:`) and the flk record (`Flk-Id:`) |
+| 国家规章库 and 国务院政策文件库 (www.gov.cn); 国家行政法规库 (xzfg.moj.gov.cn) | Departmental and local government rules; State Council and ministry documents; administrative regulations | current texts; every version xzfg holds | |
+| 国务院公报 (www.gov.cn/gongbao) | Gazette of the State Council | the text as published | item by item |
+| 最高人民法院 (www.court.gov.cn) and its 公报 | Judicial interpretations, guiding cases, gazette cases | as published | |
+| Local congresses, governments and their departments; 共产党员网 (www.12371.cn); 外交部 条约数据库 | Local law, normative documents and gazettes; Party regulations; treaties | as published | [`LICENSE`](LICENSE) lists every site with its terms |
 
 ## Licence
 
-See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. Everything Lexifina made here (the history as commits, the commit messages, the folder layout, the data, the tools and the documentation) is dedicated to the public domain under CC0 1.0; [`LICENSE`](LICENSE) lists every source with its own terms, as read on 19 November 2026.
+See [`LICENSE`](LICENSE). Laws, resolutions and decisions of state organs, and their official translations, are not protected by copyright in China (著作权法第五条); 中国人大网 states no reuse terms for these pages. Everything Lexifina made here (the history as commits, the commit messages, the folder layout, the data, the tools and the documentation) is dedicated to the public domain under CC0 1.0; [`LICENSE`](LICENSE) lists every source with its own terms and the day each was read.
 
-No AI model wrote or changed legal text, and none runs when the history is built; an AI model researched the source and wrote the scripts and the documentation (see [`REPRODUCE.md`](REPRODUCE.md)).
+No AI model wrote or changed legal text, and none runs when the history is built; an AI model researched the sources and wrote the scripts and the documentation (see [`REPRODUCE.md`](REPRODUCE.md)).
 
 ## Visualisations
 
