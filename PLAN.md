@@ -1,6 +1,6 @@
 # The plan: every part of Chinese law this repository is meant to hold
 
-Each part, where it goes, where it comes from and how far it is on `main` (2026-11-21, 170,476 commits). Regenerated with each documentation commit; the official totals behind the percentages are in [`COVERAGE.md`](COVERAGE.md).
+Each part, where it goes, where it comes from and how far it is on `main` (2026-11-22, 172,412 commits). Regenerated with each documentation commit; the official totals behind the percentages are in [`COVERAGE.md`](COVERAGE.md).
 
 | Part | Will be in | Progress | Source | Status |
 | --- | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ Each part, where it goes, where it comes from and how far it is on `main` (2026-
 | **Party, documents, treaties, gazettes** | | | | |
 | Central Party regulations | `党内法规/` | 92 of 374 regulations · 24.6% | 共产党员网 党内法规库 | collecting |
 | State Council and ministry normative documents | `规范性文件/` | target unknown | 国务院政策文件库, ministry sites | collecting; no official total |
-| Treaties | `条约/` | 6,544 of 7,437 treaties · 88.0% | 外交部 条约数据库 | collecting |
+| Treaties | `条约/` | 6,629 of 7,437 treaties · 89.1% | 外交部 条约数据库 | collecting |
 | State Council and NPCSC gazettes, item by item | `公报/` | target unknown | www.gov.cn/gongbao, 中国人大网 | collecting; scanned years by OCR |
 
 Hong Kong, Macau and Taiwan are separate repositories. Nothing is dated on an estimate: a record that states no 施行 or 公布 day is held until one is found.
